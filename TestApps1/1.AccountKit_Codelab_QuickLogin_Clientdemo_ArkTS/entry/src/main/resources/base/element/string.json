@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "QuickLogin_CodelabSample"
+    },
+    {
+      "name": "login",
+      "value": "Sign in"
+    },
+    {
+      "name": "personal_info",
+      "value": "Personal info"
+    },
+    {
+      "name": "mobile_number",
+      "value": "Mobile number"
+    },
+    {
+      "name":"read_and_agree",
+      "value":"I have read and agree to "
+    },
+    {
+      "name":"and",
+      "value":" and "
+    },
+    {
+      "name":"end",
+      "value":"."
+    },
+    {
+      "name": "app_user_agreement",
+      "value": "User Service Agreement, "
+    },
+    {
+      "name": "app_privacy_policy",
+      "value": "Privacy Policy,"
+    },
+    {
+      "name": "huaweiId_user_authentication_protocol",
+      "value": "HUAWEI ID User Authentication Agreement"
+    },
+    {
+      "name": "bind_huaweiId_number",
+      "value": "Mobile number associated with HUAWEI ID"
+    },
+    {
+      "name": "get_mobile_number_error",
+      "value": "Failed to obtain the anonymous mobile number."
+    },
+    {
+      "name": "log_out",
+      "value": "Sign out"
+    },
+    {
+      "name": "read_and_agree_protocol",
+      "value": "Before you continue, please read and agree to the agreements."
+    },
+    {
+      "name": "hwid_no_internet_connect",
+      "value": "No Internet connection. Check your network settings."
+    },
+    {
+      "name": "internet_permission_reason",
+      "value": "Used to invoke the one-click login component."
+    },
+    {
+      "name": "get_network_info_permission_reason",
+      "value": "Used to determine whether the current device is connected to the network before redirecting to the Huawei ID user authentication agreement page."
+    },
+    {
+      "name": "login_text_quikly",
+      "value": "一键登录"
+    },
+    {
+      "name":"microphone_permission",
+      "value":"获取录音权限"
+    },
+    {
+      "name": "microphone_permission_reason",
+      "value": "需要麦克风权限以录制音频"
+    }
+  ]
+}

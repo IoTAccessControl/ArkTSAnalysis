@@ -1,0 +1,36 @@
+{
+	"app": {
+		"bundleName": "com.example.multdevicecommunication",
+		"debug": true,
+		"versionCode": 1000000,
+		"versionName": "1.0.0",
+		"minAPIVersion": 50000012,
+		"targetAPIVersion": 50101019,
+		"apiReleaseType": "Release",
+		"compileSdkVersion": "5.1.1.212",
+		"compileSdkType": "HarmonyOS",
+		"appEnvironments": [],
+		"bundleType": "app",
+		"buildMode": "debug"
+	},
+	"module": {
+		"requestPermissions": [
+			{
+				"name": "ohos.permission.WRITE_CONTACTS",
+				"reason": "$string:WRITE_CONTACTS",
+				"usedScene": {
+					"when": "always"
+				}
+			}
+		],
+		"name": "home",
+		"type": "har",
+		"deviceTypes": [
+			"phone",
+			"tablet",
+			"2in1"
+		],
+		"packageName": "home",
+		"installationFree": false
+	}
+}

@@ -1,0 +1,54 @@
+# ========================
+# 通用忽略项
+# ========================
+
+# 操作系统
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+*.cache
+
+# ========================
+# Node.js / npm
+# ========================
+node_modules/
+package-lock.json  # 如果你不打算提交 lock 文件（通常建议提交，但可选）
+npm-debug.log*
+
+# ========================
+# OpenHarmony / ArkTS / DevEco Studio
+# ========================
+/oh_modules/
+/local.properties
+/hvigorw.bat
+/hvigorw
+/.hvigor/
+/.cxx/
+/.preview/          # DevEco 预览缓存（路径极长！）
+**/build/           # 所有构建输出
+**/output/          # 可能的输出目录
+*.hap               # 安装包（大文件！）
+*.har               # 模块包（除非你明确要提交）
+*.msgpack           # 编译缓存（如报错中的文件）
+
+# Clang 工具（保留配置文件，忽略缓存）
+/.clangd/
+
+# ========================
+# IDE
+# ========================
+/.idea/
+.vscode/            # 如果你不希望提交 VS Code 配置（如需团队共享，可删除此行）
+*.iml
+
+# ========================
+# 测试与调试
+# ========================
+**/.test/
+coverage/

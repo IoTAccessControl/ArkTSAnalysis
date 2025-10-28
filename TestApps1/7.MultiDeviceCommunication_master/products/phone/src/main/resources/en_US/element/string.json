@@ -1,0 +1,39 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "AppletAbility_desc",
+      "value": "description"
+    },{
+      "name": "DocumentAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "MultiDeviceCommunication"
+    },
+    {
+      "name": "AppletAbility_label",
+      "value": "MultiDeviceCommunication"
+    },
+    {
+      "name": "DocumentAbility_label",
+      "value": "MultiDeviceCommunication"
+    },
+    {
+      "name": "calendar_permission_reason",
+      "value": "This application needs calendar permissions to manage calendar events"
+    },
+    {
+      "name": "contacts_permission_reason",
+      "value": "This application needs contacts permissions to manage contact information"
+    }
+  ]
+}

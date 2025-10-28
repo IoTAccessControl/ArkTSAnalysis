@@ -1,0 +1,16 @@
+string ACCESS_BLUETOOTH_reason 0x01000002
+string EntryAbility_desc 0x01000003
+string EntryAbility_label 0x01000004
+string READ_CALENDAR_reason 0x01000005
+string READ_CALL_LOG_reason 0x01000006
+string READ_CONTACTS_reason 0x01000007
+string READ_MESSAGES_reason 0x01000008
+string app_name 0x01000000
+string module_desc 0x01000009
+color start_window_background 0x0100000a
+media app_icon 0x01000001
+media background 0x0100000b
+media foreground 0x0100000c
+media layered_image 0x0100000d
+media startIcon 0x0100000e
+profile main_pages 0x0100000f

@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Codelab"
+    },
+    {
+      "name": "Kit",
+      "value": "Health Service Kit"
+    },
+    {
+      "name": "ExerciseSequence",
+      "value": "ExerciseSequence Manage"
+    },
+    {
+      "name": "Auth",
+      "value": "Auth Manage"
+    },
+    {
+      "name": "Print_log",
+      "value": "print log :"
+    },
+    {
+      "name": "SaveData",
+      "value": "saveData"
+    },
+    {
+      "name": "ReadData",
+      "value": "readData"
+    },
+    {
+      "name": "DeleteByRequest",
+      "value": "deleteByRequest"
+    },
+    {
+      "name": "DeleteByExerciseSequence",
+      "value": "deleteByExerciseSequence"
+    },
+    {
+      "name": "RequestAuthorizations",
+      "value": "requestAuthorizations"
+    }
+  ]
+}

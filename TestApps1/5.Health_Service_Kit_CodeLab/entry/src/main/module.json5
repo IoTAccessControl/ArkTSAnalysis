@@ -1,0 +1,88 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.GET_TELEPHONY_STATE",
+        "reason": "$string:get_telephony_state_reason",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_LOCAL_MAC",
+        "reason": "$string:get_wifi_mac_reason",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_INFO",
+        "reason": "$string:get_wifi_info_reason",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "inuse"
+        }
+      },
+      // {
+      //   "name": "ohos.permission.GET_BUNDLE_INFO_PRIVILEGED",
+      //   "reason": "$string:get_bundle_info_reason",
+      //   "usedScene": {
+      //     "abilities": ["EntryAbility"],
+      //     "when": "inuse"
+      //   }
+      // },
+      {
+        "name": "ohos.permission.READ_HEALTH_DATA",
+        "reason": "$string:read_health_data_reason",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "inuse"
+        }
+      }
+    ],
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "label": "$string:EntryAbility_label",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:icon",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "orientation": "unspecified",
+        "launchType": "standard",
+        "visible": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "metadata": [
+      {
+        "name": "client_id",
+        // Todo Configure client_id here
+        "value": ""
+      }
+    ]
+  }
+}

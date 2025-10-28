@@ -1,0 +1,25 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\Users\\yao\\Desktop\\final_api\\NewsData\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\yao\\Desktop\\final_api\\NewsData",
+  "nodeModulesPath": "C:\\Users\\yao\\Desktop\\final_api\\NewsData\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\yao\\Desktop\\final_api\\NewsData\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "C:\\Users\\yao\\Desktop\\final_api\\NewsData\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

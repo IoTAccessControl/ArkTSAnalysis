@@ -1,0 +1,34 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie",
+  "nodeModulesPath": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry\\src\\main\\ets\\pages\\Verify.ets"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [
+    {
+      "ohmurl": "@bundle:com.example.webcookie/entry/ets/pages/Verify",
+      "name": "Verify",
+      "pageSourceFile": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry\\src\\main\\ets\\pages\\Verify.ets",
+      "buildFunction": "VerifyPageBuilder"
+    }
+  ],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "C:\\Users\\yao\\Desktop\\final_api\\WebCookie\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

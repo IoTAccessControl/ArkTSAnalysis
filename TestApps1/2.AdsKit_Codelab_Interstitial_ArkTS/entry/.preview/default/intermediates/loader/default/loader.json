@@ -1,0 +1,23 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\AdsKit-Codelab-Interstitial-ArkTS\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\AdsKit-Codelab-Interstitial-ArkTS",
+  "nodeModulesPath": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\AdsKit-Codelab-Interstitial-ArkTS\\entry\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\AdsKit-Codelab-Interstitial-ArkTS\\entry\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "buildConfigPath": ".preview\\config\\buildConfig.json"
+}

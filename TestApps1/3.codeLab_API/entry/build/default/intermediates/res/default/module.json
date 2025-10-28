@@ -1,0 +1,88 @@
+{
+	"app":	{
+		"bundleName":	"com.example.scenariofusionkit_codelab_functionalapi_arkts",
+		"vendor":	"example",
+		"versionCode":	1000000,
+		"versionName":	"1.0.0",
+		"icon":	"$media:app_icon",
+		"label":	"$string:app_name",
+		"apiReleaseType":	"Release",
+		"compileSdkVersion":	"5.1.0.125",
+		"targetAPIVersion":	50100018,
+		"minAPIVersion":	50100018,
+		"compileSdkType":	"HarmonyOS",
+		"appEnvironments":	[],
+		"bundleType":	"app",
+		"buildMode":	"debug",
+		"debug":	true,
+		"iconId":	16777217,
+		"labelId":	16777216
+	},
+	"module":	{
+		"name":	"entry",
+		"type":	"entry",
+		"description":	"$string:module_desc",
+		"mainElement":	"EntryAbility",
+		"deviceTypes":	["phone", "tablet"],
+		"deliveryWithInstall":	true,
+		"installationFree":	false,
+		"pages":	"$profile:main_pages",
+		"abilities":	[{
+				"name":	"EntryAbility",
+				"srcEntry":	"./ets/entryability/EntryAbility.ets",
+				"description":	"$string:EntryAbility_desc",
+				"icon":	"$media:app_icon",
+				"label":	"$string:EntryAbility_label",
+				"startWindowIcon":	"$media:startIcon",
+				"startWindowBackground":	"$color:start_window_background",
+				"exported":	true,
+				"skills":	[{
+						"entities":	["entity.system.home"],
+						"actions":	["action.system.home"]
+					}],
+				"descriptionId":	16777219,
+				"iconId":	16777217,
+				"labelId":	16777220,
+				"startWindowIconId":	16777230,
+				"startWindowBackgroundId":	16777226
+			}],
+		"requestPermissions":	[{
+				"name":	"ohos.permission.READ_CONTACTS",
+				"reason":	"$string:READ_CONTACTS_reason",
+				"usedScene":	{
+					"abilities":	["EntryAbility"],
+					"when":	"inuse"
+				},
+				"reasonId":	16777223
+			}, {
+				"name":	"ohos.permission.READ_CALL_LOG",
+				"reason":	"$string:READ_CALL_LOG_reason",
+				"usedScene":	{
+					"abilities":	["EntryAbility"],
+					"when":	"inuse"
+				},
+				"reasonId":	16777222
+			}, {
+				"name":	"ohos.permission.READ_MESSAGES",
+				"reason":	"$string:READ_MESSAGES_reason",
+				"usedScene":	{
+					"abilities":	["EntryAbility"],
+					"when":	"inuse"
+				},
+				"reasonId":	16777224
+			}, {
+				"name":	"ohos.permission.READ_CALENDAR",
+				"reason":	"$string:READ_CALENDAR_reason",
+				"usedScene":	{
+					"abilities":	["EntryAbility"],
+					"when":	"inuse"
+				},
+				"reasonId":	16777221
+			}],
+		"packageName":	"entry",
+		"virtualMachine":	"ark13.0.1.0",
+		"compileMode":	"esmodule",
+		"dependencies":	[],
+		"descriptionId":	16777225
+	}
+}

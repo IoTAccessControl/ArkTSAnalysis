@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "MapDemo"
+    },
+    {
+      "name": "network_info_permission",
+      "value": "允许应用获取网络信息"
+    },
+    {
+      "name": "send_messages_permission",
+      "value": "允许应用发送短信"
+    },
+    {
+      "name": "bluetooth_permission",
+      "value": "允许应用开启蓝牙功能"
+    },
+    {
+      "name": "secure_settings_permission",
+      "value": "允许应用开启NFC功能"
+    },
+    {
+      "name": "contacts_permission",
+      "value": "允许应用删除联系人"
+    },
+    {
+      "name": "call_log_permission",
+      "value": "允许应用删除通话记录"
+    },
+    {
+      "name": "receive_sms_permission",
+      "value": "允许应用删除短信"
+    }
+  ]
+}

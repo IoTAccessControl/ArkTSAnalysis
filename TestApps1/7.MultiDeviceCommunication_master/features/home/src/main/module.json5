@@ -1,0 +1,20 @@
+{
+  "module": {
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.WRITE_CONTACTS",
+        "reason": "$string:WRITE_CONTACTS",
+        "usedScene": {
+          "when": "always"
+        }
+      }
+    ],
+    "name": "home",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

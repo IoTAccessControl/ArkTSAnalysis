@@ -1,0 +1,28 @@
+{
+  "modulePathMap": {
+    "phone": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\products\\phone",
+    "home": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\features\\home",
+    "socialCircle": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\features\\socialCircle",
+    "base": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\common\\base"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master",
+  "nodeModulesPath": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\products\\phone\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "phone",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\products\\phone\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "C:\\Users\\yao\\Desktop\\final_api\\MultiDeviceCommunication-master\\products\\phone\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

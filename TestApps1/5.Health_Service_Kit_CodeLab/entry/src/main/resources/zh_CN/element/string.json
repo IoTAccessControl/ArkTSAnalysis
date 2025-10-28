@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Codelab"
+    },
+    {
+      "name": "Kit",
+      "value": "运动健康服务"
+    },
+    {
+      "name": "ExerciseSequence",
+      "value": "锻炼记录管理"
+    },
+    {
+      "name": "Auth",
+      "value": "授权管理"
+    },
+    {
+      "name": "Print_log",
+      "value": "日志打印："
+    },
+    {
+      "name": "SaveData",
+      "value": "保存数据"
+    },
+    {
+      "name": "ReadData",
+      "value": "读取数据"
+    },
+    {
+      "name": "DeleteByRequest",
+      "value": "根据请求删除"
+    },
+    {
+      "name": "DeleteByExerciseSequence",
+      "value": "删除指定数据"
+    },
+    {
+      "name": "RequestAuthorizations",
+      "value": "授权"
+    }
+  ]
+}

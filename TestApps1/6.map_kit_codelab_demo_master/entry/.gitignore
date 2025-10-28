@@ -1,0 +1,8 @@
+/node_modules
+/oh_modules
+/oh-package-lock.json5
+/OHMapFWK.har
+/.preview
+/build
+/.cxx
+/.test

@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "API Demo"
+    },
+    {
+      "name": "ACCESS_BLUETOOTH_reason",
+      "value": "Used to obtain the Bluetooth status"
+    },
+    {
+      "name": "READ_CONTACTS_reason",
+      "value": "Used to access contact information"
+    },
+    {
+      "name": "READ_CALL_LOG_reason",
+      "value": "Used to access call history information"
+    },
+    {
+      "name": "READ_MESSAGES_reason",
+      "value": "Used to access SMS and MMS information"
+    },
+    {
+      "name": "READ_CALENDAR_reason",
+      "value": "Used to access calendar information"
+    }
+  ]
+}

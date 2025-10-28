@@ -1,0 +1,32 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie",
+  "nodeModulesPath": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie\\entry\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie\\entry\\src\\main\\ets\\pages\\Verify.ets"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [
+    {
+      "ohmurl": "@bundle:com.example.webcookie/entry/ets/pages/Verify",
+      "name": "Verify",
+      "pageSourceFile": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie\\entry\\src\\main\\ets\\pages\\Verify.ets",
+      "buildFunction": "VerifyPageBuilder"
+    }
+  ],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\1\\DevEcoStudioProjects\\renwu\\quanxian\\WebCookie\\entry\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "buildConfigPath": ".preview\\config\\buildConfig.json"
+}

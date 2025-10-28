@@ -1,0 +1,112 @@
+﻿敏感行为,行为子项,相关API,相关权限,敏感数据项,敏感数据子项
+1、一键登录（AccountKit-Codelab-QuickLogin-Clientdemo-ArkTS）,,,,,
+本地录音,本地录音,@ohos.multimedia.media.AudioRecorder.start(callback: AsyncCallback<void>): void,ohos.permission.MICROPHONE,云空间同步/备份内容,音频/录音
+,本地录音,@ohos.multimedia.media.AVRecorder.start(callback: AsyncCallback<void>): void,ohos.permission.MICROPHONE,云空间同步/备份内容,            音频/录音
+,本地录音,@ohos.multimedia.audio.AudioCapturer.start(callback: AsyncCallback<void>): void,ohos.permission.MICROPHONE,云空间同步/备份内容,            音频/录音
+接收短信,接收短信,"@ohos.commonEventManager.subscribe(subscriber: CommonEventSubscriber, callback: AsyncCallback<CommonEventData>): void",ohos.permission.RECEIVE_SMS,云空间同步/备份内容,            信息/短信
+后台截屏/录屏,截屏,"@ohos.screenshot.save(options?: ScreenshotOptions, callback: AsyncCallback<image.PixelMap>): void",ohos.permission.CAPTURE_SCREEN,云空间同步/备份内容,              照片
+,录屏,@ohos.multimedia.media.AVRecorder.start(callback: AsyncCallback<void>): void,"ohos.permission.CAPTURE_SCREEN
+ohos.permission.MICROPHONE",云空间同步/备份内容,            照片/视频
+拍照/摄像（打开摄像头）,打开相机,@ohos.multimedia.camera.CameraInput.open(): Promise<void>;,ohos.permission.CAMERA,屏幕操作记录,             打开相机
+,拍照,@ohos.multimedia.camera.PhotoOutput.capture(setting?: camera.PhotoCaptureSetting): Promise<void>;,ohos.permission.CAMERA,屏幕操作记录,               拍照
+2、鲸鸿动能广告（AdsKit-Codelab-Interstitial-ArkTS）,,,,,
+开启/关闭位置服务,打开位置服务,@ohos.geolocation.requestEnableLocation(callback: AsyncCallback<void>): void;,ohos.permission.MANAGE_SECURE_SETTINGS,屏幕操作记录,          打开位置服务
+获取地理位置,获取GPS定位信息,"@ohos.geolocation.getCurrentLocation(request: CurrentLocationRequest, callback: AsyncCallback<Location>): void","ohos.permission.APPROXIMATELY_LOCATION
+ohos.permission.LOCATION",  精确位置信息,            经纬度信息
+,获取GPS定位信息,@ohos.geolocation.getLastLocation(callback: AsyncCallback<Location>): void,"ohos.permission.APPROXIMATELY_LOCATION
+ohos.permission.LOCATION（可选）",  精确位置信息,            经纬度信息
+,获取GPS定位信息,"@ohos.geoLocation.on(type: ‘locationChange’, request: LocationRequest, callback: Callback<Location>): void","ohos.permission.APPROXIMATELY_LOCATION
+ohos.permission.LOCATION（可选）",  精确位置信息,            经纬度信息
+,获取小区信息,@ohos.telephony.radio->getCellInformation(callback: AsyncCallback<Array<CellInformation>>): void,"ohos.permission.LOCATION
+ohos.permission.APPROXIMATELY_LOCATION",粗略位置信息,           小区位置
+读取用户本机号码,读取本机电话号码,"@ohos.telephony.sim.getShowNumber(slotId: number, callback: AsyncCallback<string>): void","ohos.permission.GET_PHONE_NUMBERS
+ohos.permission.GET_TELEPHONY_STATE",云空间同步/备份内容,            通讯录
+,读取本机电话号码,"@ohos.telephony.sim.getSimAccountInfo(slotId: number, callback: AsyncCallback<IccAccountInfo>): void",ohos.permission.GET_TELEPHONY_STATE,云空间同步/备份内容,            通讯录
+,读取本机电话号码,@ohos.telephony.sim.getActiveSimAccountInfoList(callback: AsyncCallback<Array<IccAccountInfo>>): void, ohos.permission.GET_TELEPHONY_STATE,云空间同步/备份内容,            通讯录
+,读取本机电话号码,"@ohos.telephony.sim.getSimTelephoneNumber(slotId: number, callback: AsyncCallback<string>): void",ohos.permission.GET_PHONE_NUMBERS,云空间同步/备份内容,            通讯录
+,3、基于融合场景服务实现API获取系统属性（codeLab_API）,,,,
+读取通讯录,获取联系人列表,"@ohos.contact.queryContact(context: Context, key: string, callback: AsyncCallback<Contact>): void",ohos.permission.READ_CONTACTS,云空间同步/备份内容,            通讯录
+,获取联系人列表,"@ohos.contact.queryContacts(context: Context, callback: AsyncCallback<Array<Contact>>): void",ohos.permission.READ_CONTACTS,云空间同步/备份内容,            通讯录
+,获取联系人列表,"@ohos.contact.queryContactsByPhoneNumber(context: Context, phoneNumber: string, callback: AsyncCallback<Array<Contact>>): void",ohos.permission.READ_CONTACTS,云空间同步/备份内容,            通讯录
+,获取联系人列表,"@ohos.contact.queryContactsByEmail(context: Context, email: string, callback: AsyncCallback<Array<Contact>>): void",ohos.permission.READ_CONTACTS,云空间同步/备份内容,            通讯录
+,获取群组,"@ohos.contact->queryGroups(context: Context, callback: AsyncCallback<Array<Group>>): void",ohos.permission.READ_CONTACTS,云空间同步/备份内容,            通讯录
+读取通话记录,获取通话记录,@ohos.data.dataShare'.dataShareHelper.query-->dataability://com.ohos.calllogability,ohos.permission.READ_CALL_LOG,云空间同步/备份内容,            通讯录
+读取短信数据,获取SIM卡短信,"@ohos.telephony.sms.getAllSimMessages(slotId: number, callback: AsyncCallback<Array<SimShortMessage>>): void",ohos.permission.READ_MESSAGES,云空间同步/备份内容,            短信列表
+,获取短信,"@ohos.data.dataShare.createDataShareHelper(context, 'datashare:///com.ohos.smsmmsability')",ohos.permission.READ_MESSAGES,云空间同步/备份内容,            短信列表
+读取彩信数据,获取彩信,ohos.data.dataShare.dataShareHelper.query-->URI:datashare:///com.ohos.smsmmsability,"ohos.permission.READ_WHOLE_CALENDAR或
+ohos.permission.READ_CALENDAR",云空间同步/备份内容,            短信列表
+读取日程表,获取日程表记录,"@ohos.data.dataShare'.dataShareHelper.query-->URI:""datashare:///calendardata""","ohos.permission.READ_WHOLE_CALENDAR或
+ohos.permission.READ_CALENDAR",云空间同步/备份内容,             日程表
+,获取日程表记录,"@ohos.data.dataShare.createDataShareHelper(context, 'datashare:///calendardata')",ohos.permission.READ_CALENDAR,云空间同步/备份内容,             日程表
+,获取日程表记录,ohos.calendarManager.Calendar.getEvents(callback: AsyncCallback<Event[]>): void,"ohos.permission.READ_WHOLE_CALENDAR或
+ohos.permission.READ_CALENDAR",云空间同步/备份内容,             日程表
+4、安全-应用设备状态检测（device-security-kit_-codelab_-clientdemo_-arkts-master）,,,,,
+读取媒体资源,获取图片和视频资源,@ohos.file.photoAccessHelper.getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>,ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,获取图片,ohos.file.photoAccessHelper.photoAsset.getReadOnlyFd(callback: AsyncCallback<number>): void,ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,读取缩略图,ohos.file.photoAccessHelper.photoAsset.getThumbnail(callback: AsyncCallback<image.PixelMap>): void,ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,读取相册图片,"ohos.file.photoAccessHelper.album.getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>>): void",ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,获取图片,"ohos.filemanagement.userFileManager.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void",ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,获取音频,"ohos.filemanagement.userFileManager.getAudioAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void",ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,            音频/录音
+,获取相册图片,"ohos.filemanagement.userFileManager.album.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void",ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,获取缩略图,"ohos.filemanagement.userFileManager.privateAlbum.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void",ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+,获取缩略图,ohos.filemanagement.userFileManager.fileAssets.getThumbnail(callback: AsyncCallback<image.PixelMap>): void,ohos.permission.READ_IMAGEVIDEO,云空间同步/备份内容,             图片/视频
+5、华为运动健康服务（Health_Service_Kit_CodeLab）,,,,,
+获取mac地址,获取mac地址,@ohos.wifi.getDeviceMacAddress(): string[]," ohos.permission.GET_WIFI_LOCAL_MAC
+ohos.permission.GET_WIFI_INFO",网络地址,               mac地址
+读应用软件列表,读应用软件列表,"@ohos.bundle.bundleManager.getBundleInfo(bundleName: string, bundleFlags: number): Promise<BundleInfo>",ohos.permission.GET_INSTALLED_BUNDLE_LIST,已安装列表,            已安装应用列表
+,,6、华为地图服务（map-kit_-codelab_-demo-master）,,,
+发送短信,发送短信,@ohos.telephony.sms.sendMessage(options: SendMessageOptions): void,ohos.permission.SEND_MESSAGES,屏幕操作记录,              发短信
+,发送短信,"@ohos.telephony.sms.sendShortMessage(options: SendMessageOptions, callback: AsyncCallback<void>): void",ohos.permission.SEND_MESSAGES,屏幕操作记录,              发短信
+开启无线外围接口 ,开启蓝牙,@ohos.bluetooth.enableBluetooth(): boolean;,ohos.permission.ACCESS_BLUETOOTH,屏幕操作记录,              开启蓝牙
+,开启蓝牙,@ohos.bluetooth.access.enableBluetooth(): boolean;,ohos.permission.ACCESS_BLUETOOTH,屏幕操作记录,              开启蓝牙
+,开启NFC,@ohos.nfc.controller.enableNfc(): void, ohos.permission.MANAGE_SECURE_SETTINGS,屏幕操作记录,　　　　　　　开启NFC
+,删除联系人,"@ohos.contact.deleteContact(context: Context, key: string, callback: AsyncCallback<void>): void",ohos.permission.WRITE_CONTACTS,屏幕操作记录,　　　　　　　删除联系人
+删除通话记录,删除通话记录,@ohos.data.dataShare'.dataShareHelper.delete-->dataability:///com.ohos.calllogability,ohos.permission.WRITE_CALL_LOG,屏幕操作记录,　　　　　　　删除通话记录
+7、多设备即时通讯界面（MultiDeviceCommunication-master）,,,,,
+删除日程表数据 ,删除日历事件,@kit.CalendarKit.calendarManager.getCalendarManager(context).getCalendar().deleteEvents(eventIds: number[]): Promise<void>,ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,             日程表
+,删除单个日历事件,@kit.CalendarKit.calendarManager.getCalendarManager(context).getCalendar().deleteEvent(eventId: number): Promise<void>,ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,             日程表
+,删除整个日历,@kit.CalendarKit.calendarManager.getCalendarManager(context).deleteCalendar(calendar: Calendar): Promise<boolean>,ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,             日程表
+,删除普通类型日历事件,@kit.CalendarKit.calendarManager.getCalendarManager(context).getCalendar().deleteEvents(eventIds: number[]): Promise<void>,ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,             日程表
+修改用户电话本数据（包含新增）,新增数据,"@ohos.contact.addContact(context: common.UIAbilityContext, contact: Contact): Promise<number>",ohos.permission.WRITE_CONTACTS,云空间同步/备份内容,　　　　　　　增加联系人
+,批量新增数据,@ohos.data.dataShare'.dataShareHelper.batchInsert-->URI:datashare:///com.ohos.contactsdataability,ohos.permission.WRITE_CONTACTS,云空间同步/备份内容,　　　　　　　增加联系人
+,新增联系人,"@ohos.contact.addContact(context: Context, contact: Contact, callback: AsyncCallback<number>): void",ohos.permission.WRITE_CONTACTS,云空间同步/备份内容,　　　　　　　增加联系人
+,修改联系人,"@ohos.contact.updateContact(context: Context, contact: Contact, callback: AsyncCallback<void>): void","ohos.permission.WRITE_CONTACTS
+ohos.permission.READ_CONTACTS",云空间同步/备份内容,　　　　　　　修改联系人
+,修改联系人,"@ohos.data.dataShare.createDataShareHelper(context, 'com.ohos.contactsdataability').update(uri: string, valuesBucket: ValuesBucket, predicates: DataSharePredicates): Promise<number>",ohos.permission.WRITE_CONTACTS ,云空间同步/备份内容,　　　　　　　修改联系人
+"8、新闻（NewsData）
+",,,,,
+修改通话记录（包含新增）,批量新增通话记录,@ohos.data.dataShare'.dataShareHelper.batchInsert-->dataability:///com.ohos.calllogability,"ohos.permission.WRITE_CALL_LOG
+ohos.permission.READ_CALL_LOG",云空间同步/备份内容,　　　　　　　新增通话记录
+,新增通话记录,@ohos.telephony.call.makeCall(phoneNumber: string): Promise<void>,ohos.permission.PLACE_CALL,云空间同步/备份内容,　　　　　　　新增通话记录
+9、鸿蒙支付服务（PaymentKit-CodelabDemo）,,,,,
+修改日程表数据（包含新增）,新增日程,"@ohos.calendarManager.Calendar.addEvent(event: Event, callback: AsyncCallback<number>): void","ohos.permission.WRITE_WHOLE_CALENDAR或
+ohos.permission.WRITE_CALENDAR",云空间同步/备份内容,　　　　　　　新增日程
+,批量新增日程,"@ohos.calendarManager.Calendar.addEvents(events: Event[], callback: AsyncCallback<void>): void","ohos.permission.WRITE_WHOLE_CALENDAR或
+ohos.permission.WRITE_CALENDAR",云空间同步/备份内容,　　　　　　　新增日程
+,新增日程,"@ohos.calendarManager.Calendar.addEvent(event: Event, callback: AsyncCallback<number>): void",ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,　　　　　　　新增日程
+,批量新增日程,"@ohos.calendarManager.Calendar.addEvents(events: Event[], callback: AsyncCallback<void>): void",ohos.permission.WRITE_CALENDAR,云空间同步/备份内容,　　　　　　　新增日程
+,更新日程,"@ohos.calendarManager.Calendar.updateEvent(event: Event, callback: AsyncCallback<void>): void","ohos.permission.WRITE_WHOLE_CALENDAR
+ohos.permission.READ_WHOLE_CALENDAR 或
+ohos.permission.WRITE_CALENDAR
+ohos.permission.READ_CALENDAR",云空间同步/备份内容,　　　　　　　更新日程
+支付和签约,支付功能(Promise方式),"@kit.PaymentKit.paymentService.requestPayment(context: common.UIAbilityContext, orderStr: string): Promise<void>",,支付记录,　　　　　　支付方式
+,支付功能(回调方式),"@kit.PaymentKit.paymentService.requestPayment(context: common.UIAbilityContext, orderStr: string, callback: AsyncCallback<void>): void",,支付记录,　　　　　　支付方式
+,签约功能(Promise方式),"@kit.PaymentKit.paymentService.requestContract(context: common.UIAbilityContext, contractStr: string): Promise<void>",,支付记录,　　　　　　支付方式
+,签约功能(回调方式),"@kit.PaymentKit.paymentService.requestContract(context: common.UIAbilityContext, contractStr: string, callback: AsyncCallback<void>): void",,支付记录,　　　　　　支付方式
+"10、免密登录服务（WebCookie）
+",,,,,
+ 移动通信网络数据连接传送数据,发起HTTP网络请求,"@ohos.net.http.createHttp().request(url: string, callback: AsyncCallback<HttpResponse>): void",ohos.permission.INTERNET,网络数据,　　　　　发起网络请求
+,根据URI发送网络请求,"@ohos.net.http.requestInStream(url: string, callback: AsyncCallback<number>): void",ohos.permission.INTERNET,网路数据,　　　　　发起网络请求
+,通过socket向远端发送数据,"@ohos.bluetooth.sppWrite(clientSocket: number, data: ArrayBuffer): boolean",ohos.permission.ACCESS_BLUETOOTH,网络数据,　　　　　　发送数据
+,通过socket向远端发送数据,"@ohos.bluetooth.socket.sppWrite(clientSocket: number, data: ArrayBuffer): void",ohos.permission.ACCESS_BLUETOOTH,网络数据,　　　　　　发送数据
+拨打电话,拨打电话,"@ohos.telephony.call.makeCall(context: Context, phoneNumber: string): Promise<void>",ohos.permission.PLACE_CALL,云空间同步/备份内容,　　　　　　拨打电话
+拨打电话,拨打电话,"@ohos.telephony.call.makeCall(phoneNumber: string, callback: AsyncCallback<void>): void",ohos.permission.PLACE_CALL,云空间同步/备份内容,　　　　　　拨打电话
+发送彩信,发送彩信,"ohos.telephony.sms.sendMms(context: Context, mmsParams: MmsParams, callback: AsyncCallback<void>): void",ohos.permission.SEND_MESSAGE,云空间同步/备份内容,　　　　　　拨打电话
+开启移动通信网络连接,启用蜂窝数据服务,"@ohos.telephony.data.setDataRoamingEnabled(slotId: number, enable: boolean): Promise<void>",ohos.permission.SET_TELEPHONY_STATE,网络状态,　　　　　　数据服务
+         开启 WLAN,使能WLAN,@ohos.wifi.enableWifi(): boolean,"ohos.permission.SET_WIFI_INFO
+ohos.permission.MANAGE_WIFI_CONNECTION",网络状态,　　　　　　WiFi状态
+,使能WLAN,@ohos.wifiManager.enableWifi(): void,"ohos.permission.SET_WIFI_INFO
+ohos.permission.MANAGE_WIFI_CONNECTION",网络状态,　　　　　　WiFi状态
+,                           禁用wifi,                                                         @ohos.wifiManager.disconnect(): void,"     ohos.permission.SET_WIFI_INFO
+    ohos.permission.MANAGE_WIFI_CONNECTION",　　　　　　　　　　　网络状态,　　　　　　WiFi状态
+读取应用信息,获取指定用户下所有已安装的应用信息,"@ohos.bundle.getAllApplicationInfo(bundleFlags: number, userId?: number): Promise<Array<ApplicationInfo>>",ohos.permission.GET_BUNDLE_INFO_PRIVILEGED,　　　　　　　　　　　已安装列表,            已安装应用列表

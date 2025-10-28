@@ -1,0 +1,96 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "QuickLogin_CodelabSample"
+    },
+    {
+      "name": "login",
+      "value": "登录"
+    },
+    {
+      "name": "personal_info",
+      "value": "个人信息"
+    },
+    {
+      "name": "mobile_number",
+      "value": "手机号"
+    },
+    {
+      "name":"read_and_agree",
+      "value":"已阅读并同意"
+    },
+    {
+      "name":"and",
+      "value":"和"
+    },
+    {
+      "name":"end",
+      "value":"。"
+    },
+    {
+      "name": "app_user_agreement",
+      "value": "《XXXX用户协议》"
+    },
+    {
+      "name": "app_privacy_policy",
+      "value": "《XXXX隐私政策》"
+    },
+    {
+      "name": "huaweiId_user_authentication_protocol",
+      "value": "《华为账号用户认证协议》"
+    },
+    {
+      "name": "bind_huaweiId_number",
+      "value": "华为账号绑定号码"
+    },
+    {
+      "name": "get_mobile_number_error",
+      "value": "获取匿名手机号失败"
+    },
+    {
+      "name": "log_out",
+      "value": "退出登录"
+    },
+    {
+      "name": "read_and_agree_protocol",
+      "value": "请先阅读并同意协议"
+    },
+    {
+      "name": "hwid_no_internet_connect",
+      "value": "网络未连接，请检查网络设置"
+    },
+    {
+      "name": "internet_permission_reason",
+      "value": "用于调用一键登录组件。"
+    },
+    {
+      "name": "get_network_info_permission_reason",
+      "value": "用于跳转华为账号用户认证协议页面前判断当前设备是否连接网络。"
+    },
+    {
+      "name": "microphone_permission_reason",
+      "value": "用于进行本地录音功能。"
+    },
+    {
+      "name": "receive_sms_permission_reason",
+      "value": "用于接收短信功能。"
+    },
+    {
+      "name": "capture_screen_permission_reason",
+      "value": "用于屏幕截图和录屏功能。"
+    },
+    {
+      "name": "camera_permission_reason",
+      "value": "用于访问相机、拍照等功能。"
+    }
+  ]
+}

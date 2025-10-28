@@ -1,0 +1,11 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information of your package.",
+  "main": "index.ets",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
+

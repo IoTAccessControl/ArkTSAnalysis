@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Codelab"
+    },
+    {
+      "name": "Kit",
+      "value": "Health Service Kit"
+    },
+    {
+      "name": "ExerciseSequence",
+      "value": "ExerciseSequence"
+    },
+    {
+      "name": "Auth",
+      "value": "Auth"
+    },
+    {
+      "name": "Print_log",
+      "value": "print log :"
+    },
+    {
+      "name": "SaveData",
+      "value": "SaveData"
+    },
+    {
+      "name": "ReadData",
+      "value": "ReadData"
+    },
+    {
+      "name": "DeleteByRequest",
+      "value": "DeleteByRequest"
+    },
+    {
+      "name": "DeleteByExerciseSequence",
+      "value": "DeleteByExerciseSequence"
+    },
+    {
+      "name": "RequestAuthorizations",
+      "value": "RequestAuthorizations"
+    },
+    {
+      "name": "get_telephony_state_reason",
+      "value": "需要读取IMEI信息"
+    },
+    {
+      "name": "get_wifi_mac_reason",
+      "value": "需要获取设备MAC地址"
+    },
+    {
+      "name": "get_wifi_info_reason",
+      "value": "需要获取WiFi信息"
+    },
+    {
+      "name": "get_bundle_info_reason",
+      "value": "需要获取已安装应用信息"
+    },
+    {
+      "name": "read_health_data_reason",
+      "value": "需要读取健康数据"
+    }
+  ]
+}

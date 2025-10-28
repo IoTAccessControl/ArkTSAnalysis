@@ -1,0 +1,76 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "InterstitialAdsDemo"
+    },
+    {
+      "name": "interstitial_ads_demo_title",
+      "value": "InterstitialAdsDemo"
+    },
+    {
+      "name": "request_interstitial_video_ad_btn",
+      "value": "Request interstitial video ad"
+    },
+    {
+      "name": "request_interstitial_image_ad_btn",
+      "value": "Request interstitial image ad"
+    },
+    {
+      "name": "app_tracking_permission_reason",
+      "value": "The app obtains this information to recommend content that you may be interested in."
+    },
+    {
+      "name": "location_permission_reason",
+      "value": "Required to provide location-based services and functionality."
+    },
+    {
+      "name": "phone_permission_reason",
+      "value": "Required to access telephony information."
+    },
+    {
+      "name": "enable_location_btn",
+      "value": "Enable Location Service"
+    },
+    {
+      "name": "get_current_location_btn",
+      "value": "Get Current Location"
+    },
+    {
+      "name": "get_last_location_btn",
+      "value": "Get Last Location"
+    },
+    {
+      "name": "listen_location_btn",
+      "value": "Listen to Location Changes"
+    },
+    {
+      "name": "get_cell_info_btn",
+      "value": "Get Cell Information"
+    },
+    {
+      "name": "get_phone_number_btn",
+      "value": "Get Phone Number"
+    },
+    {
+      "name": "get_sim_account_btn",
+      "value": "Get SIM Account Info"
+    },
+    {
+      "name": "get_active_sim_btn",
+      "value": "Get Active SIM Info"
+    },
+    {
+      "name": "get_sim_telephone_number_btn",
+      "value": "Get SIM Telephone Number"
+    }
+  ]
+}

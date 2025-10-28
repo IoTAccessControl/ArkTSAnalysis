@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/MainIndex",
+    "pages/AuthIndex",
+    "pages/ExerciseSequenceIndex",
+    "pages/PermissionTestPage"
+  ]
+}

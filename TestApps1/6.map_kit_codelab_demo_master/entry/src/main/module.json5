@@ -1,0 +1,110 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      // {
+      //   "name": "ohos.permission.INTERNET",
+      //   "reason": "$string:EntryAbility_desc",
+      //   "usedScene": {
+      //     "when": "always"
+      //   }
+      // },
+      // {
+      //   "name": "ohos.permission.GET_NETWORK_INFO",
+      //   "reason": "$string:network_info_permission",
+      //   "usedScene": {
+      //     "when": "always"
+      //   }
+      // },
+      {
+        "name": "ohos.permission.SEND_MESSAGES",
+        "reason": "$string:send_messages_permission",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.ACCESS_BLUETOOTH",
+        "reason": "$string:bluetooth_permission",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_CALL_LOG",
+        "reason": "$string:bluetooth_permission",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      // {
+      //   "name": "ohos.permission.DISCOVER_BLUETOOTH",
+      //   "reason": "$string:bluetooth_permission",
+      //   "usedScene": {
+      //     "when": "always"
+      //   }
+      // },
+      {
+        "name": "ohos.permission.MANAGE_SECURE_SETTINGS",
+        "reason": "$string:secure_settings_permission",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_CONTACTS",
+        "reason": "$string:contacts_permission",
+        "usedScene": {
+          "when": "always"
+        }
+      },
+      // {
+      //   "name": "ohos.permission.WRITE_CALL_LOG",
+      //   "reason": "$string:call_log_permission",
+      //   "usedScene": {
+      //     "when": "always"
+      //   }
+      // },
+      // {
+      //   "name": "ohos.permission.RECEIVE_SMS",
+      //   "reason": "$string:receive_sms_permission",
+      //   "usedScene": {
+      //     "when": "always"
+      //   }
+      // }
+    ]
+  }
+}
