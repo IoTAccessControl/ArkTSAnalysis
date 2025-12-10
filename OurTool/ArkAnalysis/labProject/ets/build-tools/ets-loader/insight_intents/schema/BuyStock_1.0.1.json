@@ -1,0 +1,81 @@
+{
+  "intentName": "BuyStock",
+  "intentVersion": "1.0.1",
+  "llmDescription": "买入股票",
+  "keywords": ["BuyStock"],
+  "domain": "FinanceDomain",
+  "parameters": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "stockName",
+        "stockSymbol",
+        "stockMarket",
+        "purchasePrice",
+        "purchaseQuantity"
+      ]
+    },
+    "properties": {
+      "stockName": {
+        "description": "股票名称。比如：贵州茅台，上证指数。股票名称和（股票市场&股票代码）二选一填入。",
+        "type": "string"
+      },
+      "stockSymbol": {
+        "description": "股票代码，全球股票唯一代码。000001：国内上证指数代码。399001：国内深证指数代码。600519：国内股茅台代码。股票名称和（股票市场&股票代码）二选一填入。",
+        "type": "string",
+        "enum":[
+          "000001",
+          "399001",
+          "600519"
+        ]
+      },
+      "stockMarket": {
+        "description": "股票市场。SH：上交所。SZ：深交所。BJ：北交所。和股票代码配合使用。",
+        "type": "string"
+      },
+      "purchasePrice": {
+        "description": "买入股票价格。",
+        "type": "number"
+      },
+      "purchaseQuantity": {
+        "description": "买入股票数量。",
+        "type": "number"
+      }
+    },
+    "oneOf": [
+      {
+        "required": [
+          "stockName"
+        ]
+      },
+      {
+        "required": [
+          "stockSymbol","stockMarket"
+        ]
+      }
+    ]
+  },
+  "result": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "code",
+        "result"
+      ]
+    },
+    "required": [
+      "code",
+      "result"
+    ],
+    "properties": {
+      "code": {
+        "description": "意图调用返回的结果码，0代表成功。",
+        "type": "number"
+      },
+      "result": {
+        "description": "意图调用返回的数据，如果无数据则返回空。",
+        "type": "object"
+      }
+    }
+  }
+}

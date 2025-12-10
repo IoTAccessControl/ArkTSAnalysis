@@ -1,0 +1,120 @@
+{
+  "symbols": {
+    "abilityDelegatorRegistry": {
+      "source": "@ohos.app.ability.abilityDelegatorRegistry.d.ts",
+      "bindings": "default"
+    },
+    "TestRunner": {
+      "source": "@ohos.application.testRunner.d.ts",
+      "bindings": "default"
+    },
+    "Component": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "Component"
+    },
+    "DisplayRotation": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "DisplayRotation"
+    },
+    "Driver": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "Driver"
+    },
+    "MatchPattern": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "MatchPattern"
+    },
+    "MouseButton": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "MouseButton"
+    },
+    "ON": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "ON"
+    },
+    "On": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "On"
+    },
+    "PointerMatrix": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "PointerMatrix"
+    },
+    "ResizeDirection": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "ResizeDirection"
+    },
+    "UIElementInfo": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UIElementInfo"
+    },
+    "UIEventObserver": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UIEventObserver"
+    },
+    "UiDirection": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UiDirection"
+    },
+    "UiWindow": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UiWindow"
+    },
+    "WindowMode": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "WindowMode"
+    },
+    "Point": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "Point"
+    },
+    "WindowFilter": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "WindowFilter"
+    },
+    "Rect": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "Rect"
+    },
+    "TouchPadSwipeOptions": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "TouchPadSwipeOptions"
+    },
+    "InputTextMode": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "InputTextMode"
+    },
+    "PerfMetric": {
+      "source": "@ohos.test.PerfTest.d.ts",
+      "bindings": "PerfMetric"
+    },
+    "PerfTestStrategy": {
+      "source": "@ohos.test.PerfTest.d.ts",
+      "bindings": "PerfTestStrategy"
+    },
+    "PerfMeasureResult": {
+      "source": "@ohos.test.PerfTest.d.ts",
+      "bindings": "PerfMeasureResult"
+    },
+    "PerfTest": {
+      "source": "@ohos.test.PerfTest.d.ts",
+      "bindings": "PerfTest"
+    },
+    "UiComponent": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UiComponent"
+    },
+    "UiDriver": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "UiDriver"
+    },
+    "BY": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "BY"
+    },
+    "By": {
+      "source": "@ohos.UiTest.d.ts",
+      "bindings": "By"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "symbols": {
+    "deviceStatus": {
+      "source": "@ohos.multimodalAwareness.deviceStatus.d.ts",
+      "bindings": "default"
+    },
+    "metadataBinding": {
+      "source": "@ohos.multimodalAwareness.metadataBinding.d.ts",
+      "bindings": "default"
+    },
+    "motion": {
+      "source": "@ohos.multimodalAwareness.motion.d.ts",
+      "bindings": "default"
+    },
+    "onScreen": {
+      "source": "@ohos.multimodalAwareness.onScreen.d.ts",
+      "bindings": "default"
+    },
+    "stationary": {
+      "source": "@ohos.stationary.d.ts",
+      "bindings": "default"
+    },
+    "userStatus": {
+      "source": "@ohos.multimodalAwareness.userStatus.d.ts",
+      "bindings": "default"
+    }
+  }
+}

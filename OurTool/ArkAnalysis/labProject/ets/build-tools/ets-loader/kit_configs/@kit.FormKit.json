@@ -1,0 +1,36 @@
+{
+  "symbols": {
+    "formBindingData": {
+      "source": "@ohos.app.form.formBindingData.d.ts",
+      "bindings": "default"
+    },
+    "FormExtensionAbility": {
+      "source": "@ohos.app.form.FormExtensionAbility.d.ts",
+      "bindings": "default"
+    },
+    "formInfo": {
+      "source": "@ohos.app.form.formInfo.d.ts",
+      "bindings": "default"
+    },
+    "formProvider": {
+      "source": "@ohos.app.form.formProvider.d.ts",
+      "bindings": "default"
+    },
+    "formError": {
+      "source": "@ohos.application.formError.d.ts",
+      "bindings": "default"
+    },
+    "FormEditExtensionAbility": {
+      "source": "@ohos.app.form.FormEditExtensionAbility.d.ts",
+      "bindings": "default"
+    },
+    "LiveFormExtensionAbility": {
+      "source": "@ohos.app.form.LiveFormExtensionAbility.d.ts",
+      "bindings": "default"
+    },
+    "LiveFormInfo": {
+      "source": "@ohos.app.form.LiveFormExtensionAbility.d.ts",
+      "bindings": "LiveFormInfo"
+    }
+  }
+}

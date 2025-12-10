@@ -1,0 +1,15 @@
+{
+    "targetProjectName": "applications_photos",
+    "targetProjectDirectory": "tests/resources/viewtree/project",
+
+    "logPath": "out/ArkAnalyzer.log",
+    "logLevel": "DEBUG",
+
+    "sdks": [
+        {
+            "name": "etsSdk",
+            "path": "tests/resources/Sdk",
+            "moduleName": ""
+        }
+    ]
+}

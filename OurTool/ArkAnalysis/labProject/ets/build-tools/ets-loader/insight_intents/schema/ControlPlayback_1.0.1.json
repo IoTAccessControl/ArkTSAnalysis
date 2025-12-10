@@ -1,0 +1,68 @@
+{
+  "intentName": "ControlPlayback",
+  "intentVersion": "1.0.1",
+  "llmDescription": "播放音乐控制",
+  "keywords": ["ControlPlayback"],
+  "parameters": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "playbackSpeed",
+        "playbackProgress"
+      ]
+    },
+    "oneOf": [
+      {
+        "required": [
+          "playbackSpeed"
+        ]
+      },
+      {
+        "required": [
+          "playbackProgress"
+        ]
+      }
+    ],
+    "properties": {
+      "playbackSpeed": {
+        "description": "播放倍速",
+        "type": "number",
+        "enum": [
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          2.0
+        ]
+      },
+      "playbackProgress": {
+        "description": "播放进度，单位秒。",
+        "type": "number"
+      }
+    }
+  },
+  "result": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "code",
+        "result"
+      ]
+    },
+    "required": [
+      "code",
+      "result"
+    ],
+    "properties": {
+      "code": {
+        "description": "意图调用返回的结果码，0代表成功。",
+        "type": "number"
+      },
+      "result": {
+        "description": "意图调用返回的数据，如果无数据则返回空。",
+        "type": "object"
+      }
+    }
+  }
+}

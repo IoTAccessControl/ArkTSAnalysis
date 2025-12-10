@@ -1,0 +1,8 @@
+{
+  "symbols": {
+    "mechanicManager": {
+      "source": "@ohos.distributedHardware.mechanicManager.d.ts",
+      "bindings": "default"
+    }
+  }
+}

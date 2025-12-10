@@ -1,0 +1,15 @@
+{
+    "targetProjectName": "AppSampleD",
+    "targetProjectDirectory": "C:/Users/xsy/labProject/myDevEchoStudioProject/WebCookie",
+    "sdks": [
+        {
+            "name": "etsSdk",
+            "path": "tests/resources/Sdk",
+            "moduleName": ""
+        }
+    ],
+
+    "options": {
+        "enableLeadingComments": true
+    }
+}

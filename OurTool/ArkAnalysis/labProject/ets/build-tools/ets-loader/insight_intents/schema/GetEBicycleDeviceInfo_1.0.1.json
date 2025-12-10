@@ -1,0 +1,82 @@
+{
+  "intentName": "GetEBicycleDeviceInfo",
+  "intentVersion": "1.0.1",
+  "llmDescription": "获取电动自行车设备信息",
+  "keywords": ["GetEBicycleDeviceInfo"],
+  "domain": "NavigationDomain",
+  "parameters": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "infoType"
+      ]
+    },
+    "properties": {
+      "infoType": {
+        "description": "获取信息类型。CarInfo：默认，车辆信息（含里程，电量）。TirePressureInfo：胎压信息（设备名称+胎压信息）。",
+        "type": "string",
+        "enum":[
+          "CarInfo",
+          "TirePressureInfo"
+        ]
+      }
+    }
+  },
+  "result": {
+    "type": "object",
+    "propertyNames": {
+      "enum": [
+        "code",
+        "result",
+        "entityId",
+        "entityName",
+        "deviceName",
+        "batteryLevel",
+        "remainingMileage",
+        "tirePressureInfo"
+      ]
+    },
+    "required": [
+      "code",
+      "result",
+      "entityId",
+      "entityName",
+      "deviceName"
+    ],
+    "properties": {
+      "code": {
+        "description": "意图调用返回的结果码，0代表成功。",
+        "type": "number"
+      },
+      "result": {
+        "description": "意图调用返回的数据，如果无数据则返回空。",
+        "type": "object"
+      },
+      "entityId": {
+        "description": "数据唯一标识，设备的ID。",
+        "type": "string",
+        "maxLength": 64
+      },
+      "entityName": {
+        "description": "表示实体的名称，BicycleInfo。",
+        "type": "string"
+      },
+      "deviceName": {
+        "description": "设备名称。",
+        "type": "string"
+      },
+      "batteryLevel": {
+        "description": "剩余电量结果，单位百分比。",
+        "type": "number"
+      },
+      "remainingMileage": {
+        "description": "剩余里程，单位KM。",
+        "type": "number"
+      },
+      "tirePressureInfo": {
+        "description": "胎压信息，包含建议胎压值，整体状态和每个轮胎胎压信息（轮胎名称，胎压数值，胎压单位）。",
+        "type": "object"
+      }
+    }
+  }
+}
