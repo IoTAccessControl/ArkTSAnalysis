@@ -1,0 +1,100 @@
+{
+  "project": "Pedometer",
+  "generatedAt": "2025-12-09T12:22:33.079Z",
+  "configPath": "/home/xsy/labProject/arkanalyzer-master/myTests/myJSON/analyzePedometer.json",
+  "sensitiveApis": [
+    {
+      "sdkFile": "api/@ohos.geoLocationManager.d.ts",
+      "module": "@ohos.geoLocationManager",
+      "className": "%dflt",
+      "methodName": "getAddressesFromLocation",
+      "isStatic": false,
+      "category": "LOCATION",
+      "callSites": [
+        {
+          "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/pages/HomePage.ets",
+          "line": 84,
+          "column": 5,
+          "snippet": "geoLocationManager.getAddressesFromLocation(reverseGeocodeRequest).then(data => {\n      if (data[0].placeName) {\n        this.currentLocation = data[0].placeName;\n      }\n    }).catch((err: Error) => {\n      Logger.error(TAG, 'GetAddressesFromLocation err ' + JSON.stringify(err));\n    });",
+          "contextBefore": [],
+          "contextAfter": [],
+          "callerSignature": "@Pedometer/entry/src/main/ets/pages/HomePage.ets: HomePage.%AM3$%instInit(@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location)",
+          "callPath": {
+            "signature": "@Pedometer/entry/src/main/ets/pages/HomePage.ets: HomePage.%AM3$%instInit(@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location)",
+            "children": [
+              {
+                "signature": "@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.%dflt.getAddressesFromLocation(@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.ReverseGeoCodeRequest)",
+                "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/pages/HomePage.ets",
+                "line": 84,
+                "column": 5,
+                "snippet": "geoLocationManager.getAddressesFromLocation(reverseGeocodeRequest).then(data => {\n      if (data[0].placeName) {\n        this.currentLocation = data[0].placeName;\n      }\n    }).catch((err: Error) => {\n      Logger.error(TAG, 'GetAddressesFromLocation err ' + JSON.stringify(err));\n    });"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sdkFile": "api/@ohos.geoLocationManager.d.ts",
+      "module": "@ohos.geoLocationManager",
+      "className": "%dflt",
+      "methodName": "off",
+      "isStatic": false,
+      "category": "LOCATION",
+      "callSites": [
+        {
+          "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets",
+          "line": 35,
+          "column": 5,
+          "snippet": "geoLocationManager.off('locationChange');",
+          "contextBefore": [],
+          "contextAfter": [],
+          "callerSignature": "@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.geolocationOff()",
+          "callPath": {
+            "signature": "@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.geolocationOff()",
+            "children": [
+              {
+                "signature": "@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.%dflt.off('locationChange', @etsSdk/api/@ohos.base.d.ts: Callback<@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location>)",
+                "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets",
+                "line": 35,
+                "column": 5,
+                "snippet": "geoLocationManager.off('locationChange');"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sdkFile": "api/@ohos.geoLocationManager.d.ts",
+      "module": "@ohos.geoLocationManager",
+      "className": "%dflt",
+      "methodName": "on",
+      "isStatic": false,
+      "category": "LOCATION",
+      "callSites": [
+        {
+          "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets",
+          "line": 28,
+          "column": 7,
+          "snippet": "geoLocationManager.on('locationChange', requestInfo, locationChange);",
+          "contextBefore": [],
+          "contextAfter": [],
+          "callerSignature": "@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.geolocationOn(@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.%AM0(@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location))",
+          "callPath": {
+            "signature": "@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.geolocationOn(@Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets: LocationUtil.%AM0(@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location))",
+            "children": [
+              {
+                "signature": "@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.%dflt.on('locationChange', @etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.LocationRequest|@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.ContinuousLocationRequest, @etsSdk/api/@ohos.base.d.ts: Callback<@etsSdk/api/@ohos.geoLocationManager.d.ts: geoLocationManager.Location>)",
+                "projectFile": "/home/xsy/labProject/arkanalyzer-master/DevEchoStudioProject/Pedometer/entry/src/main/ets/common/utils/LocationUtil.ets",
+                "line": 28,
+                "column": 7,
+                "snippet": "geoLocationManager.on('locationChange', requestInfo, locationChange);"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
