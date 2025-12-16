@@ -1,0 +1,1123 @@
+[2025-03-31T21:33:57.386] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2025-03-31T21:33:57.967] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: false,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2025-03-31T21:33:57.993] [DEBUG] debug-file - hvigorfile, resolving C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\hvigorfile.ts
+[2025-03-31T21:33:59.867] [DEBUG] debug-file - hvigorfile, require result:  { appTasks: [Getter] }
+[2025-03-31T21:34:00.064] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-03-31T21:34:00.070] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2025-03-31T21:34:00.090] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2025-03-31T21:34:00.085] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2025-03-31T21:34:00.133] [DEBUG] debug-file - Sdk init in 53 ms 
+[2025-03-31T21:34:00.100] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-03-31T21:34:00.167] [DEBUG] debug-file - Project task initialization takes 33 ms 
+[2025-03-31T21:34:00.179] [DEBUG] debug-file - hvigorfile, resolving C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\hvigorfile.ts
+[2025-03-31T21:34:00.214] [DEBUG] debug-file - Module entry task initialization takes 6 ms 
+[2025-03-31T21:34:00.201] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-03-31T21:34:00.221] [DEBUG] debug-file - project has submodules:entry
+[2025-03-31T21:34:00.251] [DEBUG] debug-file - Configuration task cost before running: 2 s 311 ms 
+[2025-03-31T21:34:00.254] [DEBUG] debug-file - Executing task :entry:clean
+[2025-03-31T21:33:57.390] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '5.0.0',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {}
+}
+[2025-03-31T21:34:00.258] [DEBUG] debug-file - entry : clean cost memory 0.49582672119140625
+[2025-03-31T21:34:00.278] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "napiLibFilterOption": {}
+} in this build.
+[2025-03-31T21:34:00.298] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2025-03-31T21:33:57.969] [DEBUG] debug-file - Since current hvigor version 5.14.3 differs from last hvigor version 
+      undefined, delete file-cache.json and task-cache.json.
+[2025-03-31T21:33:59.867] [DEBUG] debug-file - hvigorfile, binding system plugins { appTasks: [Getter] }
+[2025-03-31T21:34:00.064] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-03-31T21:34:00.071] [DEBUG] debug-file - not found resModel json file in : C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\ohosTest\module.json5
+[2025-03-31T21:34:00.167] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\hvigorfile.ts
+[2025-03-31T21:34:00.185] [DEBUG] debug-file - hvigorfile, require result:  { hapTasks: [Getter] }
+[2025-03-31T21:34:00.223] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-03-31T21:34:00.214] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\hvigorfile.ts
+[2025-03-31T21:34:00.255] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2025-03-31T21:34:00.201] [DEBUG] debug-file - Target 'default' config: {}
+[2025-03-31T21:33:57.393] [DEBUG] debug-file - env: daemon=false
+[2025-03-31T21:34:00.259] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 318 ms 
+[2025-03-31T21:34:00.281] [DEBUG] debug-file - Module 'entry' target 'ohosTest' using build option: {
+  "debuggable": true,
+  "napiLibFilterOption": {}
+} in this build.
+[2025-03-31T21:34:00.300] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2025-03-31T21:33:57.970] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2025-03-31T21:34:00.065] [DEBUG] debug-file - Product 'default' build option: {}
+[2025-03-31T21:34:00.185] [DEBUG] debug-file - hvigorfile, binding system plugins { hapTasks: [Getter] }
+[2025-03-31T21:34:00.230] [DEBUG] debug-file - load to the disk finished
+[2025-03-31T21:33:57.393] [DEBUG] debug-file - no-daemon, use the parent process.execArgv --max-old-space-size=8192,--expose-gc
+[2025-03-31T21:34:00.202] [DEBUG] debug-file - Target 'ohosTest' config: {}
+[2025-03-31T21:34:00.260] [INFO] debug-file - Finished :entry:clean... after 5 ms 
+[2025-03-31T21:34:00.302] [DEBUG] debug-file - Current worker pool is stopped or closed.
+[2025-03-31T21:34:00.289] [DEBUG] debug-file - hvigor start cli arguments:{
+  prop: [ 'product=default' ],
+  sync: true,
+  parallel: true,
+  incremental: true,
+  daemon: false,
+  _: [],
+  env: {
+    ALLUSERSPROFILE: 'C:\\ProgramData',
+    APPDATA: 'C:\\Users\\xsy\\AppData\\Roaming',
+    ChocolateyInstall: 'C:\\ProgramData\\chocolatey',
+    ChocolateyLastPathUpdate: '133866725248419582',
+    CommonProgramFiles: 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Files',
+    CommonProgramW6432: 'C:\\Program Files\\Common Files',
+    COMPUTERNAME: 'XSY',
+    ComSpec: 'C:\\WINDOWS\\system32\\cmd.exe',
+    config: '{"product":"default"}',
+    CREATED_BY: 'deveco',
+    'DevEco Studio': 'C:\\Program Files\\Huawei\\DevEco Studio\\bin;',
+    DEVECO_SDK_HOME: 'C:/Program Files/Huawei/DevEco Studio/sdk',
+    DriverData: 'C:\\Windows\\System32\\Drivers\\DriverData',
+    EFC_15544: '1',
+    FPS_BROWSER_APP_PROFILE_STRING: 'Internet Explorer',
+    FPS_BROWSER_USER_PROFILE_STRING: 'Default',
+    HDC_SERVER_PORT: '65037',
+    HOMEDRIVE: 'C:',
+    HOMEPATH: '\\Users\\xsy',
+    IDEA_INITIAL_DIRECTORY: 'C:\\Users\\xsy\\Desktop',
+    IGCCSVC_DB: 'AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUmEB4nBdgUGojHpHxpLG2wQAAAACAAAAAAAQZgAAAAEAACAAAAA3nyiez7/IIUvS8WJgrAyeEny4ylF6Zvar5d7EDQcwbwAAAAAOgAAAAAIAACAAAAD9oUW9xXkfDyCUcEvCg4ZiHwD7V0wxPQrFcXsHo6KWcWAAAADblmp05UMr7yWOldCsiCGwsKFy8Xomlel0NPa/bQGKcz0R4Y7XDATjaTwN4GRIMpMvGnU3CGWjV0NawcWVRqWypkMjPrwvHXIWWOn9hZUMEZpXcUXZkeHYvZgmSsz5jw5AAAAABcEt8h9QhIRrIaA5mEHGa3SmGee8e+bm2J+Kr1p2/jOZ6ePsX1l0+P8j2+2A89Pb4dKzmNHLHFXgRbpXkw2nSA==',
+    JAVA_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\jbr',
+    LOCALAPPDATA: 'C:\\Users\\xsy\\AppData\\Local',
+    LOGONSERVER: '\\\\XSY',
+    NODE_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node',
+    NODE_PATH: 'C:\\Users\\xsy\\.hvigor\\project_caches\\20765bb9957d79bd88a213a9afaec47e\\workspace\\node_modules',
+    NO_UPDATE_NOTIFIER: 'true',
+    'npm_config_@ohos:registry': 'https://repo.harmonyos.com/npm/',
+    'npm_config_auto-install-peers': 'false',
+    npm_config_registry: 'https://repo.huaweicloud.com/repository/npm/',
+    'npm_config_strict-ssl': '',
+    'npm_config_update-notifier': 'false',
+    NUMBER_OF_PROCESSORS: '20',
+    OHOS_SDK_NATIVE: 'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\native',
+    ohpmBin: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\ohpm\\bin\\ohpm.bat',
+    OneDrive: 'C:\\Users\\xsy\\OneDrive',
+    OnlineServices: 'Online Services',
+    OS: 'Windows_NT',
+    Path: 'C:\\Program Files\\Huawei\\DevEco Studio\\jbr\\bin;C:/Program Files/Huawei/DevEco Studio/tools/node;C:\\Python313\\Scripts\\;C:\\Python313\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\HP\\OMEN-Broadcast\\Common;C:\\users\\xsy\\Appdata\\Roaming\\pip\\pip.ini;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Bandizip\\;C:\\Qt\\6.7.2\\mingw_64\\bin;C:\\Qt\\Tools\\CMake_64\\bin;C:\\Qt\\Tools\\mingw1120_64\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;%JAVA_HOME%\\bin;C:\\Program Files (x86)\\EasyShare\\x86\\;C:\\Program Files (x86)\\EasyShare\\x64\\;C:\\Users\\xsy\\AppData\\Local\\opam\\my_project\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.2.3\\bin;;C:\\texlive\\2024\\bin\\windows;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WinGet\\Links;C:\\Users\\xsy\\Microsoft VS Code\\bin;C:\\Users\\xsy\\.dotnet\\tools;C:\\Program Files\\Huawei\\DevEco Studio\\bin;;C:\\Users\\xsy\\AppData\\Roaming\\npm;C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node;C:\\Program Files\\Huawei\\DevEco Studio\\jbr\\bin;C:\\Python313\\Scripts\\;C:\\Python313\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\HP\\OMEN-Broadcast\\Common;C:\\users\\xsy\\Appdata\\Roaming\\pip\\pip.ini;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Bandizip\\;C:\\Qt\\6.7.2\\mingw_64\\bin;C:\\Qt\\Tools\\CMake_64\\bin;C:\\Qt\\Tools\\mingw1120_64\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;%JAVA_HOME%\\bin;C:\\Program Files (x86)\\EasyShare\\x86\\;C:\\Program Files (x86)\\EasyShare\\x64\\;C:\\Users\\xsy\\AppData\\Local\\opam\\my_project\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.2.3\\bin;;C:\\texlive\\2024\\bin\\windows;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WinGet\\Links;C:\\Users\\xsy\\Microsoft VS Code\\bin;C:\\Users\\xsy\\.dotnet\\tools;C:\\Program Files\\Huawei\\DevEco Studio\\bin;;C:\\Users\\xsy\\AppData\\Roaming\\npm',
+    PATHEXT: '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    platformcode: 'M7',
+    PROCESSOR_ARCHITECTURE: 'AMD64',
+    PROCESSOR_IDENTIFIER: 'Intel64 Family 6 Model 183 Stepping 1, GenuineIntel',
+    PROCESSOR_LEVEL: '6',
+    PROCESSOR_REVISION: 'b701',
+    ProgramData: 'C:\\ProgramData',
+    ProgramFiles: 'C:\\Program Files',
+    'ProgramFiles(x86)': 'C:\\Program Files (x86)',
+    ProgramW6432: 'C:\\Program Files',
+    PSModulePath: 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    PUBLIC: 'C:\\Users\\Public',
+    'PyCharm Community Edition': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.2.3\\bin;',
+    QtMsBuild: 'C:\\Users\\xsy\\AppData\\Local\\QtMsBuild',
+    RegionCode: 'APJ',
+    SESSIONNAME: 'Console',
+    SystemDrive: 'C:',
+    SystemRoot: 'C:\\WINDOWS',
+    TEMP: 'C:\\Users\\xsy\\AppData\\Local\\Temp',
+    TMP: 'C:\\Users\\xsy\\AppData\\Local\\Temp',
+    'user.country': 'CN',
+    USERDOMAIN: 'XSY',
+    USERDOMAIN_ROAMINGPROFILE: 'XSY',
+    USERNAME: '夏盛宇',
+    USERPROFILE: 'C:\\Users\\xsy',
+    windir: 'C:\\WINDOWS',
+    WORKSPACE_DIR: 'C:\\Users\\xsy\\.hvigor\\project_caches\\20765bb9957d79bd88a213a9afaec47e\\workspace',
+    ZES_ENABLE_SYSMAN: '1'
+  },
+  analyze: 'normal'
+}
+[2025-03-31T21:34:00.065] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-03-31T21:34:00.237] [DEBUG] debug-file - Module map-kit_-codelab_-demo-master Collected Dependency: 
+[2025-03-31T21:34:00.202] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "napiLibFilterOption": {}
+}
+[2025-03-31T21:34:00.260] [DEBUG] debug-file - Executing task ::clean
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Clear worker 0.
+[2025-03-31T21:34:00.293] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2025-03-31T21:34:00.237] [DEBUG] debug-file - Module map-kit_-codelab_-demo-master's total dependency: 0
+[2025-03-31T21:34:00.260] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2025-03-31T21:34:00.202] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option: {
+  "debuggable": true,
+  "napiLibFilterOption": {}
+}
+[2025-03-31T21:34:00.294] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Worker 0 has been cleared.
+[2025-03-31T21:34:00.242] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-03-31T21:34:00.261] [DEBUG] debug-file - map-kit_-codelab_-demo-master : clean cost memory 0.0318756103515625
+[2025-03-31T21:34:00.202] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-03-31T21:34:00.242] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-03-31T21:34:00.261] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 321 ms 
+[2025-03-31T21:34:00.203] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "napiLibFilterOption": {}
+} in this build.
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Current busy worker size: 0.
+[2025-03-31T21:34:00.247] [DEBUG] debug-file - Configuration phase cost:2 s 267 ms 
+[2025-03-31T21:34:00.261] [INFO] debug-file - Finished ::clean... after 1 ms 
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Clear worker 1.
+[2025-03-31T21:34:00.261] [DEBUG] debug-file - Executing task :entry:init
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Worker 1 has been cleared.
+[2025-03-31T21:34:00.261] [DEBUG] debug-file - entry : init cost memory 0.01019287109375
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Current idle worker size: 0.
+[2025-03-31T21:34:00.261] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 321 ms 
+[2025-03-31T21:34:00.303] [DEBUG] debug-file - Current busy worker size: 0.
+[2025-03-31T21:34:00.262] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2025-03-31T21:34:00.304] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-03-31T21:34:00.262] [DEBUG] debug-file - Executing task ::init
+[2025-03-31T21:34:00.309] [DEBUG] debug-file - worker[0] exits with exit code 0.
+[2025-03-31T21:34:00.262] [DEBUG] debug-file - map-kit_-codelab_-demo-master : init cost memory 0.00897216796875
+[2025-03-31T21:34:00.310] [DEBUG] debug-file - worker[1] exits with exit code 0.
+[2025-03-31T21:34:00.262] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 322 ms 
+[2025-03-31T21:34:00.310] [DEBUG] debug-file - Current worker pool is terminated.
+[2025-03-31T21:34:00.262] [INFO] debug-file - Finished ::init... after 1 ms 
+[2025-03-31T21:37:04.136] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2025-03-31T21:37:04.212] [DEBUG] debug-file - env: daemon=true
+[2025-03-31T21:37:04.138] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '5.0.0',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {}
+}
+[2025-03-31T21:37:04.973] [DEBUG] debug-file - hvigor start cli arguments:{
+  prop: [
+    'module=entry@default',
+    'product=default',
+    'requiredDeviceType=phone'
+  ],
+  mode: 'module',
+  parallel: true,
+  incremental: true,
+  daemon: true,
+  _: [ 'assembleHap', '--analyze=normal' ],
+  env: {
+    ALLUSERSPROFILE: 'C:\\ProgramData',
+    APPDATA: 'C:\\Users\\xsy\\AppData\\Roaming',
+    ChocolateyInstall: 'C:\\ProgramData\\chocolatey',
+    ChocolateyLastPathUpdate: '133866725248419582',
+    CommonProgramFiles: 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Files',
+    CommonProgramW6432: 'C:\\Program Files\\Common Files',
+    COMPUTERNAME: 'XSY',
+    ComSpec: 'C:\\WINDOWS\\system32\\cmd.exe',
+    config: '{"module":"entry@default","product":"default","requiredDeviceType":"phone"}',
+    CREATED_BY: 'deveco',
+    'DevEco Studio': 'C:\\Program Files\\Huawei\\DevEco Studio\\bin;',
+    DEVECO_SDK_HOME: 'C:/Program Files/Huawei/DevEco Studio/sdk',
+    DriverData: 'C:\\Windows\\System32\\Drivers\\DriverData',
+    EFC_15544: '1',
+    FPS_BROWSER_APP_PROFILE_STRING: 'Internet Explorer',
+    FPS_BROWSER_USER_PROFILE_STRING: 'Default',
+    HDC_SERVER_PORT: '65037',
+    HOMEDRIVE: 'C:',
+    HOMEPATH: '\\Users\\xsy',
+    IDEA_INITIAL_DIRECTORY: 'C:\\Users\\xsy\\Desktop',
+    IGCCSVC_DB: 'AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUmEB4nBdgUGojHpHxpLG2wQAAAACAAAAAAAQZgAAAAEAACAAAAA3nyiez7/IIUvS8WJgrAyeEny4ylF6Zvar5d7EDQcwbwAAAAAOgAAAAAIAACAAAAD9oUW9xXkfDyCUcEvCg4ZiHwD7V0wxPQrFcXsHo6KWcWAAAADblmp05UMr7yWOldCsiCGwsKFy8Xomlel0NPa/bQGKcz0R4Y7XDATjaTwN4GRIMpMvGnU3CGWjV0NawcWVRqWypkMjPrwvHXIWWOn9hZUMEZpXcUXZkeHYvZgmSsz5jw5AAAAABcEt8h9QhIRrIaA5mEHGa3SmGee8e+bm2J+Kr1p2/jOZ6ePsX1l0+P8j2+2A89Pb4dKzmNHLHFXgRbpXkw2nSA==',
+    JAVA_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\jbr',
+    LOCALAPPDATA: 'C:\\Users\\xsy\\AppData\\Local',
+    LOGONSERVER: '\\\\XSY',
+    NODE_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node',
+    NODE_PATH: 'C:\\Users\\xsy\\.hvigor\\project_caches\\20765bb9957d79bd88a213a9afaec47e\\workspace\\node_modules',
+    'npm_config_auto-install-peers': 'false',
+    'npm_config_update-notifier': 'false',
+    NUMBER_OF_PROCESSORS: '20',
+    ohpmBin: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\ohpm\\bin\\ohpm.bat',
+    OneDrive: 'C:\\Users\\xsy\\OneDrive',
+    OnlineServices: 'Online Services',
+    OS: 'Windows_NT',
+    Path: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node;C:\\Program Files\\Huawei\\DevEco Studio\\jbr\\bin;C:\\Python313\\Scripts\\;C:\\Python313\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\HP\\OMEN-Broadcast\\Common;C:\\users\\xsy\\Appdata\\Roaming\\pip\\pip.ini;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Bandizip\\;C:\\Qt\\6.7.2\\mingw_64\\bin;C:\\Qt\\Tools\\CMake_64\\bin;C:\\Qt\\Tools\\mingw1120_64\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;%JAVA_HOME%\\bin;C:\\Program Files (x86)\\EasyShare\\x86\\;C:\\Program Files (x86)\\EasyShare\\x64\\;C:\\Users\\xsy\\AppData\\Local\\opam\\my_project\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\xsy\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.2.3\\bin;;C:\\texlive\\2024\\bin\\windows;C:\\Users\\xsy\\AppData\\Local\\Microsoft\\WinGet\\Links;C:\\Users\\xsy\\Microsoft VS Code\\bin;C:\\Users\\xsy\\.dotnet\\tools;C:\\Program Files\\Huawei\\DevEco Studio\\bin;;C:\\Users\\xsy\\AppData\\Roaming\\npm',
+    PATHEXT: '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW',
+    platformcode: 'M7',
+    PROCESSOR_ARCHITECTURE: 'AMD64',
+    PROCESSOR_IDENTIFIER: 'Intel64 Family 6 Model 183 Stepping 1, GenuineIntel',
+    PROCESSOR_LEVEL: '6',
+    PROCESSOR_REVISION: 'b701',
+    ProgramData: 'C:\\ProgramData',
+    ProgramFiles: 'C:\\Program Files',
+    'ProgramFiles(x86)': 'C:\\Program Files (x86)',
+    ProgramW6432: 'C:\\Program Files',
+    PSModulePath: 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    PUBLIC: 'C:\\Users\\Public',
+    'PyCharm Community Edition': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.2.3\\bin;',
+    QtMsBuild: 'C:\\Users\\xsy\\AppData\\Local\\QtMsBuild',
+    RegionCode: 'APJ',
+    SESSIONNAME: 'Console',
+    SystemDrive: 'C:',
+    SystemRoot: 'C:\\WINDOWS',
+    TEMP: 'C:\\Users\\xsy\\AppData\\Local\\Temp',
+    TMP: 'C:\\Users\\xsy\\AppData\\Local\\Temp',
+    'user.country': 'CN',
+    USERDOMAIN: 'XSY',
+    USERDOMAIN_ROAMINGPROFILE: 'XSY',
+    USERNAME: '夏盛宇',
+    USERPROFILE: 'C:\\Users\\xsy',
+    windir: 'C:\\WINDOWS',
+    WORKSPACE_DIR: 'C:\\Users\\xsy\\.hvigor\\project_caches\\20765bb9957d79bd88a213a9afaec47e\\workspace',
+    ZES_ENABLE_SYSMAN: '1'
+  }
+}
+[2025-03-31T21:37:04.942] [DEBUG] debug-file - java daemon tryConnect failed Error: connect ECONNREFUSED 127.0.0.1:45050
+[2025-03-31T21:37:04.979] [DEBUG] debug-file - java daemon started at port 45050 pid 22928
+[2025-03-31T21:37:05.015] [DEBUG] debug-file - session manager: set active socket. socketId=sAKGMO9b96FMkUAhAAAB
+[2025-03-31T21:37:05.846] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-03-31T21:37:05.874] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2025-03-31T21:37:05.877] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2025-03-31T21:37:05.894] [DEBUG] debug-file - hvigorfile, resolving C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\hvigorfile.ts
+[2025-03-31T21:37:08.433] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-03-31T21:37:08.434] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-03-31T21:37:08.656] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-03-31T21:37:08.656] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-03-31T21:37:08.657] [DEBUG] debug-file - Product 'default' build option: {}
+[2025-03-31T21:37:08.657] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-03-31T21:37:08.661] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2025-03-31T21:37:08.663] [DEBUG] debug-file - not found resModel json file in : C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\ohosTest\module.json5
+[2025-03-31T21:37:08.677] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2025-03-31T21:37:08.681] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2025-03-31T21:37:08.687] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-03-31T21:37:08.723] [DEBUG] debug-file - Sdk init in 49 ms 
+[2025-03-31T21:37:08.747] [DEBUG] debug-file - Project task initialization takes 23 ms 
+[2025-03-31T21:37:08.747] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\hvigorfile.ts
+[2025-03-31T21:37:08.754] [DEBUG] debug-file - hvigorfile, resolving C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\hvigorfile.ts
+[2025-03-31T21:37:08.760] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2025-03-31T21:37:08.760] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2025-03-31T21:37:08.774] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-03-31T21:37:08.775] [DEBUG] debug-file - Target 'default' config: {}
+[2025-03-31T21:37:08.775] [DEBUG] debug-file - Target 'ohosTest' config: {}
+[2025-03-31T21:37:08.775] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "napiLibFilterOption": {}
+}
+[2025-03-31T21:37:08.775] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option: {
+  "debuggable": true,
+  "napiLibFilterOption": {}
+}
+[2025-03-31T21:37:08.775] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-03-31T21:37:08.776] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "napiLibFilterOption": {}
+} in this build.
+[2025-03-31T21:37:08.781] [DEBUG] debug-file - Module entry task initialization takes 4 ms 
+[2025-03-31T21:37:08.782] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\hvigorfile.ts
+[2025-03-31T21:37:08.858] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 76 ms 
+[2025-03-31T21:37:08.859] [DEBUG] debug-file - project has submodules:entry
+[2025-03-31T21:37:08.861] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-03-31T21:37:08.870] [DEBUG] debug-file - load to the disk finished
+[2025-03-31T21:37:08.876] [DEBUG] debug-file - Module map-kit_-codelab_-demo-master Collected Dependency: 
+[2025-03-31T21:37:08.876] [DEBUG] debug-file - Module map-kit_-codelab_-demo-master's total dependency: 0
+[2025-03-31T21:37:08.880] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-03-31T21:37:08.880] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-03-31T21:37:08.886] [DEBUG] debug-file - Configuration phase cost:3 s 4 ms 
+[2025-03-31T21:37:08.889] [DEBUG] debug-file - Configuration task cost before running: 3 s 35 ms 
+[2025-03-31T21:37:08.891] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.891] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.891] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.892] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:08.896] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2025-03-31T21:37:08.901] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.902] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.902] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:08.902] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.018] [DEBUG] debug-file - current product is not Atomic service.
+[2025-03-31T21:37:09.018] [DEBUG] debug-file - Use tool [win32: JAVA_HOME, CLASSPATH]
+ [
+  { JAVA_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\jbr' },
+  { CLASSPATH: undefined }
+]
+[2025-03-31T21:37:09.018] [DEBUG] debug-file - Use tool [win32: NODE_HOME]
+ [
+  {
+    NODE_HOME: 'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node'
+  }
+]
+[2025-03-31T21:37:09.019] [DEBUG] debug-file - entry : default@PreBuild cost memory 4.129264831542969
+[2025-03-31T21:37:09.019] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 166 ms 
+[2025-03-31T21:37:09.021] [INFO] debug-file - Finished :entry:default@PreBuild... after 124 ms 
+[2025-03-31T21:37:09.023] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.024] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.024] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.024] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.027] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2025-03-31T21:37:09.028] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 2 ms 
+[2025-03-31T21:37:09.028] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.028] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.028] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.028] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.032] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.1429443359375
+[2025-03-31T21:37:09.032] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 179 ms 
+[2025-03-31T21:37:09.033] [INFO] debug-file - Finished :entry:default@GenerateMetadata... after 6 ms 
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0572967529296875
+[2025-03-31T21:37:09.035] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 182 ms 
+[2025-03-31T21:37:09.036] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2025-03-31T21:37:09.040] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.041] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.041] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.041] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.042] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - Change app api release type with 'Release'
+[2025-03-31T21:37:09.043] [DEBUG] debug-file - Change app compile API version with '5.0.2.126'
+[2025-03-31T21:37:09.044] [DEBUG] debug-file - Change app target API version with '50002014'
+[2025-03-31T21:37:09.044] [DEBUG] debug-file - Change app minimum API version with '50002014'
+[2025-03-31T21:37:09.044] [DEBUG] debug-file - Use cli appEnvironment
+[2025-03-31T21:37:09.047] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.2158966064453125
+[2025-03-31T21:37:09.047] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 194 ms 
+[2025-03-31T21:37:09.048] [INFO] debug-file - Finished :entry:default@MergeProfile... after 6 ms 
+[2025-03-31T21:37:09.050] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.050] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.050] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.050] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.051] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2025-03-31T21:37:09.052] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:09.052] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.052] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.053] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.053] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.055] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.14041900634765625
+[2025-03-31T21:37:09.055] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 201 ms 
+[2025-03-31T21:37:09.055] [INFO] debug-file - Finished :entry:default@CreateBuildProfile... after 4 ms 
+[2025-03-31T21:37:09.057] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.057] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.057] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.057] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.05762481689453125
+[2025-03-31T21:37:09.058] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 205 ms 
+[2025-03-31T21:37:09.058] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2025-03-31T21:37:09.061] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.061] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.061] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.061] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.069] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2025-03-31T21:37:09.070] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:09.070] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.27603912353515625
+[2025-03-31T21:37:09.070] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 217 ms 
+[2025-03-31T21:37:09.070] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2025-03-31T21:37:09.072] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.072] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.072] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.072] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.074] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.0986175537109375
+[2025-03-31T21:37:09.075] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 222 ms 
+[2025-03-31T21:37:09.076] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 2 ms 
+[2025-03-31T21:37:09.078] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.078] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.078] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.078] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.079] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2025-03-31T21:37:09.079] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.079] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.079] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.079] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.080] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.0585784912109375
+[2025-03-31T21:37:09.080] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 226 ms 
+[2025-03-31T21:37:09.080] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2025-03-31T21:37:09.082] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.082] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.082] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.082] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.083] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2025-03-31T21:37:09.084] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.084] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.084] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.084] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.086] [DEBUG] debug-file - Module Pack Info:  {
+  summary: {
+    app: { bundleName: 'x***x', bundleType: 'app', version: [Object] },
+    modules: [ [Object] ]
+  },
+  packages: [
+    {
+      deviceType: [Array],
+      moduleType: 'entry',
+      deliveryWithInstall: true,
+      name: 'entry-default'
+    }
+  ]
+}
+[2025-03-31T21:37:09.088] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.18473052978515625
+[2025-03-31T21:37:09.088] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 235 ms 
+[2025-03-31T21:37:09.089] [INFO] debug-file - Finished :entry:default@MakePackInfo... after 6 ms 
+[2025-03-31T21:37:09.091] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.091] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.091] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.091] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.092] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2025-03-31T21:37:09.092] [DEBUG] debug-file - File: 'C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2025-03-31T21:37:09.093] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:09.093] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.093] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.093] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.093] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.094] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.0982818603515625
+[2025-03-31T21:37:09.094] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 241 ms 
+[2025-03-31T21:37:09.094] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 2 ms 
+[2025-03-31T21:37:09.096] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.096] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.096] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.096] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.098] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2025-03-31T21:37:09.098] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.098] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.098] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.098] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.100] [DEBUG] debug-file - [
+  'C:\\Program Files\\Huawei\\DevEco Studio\\tools\\node\\node.exe',
+  'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\bin\\ark\\ts2abc.js',
+  '--target-api-version',
+  '14'
+]
+[2025-03-31T21:37:09.315] [DEBUG] debug-file - 12.0.6.0
+[2025-03-31T21:37:09.320] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 1.8299484252929688
+[2025-03-31T21:37:09.320] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 467 ms 
+[2025-03-31T21:37:09.320] [INFO] debug-file - Finished :entry:default@ProcessProfile... after 223 ms 
+[2025-03-31T21:37:09.322] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.322] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.322] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.323] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.324] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2025-03-31T21:37:09.325] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.326] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.326] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.326] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.329] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.4002685546875
+[2025-03-31T21:37:09.329] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 475 ms 
+[2025-03-31T21:37:09.330] [INFO] debug-file - Finished :entry:default@ProcessRouterMap... after 5 ms 
+[2025-03-31T21:37:09.331] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.331] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.332] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.334] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.08666229248046875
+[2025-03-31T21:37:09.334] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 481 ms 
+[2025-03-31T21:37:09.335] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 2 ms 
+[2025-03-31T21:37:09.338] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.338] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.338] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.338] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.339] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2025-03-31T21:37:09.343] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2025-03-31T21:37:09.344] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.344] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.344] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.344] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.347] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.22081756591796875
+[2025-03-31T21:37:09.348] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 495 ms 
+[2025-03-31T21:37:09.350] [INFO] debug-file - Finished :entry:default@ProcessResource... after 6 ms 
+[2025-03-31T21:37:09.352] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.352] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.352] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.352] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.355] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2025-03-31T21:37:09.371] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.7632827758789062
+[2025-03-31T21:37:09.371] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 518 ms 
+[2025-03-31T21:37:09.375] [INFO] debug-file - Finished :entry:default@GenerateLoaderJson... after 16 ms 
+[2025-03-31T21:37:09.377] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.377] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.377] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.377] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.378] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2025-03-31T21:37:09.380] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.380] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.380] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.380] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.384] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2025-03-31T21:37:09.384] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2025-03-31T21:37:09.386] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2025-03-31T21:37:09.388] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2025-03-31T21:37:09.390] [DEBUG] debug-file - default@ProcessLibs work[0] is submitted.
+[2025-03-31T21:37:09.392] [DEBUG] debug-file - default@ProcessLibs work[0] is pushed to ready queue.
+[2025-03-31T21:37:09.392] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:09.392] [DEBUG] debug-file - Create  resident worker with id: 18.
+[2025-03-31T21:37:09.393] [DEBUG] debug-file - default@ProcessLibs work[0] has been dispatched to worker[18].
+[2025-03-31T21:37:09.394] [DEBUG] debug-file - default@ProcessLibs work[0] is dispatched.
+[2025-03-31T21:37:09.394] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 1.0537643432617188
+[2025-03-31T21:37:09.396] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.396] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.396] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:09.396] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:09.396] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2025-03-31T21:37:09.399] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2025-03-31T21:37:09.495] [DEBUG] debug-file - Use tool [C:\Program Files\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2025-03-31T21:37:09.497] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 256413696,
+  heapTotal: 170610688,
+  heapUsed: 143632000,
+  external: 2978189,
+  arrayBuffers: 1166315
+} os memoryUsage :12.537281036376953
+[2025-03-31T21:37:10.147] [DEBUG] debug-file - 03-31 21:37:10.147 18044  8304 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2025-03-31T21:37:10.148] [DEBUG] debug-file - 03-31 21:37:10.147 18044  8304 E C01400/ImageTranscoderUtils: ImageFilter IN C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\resources\base\media\app_icon.png
+03-31 21:37:10.147 18044  8304 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\resources\base\media\app_icon.png
+
+[2025-03-31T21:37:10.151] [DEBUG] debug-file - 03-31 21:37:10.151 18044  8304 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2025-03-31T21:37:10.151] [DEBUG] debug-file - 03-31 21:37:10.151 18044  8304 E C01400/ImageTranscoderUtils: ImageFilter IN C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\resources\base\media\icon.png
+
+[2025-03-31T21:37:10.152] [DEBUG] debug-file - 03-31 21:37:10.152 18044  8304 E C01400/ImageTranscoder: TranscodeSLR Only zoom-out is supported.
+Warning: ScaleImage failed, error message: INVALID_PARAMETERS, file path = C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\resources\base\media\icon.png
+
+[2025-03-31T21:37:10.160] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2025-03-31T21:37:10.218] [DEBUG] debug-file - astcenc customized so is not be opened when dlclose!
+
+[2025-03-31T21:37:10.228] [DEBUG] debug-file - entry : default@CompileResource cost memory 7.874916076660156
+[2025-03-31T21:37:10.229] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 375 ms 
+[2025-03-31T21:37:10.230] [INFO] debug-file - Finished :entry:default@CompileResource... after 831 ms 
+[2025-03-31T21:37:10.234] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.234] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.234] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.234] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.240] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2025-03-31T21:37:10.262] [DEBUG] debug-file - build config:
+[2025-03-31T21:37:10.262] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  watchMode: 'false',
+  aceProfilePath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile',
+  etsLoaderPath: 'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader',
+  modulePath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master',
+  compileSdkVersion: 14,
+  compatibleSdkVersion: 14,
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'x***x',
+  etsLoaderVersion: '5.0.2.126',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '2111431fa7539e9351ce6afad416c04d',
+  externalApiPaths: [
+    'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\hms\\ets'
+  ],
+  compilerTypes: undefined,
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\generated\\profile\\default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 14,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  strictMode: undefined,
+  buildDir: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build',
+  deviceTypes: [ 'phone', 'tablet', '2in1' ],
+  useNormalizedOHMUrl: false,
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: {
+    requestPermissions: [ [Object], [Object] ],
+    definePermissions: undefined
+  },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  caseSensitiveCheck: false,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+  ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  autoLazyImport: undefined,
+  aceModuleJsonPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\ark_module.json',
+  appResource: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\ResourceTable.txt',
+  rawFileResource: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\resources\\rawfile',
+  resourceTableHash: 'ba71baa82b0fc266443f4749cc105e83',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:14:5.0.2.126:Release',
+  aceModuleRoot: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\src\\main\\ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\src\\main\\supervisual',
+  aceBuildJson: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\loader\\default\\loader.json',
+  cachePath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule\\debug',
+  aceModuleBuild: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\src\\main': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+      belongProjectPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+    },
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\src\\ohosTest\\ets': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+      belongProjectPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+    },
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\src\\ohosTest': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+      belongProjectPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+    },
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry',
+      belongProjectPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+    },
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master': {
+      moduleName: 'map-kit_-codelab_-demo-master',
+      modulePkgPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master',
+      belongProjectPath: 'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master'
+    }
+  },
+  pkgJsonFileHash: '11bc51ed8c50d9c9edf1765dd4fd5b05',
+  allModulePaths: [
+    'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry'
+  ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {}
+  },
+  otherPaths: {
+    'entry/*': [
+      '..\\*',
+      '..\\..\\..\\build\\default\\generated\\profile\\default\\*'
+    ]
+  },
+  collectImportersConfig: undefined
+}
+[2025-03-31T21:37:10.262] [DEBUG] debug-file - Compile arkts with external api path: C:\Program Files\Huawei\DevEco Studio\sdk\default\hms\ets
+[2025-03-31T21:37:10.265] [DEBUG] debug-file - default@CompileArkTS work[1] is submitted.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - default@CompileArkTS work[1] is pushed to ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.266] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.267] [DEBUG] debug-file - Create  resident worker with id: 4.
+[2025-03-31T21:37:10.268] [DEBUG] debug-file - default@CompileArkTS work[1] has been dispatched to worker[4].
+[2025-03-31T21:37:10.268] [DEBUG] debug-file - default@CompileArkTS work[1] is dispatched.
+[2025-03-31T21:37:10.268] [DEBUG] debug-file - CopyResources startTime: 292103416690200
+[2025-03-31T21:37:10.268] [DEBUG] debug-file - default@CompileArkTS work[2] is submitted.
+[2025-03-31T21:37:10.269] [DEBUG] debug-file - default@CompileArkTS work[2] is pushed to ready queue.
+[2025-03-31T21:37:10.269] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.269] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2025-03-31T21:37:10.269] [DEBUG] debug-file - Create  resident worker with id: 17.
+[2025-03-31T21:37:10.271] [DEBUG] debug-file - default@CompileArkTS work[2] has been dispatched to worker[17].
+[2025-03-31T21:37:10.271] [DEBUG] debug-file - default@CompileArkTS work[2] is dispatched.
+[2025-03-31T21:37:10.271] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 1.710540771484375
+[2025-03-31T21:37:10.274] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.275] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.275] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.275] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.282] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2025-03-31T21:37:10.287] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.13665771484375
+[2025-03-31T21:37:10.287] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 433 ms 
+[2025-03-31T21:37:10.287] [INFO] debug-file - Finished :entry:default@BuildJS... after 6 ms 
+[2025-03-31T21:37:10.578] [DEBUG] debug-file - worker[18] has one work done.
+[2025-03-31T21:37:10.579] [DEBUG] debug-file - default@ProcessLibs work[0] done.
+[2025-03-31T21:37:10.579] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.581] [INFO] debug-file - Finished :entry:default@ProcessLibs... after 19 ms 
+[2025-03-31T21:37:10.584] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.584] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.584] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.584] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.586] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.588] [DEBUG] debug-file - default@DoNativeStrip work[3] is submitted.
+[2025-03-31T21:37:10.589] [DEBUG] debug-file - default@DoNativeStrip work[3] is pushed to ready queue.
+[2025-03-31T21:37:10.589] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.589] [DEBUG] debug-file - default@DoNativeStrip work[3] has been dispatched to worker[18].
+[2025-03-31T21:37:10.589] [DEBUG] debug-file - default@DoNativeStrip work[3] is dispatched.
+[2025-03-31T21:37:10.589] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.219635009765625
+[2025-03-31T21:37:10.606] [DEBUG] debug-file - worker[18] has one work done.
+[2025-03-31T21:37:10.606] [DEBUG] debug-file - default@DoNativeStrip work[3] done.
+[2025-03-31T21:37:10.606] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.606] [INFO] debug-file - Finished :entry:default@DoNativeStrip... after 14 ms 
+[2025-03-31T21:37:10.608] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.608] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.608] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.608] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.610] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2025-03-31T21:37:10.610] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:10.611] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.611] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.611] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:10.611] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:10.611] [DEBUG] debug-file - default@CacheNativeLibs work[4] is submitted.
+[2025-03-31T21:37:10.612] [DEBUG] debug-file - default@CacheNativeLibs work[4] is pushed to ready queue.
+[2025-03-31T21:37:10.612] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:10.612] [DEBUG] debug-file - default@CacheNativeLibs work[4] has been dispatched to worker[18].
+[2025-03-31T21:37:10.612] [DEBUG] debug-file - default@CacheNativeLibs work[4] is dispatched.
+[2025-03-31T21:37:10.612] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.20111083984375
+[2025-03-31T21:37:11.155] [DEBUG] debug-file - worker[17] has one work done.
+[2025-03-31T21:37:11.156] [DEBUG] debug-file - CopyResources is end, endTime: 292104304455700
+[2025-03-31T21:37:11.156] [DEBUG] debug-file - default@CompileArkTS work[2] done.
+[2025-03-31T21:37:11.156] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2025-03-31T21:37:11.841] [DEBUG] debug-file - worker[18] has one work done.
+[2025-03-31T21:37:11.841] [DEBUG] debug-file - default@CacheNativeLibs work[4] done.
+[2025-03-31T21:37:11.841] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2025-03-31T21:37:11.841] [INFO] debug-file - Finished :entry:default@CacheNativeLibs... after 10 ms 
+[2025-03-31T21:37:18.906] [INFO] debug-file - [33mWARN: [33mArkTS:WARN File: C:/Users/xsy/labProject/myDevEchoStudioProject/map-kit_-codelab_-demo-master/entry/src/main/ets/pages/BasicMapDemo.ets:41:35
+ The system capacity of this api 'addMarker' is not supported on all devices
+[39m
+[33mWARN: [33mArkTS:WARN File: C:/Users/xsy/labProject/myDevEchoStudioProject/map-kit_-codelab_-demo-master/entry/src/main/ets/pages/BasicMapDemo.ets:49:7
+ The system capacity of this api 'MapComponent' is not supported on all devices
+[39m
+
+[2025-03-31T21:37:18.907] [DEBUG] debug-file - Ark compile task finished.finished time is 292112055161100
+[2025-03-31T21:37:18.907] [DEBUG] debug-file - worker[4] has one work done.
+[2025-03-31T21:37:18.914] [DEBUG] debug-file - default@CompileArkTS work[1] done.
+[2025-03-31T21:37:18.914] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2025-03-31T21:37:18.916] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 6 s 344 ms 
+[2025-03-31T21:37:18.918] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.918] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.918] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.918] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:18.919] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2025-03-31T21:37:18.920] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 1 ms 
+[2025-03-31T21:37:18.920] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.920] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.920] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.920] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:18.923] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.1124114990234375
+[2025-03-31T21:37:18.923] [DEBUG] debug-file - runTaskFromQueue task cost before running: 13 s 70 ms 
+[2025-03-31T21:37:18.923] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 4 ms 
+[2025-03-31T21:37:18.926] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.926] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.926] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.926] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:18.934] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2025-03-31T21:37:18.941] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.941] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.941] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:18.941] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:18.945] [DEBUG] debug-file - Use tool [C:\Program Files\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'C:\\Program Files\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\loader_out\\default\\ets'
+]
+[2025-03-31T21:37:18.947] [DEBUG] debug-file - default@PackageHap work[5] is submitted.
+[2025-03-31T21:37:18.949] [DEBUG] debug-file - default@PackageHap work[5] is pushed to ready queue.
+[2025-03-31T21:37:18.949] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2025-03-31T21:37:18.949] [DEBUG] debug-file - default@PackageHap work[5] has been dispatched to worker[18].
+[2025-03-31T21:37:18.949] [DEBUG] debug-file - default@PackageHap work[5] is dispatched.
+[2025-03-31T21:37:18.961] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.7340240478515625
+[2025-03-31T21:37:18.959] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 838447104,
+  heapTotal: 96636928,
+  heapUsed: 90063240,
+  external: 4023980,
+  arrayBuffers: 59440
+} os memoryUsage :13.0084228515625
+[2025-03-31T21:37:19.473] [DEBUG] debug-file - worker[18] has one work done.
+[2025-03-31T21:37:19.474] [DEBUG] debug-file - default@PackageHap work[5] done.
+[2025-03-31T21:37:19.474] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2025-03-31T21:37:19.475] [INFO] debug-file - Finished :entry:default@PackageHap... after 540 ms 
+[2025-03-31T21:37:19.477] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.477] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.477] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.477] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:19.480] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2025-03-31T21:37:19.481] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.481] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.481] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2025-03-31T21:37:19.481] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dynamicDependencies":{},"dependencies":{}} at undefined
+[2025-03-31T21:37:19.485] [DEBUG] debug-file - java daemon remote sign failed undefined fallback to local java -jar sign
+[2025-03-31T21:37:19.487] [ERROR] debug-file - Failed :entry:default@SignHap... 
+[2025-03-31T21:37:19.487] [DEBUG] debug-file - hvigor build process will be closed with an error.
+[2025-03-31T21:37:19.489] [DEBUG] debug-file - ERROR: stacktrace = Error: Invalid storeFile value. Make sure it is not null or empty. The file must be included in 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.p12'.
+	 Detail: Please check signingConfigs in root project file
+	 at C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5
+    at OhosLogger.errorMessageExit (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\log\hvigor-log.js:1:3224)
+    at OhosLogger._printErrorAndExit (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\log\ohos-logger.js:1:1978)
+    at HapSignCommandBuilder.validateMaterial (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:2810)
+    at HapSignCommandBuilder.checkValidMaterial (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:2053)
+    at HapSignCommandBuilder.getSignCommand (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:1090)
+    at SignUtil.executeSign (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\sign-util.js:1:4283)
+    at SignUtil.sign (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\sign-util.js:1:2193)
+    at async SignHap.doTaskAction (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign-hap.js:1:1735)
+    at async SignHap.<anonymous> (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\task\ohos-module-task.js:1:1810)
+    at async SignHap.execute (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\external\task\core-task-impl.js:1:2191)
+[2025-03-31T21:37:19.489] [ERROR] debug-file - Error: Invalid storeFile value. Make sure it is not null or empty. The file must be included in 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.p12'.
+	 Detail: Please check signingConfigs in root project file
+	 at C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5
+    at OhosLogger.errorMessageExit (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\log\hvigor-log.js:1:3224)
+    at OhosLogger._printErrorAndExit (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\log\ohos-logger.js:1:1978)
+    at HapSignCommandBuilder.validateMaterial (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:2810)
+    at HapSignCommandBuilder.checkValidMaterial (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:2053)
+    at HapSignCommandBuilder.getSignCommand (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\command-builder-impl\common-sign-command-builder.js:1:1090)
+    at SignUtil.executeSign (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\sign-util.js:1:4283)
+    at SignUtil.sign (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign\sign-util.js:1:2193)
+    at async SignHap.doTaskAction (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\sign-hap.js:1:1735)
+    at async SignHap.<anonymous> (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\task\ohos-module-task.js:1:1810)
+    at async SignHap.execute (C:\Program Files\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\external\task\core-task-impl.js:1:2191)
+[2025-03-31T21:37:19.501] [WARN] debug-file - BUILD FAILED in 13 s 647 ms 
+[2025-03-31T21:37:19.502] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\app.json5 cache by regenerate.
+[2025-03-31T21:37:19.503] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\module.json5 cache by regenerate.
+[2025-03-31T21:37:19.503] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\resources\base\profile\main_pages.json cache by regenerate.
+[2025-03-31T21:37:19.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\hvigor\hvigor-config.json5 cache by regenerate.
+[2025-03-31T21:37:19.504] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\oh-package.json5 cache by regenerate.
+[2025-03-31T21:37:19.505] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\oh-package.json5 cache by regenerate.
+[2025-03-31T21:37:19.505] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:5 ms .
+[2025-03-31T21:37:19.505] [DEBUG] debug-file - Update task entry:default@GenerateMetadata input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\module.json5 cache by regenerate.
+[2025-03-31T21:37:19.506] [DEBUG] debug-file - Update task entry:default@GenerateMetadata output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\hap_metadata\default\output_metadata.json cache.
+[2025-03-31T21:37:19.506] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata post-execution cost:1 ms .
+[2025-03-31T21:37:19.506] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\app.json5 cache by regenerate.
+[2025-03-31T21:37:19.506] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.507] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\module.json5 cache by regenerate.
+[2025-03-31T21:37:19.507] [DEBUG] debug-file - Update task entry:default@MergeProfile output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\merge_profile\default\module.json cache.
+[2025-03-31T21:37:19.507] [DEBUG] debug-file - Incremental task entry:default@MergeProfile post-execution cost:2 ms .
+[2025-03-31T21:37:19.508] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\app.json5 cache by regenerate.
+[2025-03-31T21:37:19.508] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.509] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\generated\profile\default\BuildProfile.ets cache.
+[2025-03-31T21:37:19.509] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile post-execution cost:2 ms .
+[2025-03-31T21:37:19.509] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2025-03-31T21:37:19.509] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2025-03-31T21:37:19.510] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2025-03-31T21:37:19.510] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2025-03-31T21:37:19.510] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\app.json5 cache by regenerate.
+[2025-03-31T21:37:19.510] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\module.json5 cache by regenerate.
+[2025-03-31T21:37:19.511] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.512] [DEBUG] debug-file - Update task entry:default@MakePackInfo output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\pack.info cache.
+[2025-03-31T21:37:19.512] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo post-execution cost:2 ms .
+[2025-03-31T21:37:19.512] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Program Files\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2025-03-31T21:37:19.512] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Program Files\Huawei\DevEco Studio\sdk\default\openharmony\ets\api\device-define cache by regenerate.
+[2025-03-31T21:37:19.513] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2025-03-31T21:37:19.514] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:2 ms .
+[2025-03-31T21:37:19.514] [DEBUG] debug-file - Update task entry:default@ProcessProfile input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\merge_profile\default\module.json cache by regenerate.
+[2025-03-31T21:37:19.514] [DEBUG] debug-file - Update task entry:default@ProcessProfile output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\process_profile\default\module.json cache.
+[2025-03-31T21:37:19.514] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile post-execution cost:1 ms .
+[2025-03-31T21:37:19.515] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\oh-package.json5 cache by regenerate.
+[2025-03-31T21:37:19.515] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\oh-package.json5 cache by regenerate.
+[2025-03-31T21:37:19.516] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\module.json5 cache by regenerate.
+[2025-03-31T21:37:19.516] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\router_map\default\temp-router-map.json cache.
+[2025-03-31T21:37:19.516] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\router_map\default\loader-router-map.json cache.
+[2025-03-31T21:37:19.516] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap post-execution cost:2 ms .
+[2025-03-31T21:37:19.516] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resConfig.json cache.
+[2025-03-31T21:37:19.517] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\opt-compression.json cache.
+[2025-03-31T21:37:19.517] [DEBUG] debug-file - Incremental task entry:default@ProcessResource post-execution cost:1 ms .
+[2025-03-31T21:37:19.518] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\router_map\default\temp-router-map.json cache by regenerate.
+[2025-03-31T21:37:19.519] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader\default\loader.json cache.
+[2025-03-31T21:37:19.519] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson post-execution cost:3 ms .
+[2025-03-31T21:37:19.519] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.520] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build-profile.json5 cache by regenerate.
+[2025-03-31T21:37:19.520] [DEBUG] debug-file - Update task entry:default@ProcessLibs output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\libs\default cache.
+[2025-03-31T21:37:19.520] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs post-execution cost:1 ms .
+[2025-03-31T21:37:19.521] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\resources cache by regenerate.
+[2025-03-31T21:37:19.523] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\AppScope\resources cache by regenerate.
+[2025-03-31T21:37:19.524] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2025-03-31T21:37:19.525] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2025-03-31T21:37:19.525] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default cache.
+[2025-03-31T21:37:19.529] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2025-03-31T21:37:19.529] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\generated\r\default cache.
+[2025-03-31T21:37:19.530] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:10 ms .
+[2025-03-31T21:37:19.531] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader\default cache by regenerate.
+[2025-03-31T21:37:19.532] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2025-03-31T21:37:19.532] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2025-03-31T21:37:19.532] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2025-03-31T21:37:19.533] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\src\main\ets cache by regenerate.
+[2025-03-31T21:37:19.534] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2025-03-31T21:37:19.534] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader_out\default\ets cache.
+[2025-03-31T21:37:19.534] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:5 ms .
+[2025-03-31T21:37:19.535] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader\default cache by regenerate.
+[2025-03-31T21:37:19.536] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2025-03-31T21:37:19.536] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2025-03-31T21:37:19.536] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2025-03-31T21:37:19.537] [DEBUG] debug-file - Update task entry:default@BuildJS output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader_out\default\js cache.
+[2025-03-31T21:37:19.537] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:3 ms .
+[2025-03-31T21:37:19.537] [DEBUG] debug-file - Update task entry:default@DoNativeStrip input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\libs\default cache by regenerate.
+[2025-03-31T21:37:19.537] [DEBUG] debug-file - Update task entry:default@DoNativeStrip output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\stripped_native_libs\default cache.
+[2025-03-31T21:37:19.537] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip post-execution cost:1 ms .
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\libs\default cache by regenerate.
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\patch\default\base_native_libs.json cache.
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs post-execution cost:1 ms .
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2025-03-31T21:37:19.538] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\package\default\module.json cache.
+[2025-03-31T21:37:19.539] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2025-03-31T21:37:19.539] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2025-03-31T21:37:19.540] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2025-03-31T21:37:19.540] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2025-03-31T21:37:19.541] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2025-03-31T21:37:19.541] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2025-03-31T21:37:19.541] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader_out\default\ets cache by regenerate.
+[2025-03-31T21:37:19.542] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2025-03-31T21:37:19.542] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2025-03-31T21:37:19.543] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2025-03-31T21:37:19.543] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\intermediates\source_map\default\sourceMaps.map cache.
+[2025-03-31T21:37:19.543] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2025-03-31T21:37:19.543] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:5 ms .
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cer cache by regenerate.
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.p7b cache by regenerate.
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.p12 cache by regenerate.
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\entry-default-unsigned.hap cache by regenerate.
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Update task entry:default@SignHap output file:C:\Users\xsy\labProject\myDevEchoStudioProject\map-kit_-codelab_-demo-master\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2025-03-31T21:37:19.544] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:2 ms .
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Cleanup worker 0.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Worker 0 has been cleaned up.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Current idle worker size: 4.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Current resident worker size: 5.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Cleanup worker 1.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Worker 1 has been cleaned up.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Current idle worker size: 3.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Current resident worker size: 5.
+[2025-03-31T21:37:19.569] [DEBUG] debug-file - Cleanup worker 17.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Worker 17 has been cleaned up.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Current idle worker size: 2.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Current resident worker size: 5.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Cleanup worker 18.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Worker 18 has been cleaned up.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-03-31T21:37:19.570] [DEBUG] debug-file - Current resident worker size: 5.
+[2025-03-31T21:37:19.571] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-03-31T21:37:19.574] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-03-31T21:37:19.574] [DEBUG] debug-file - session manager: send message to worker process.
+[2025-03-31T21:37:19.578] [DEBUG] debug-file - worker[0] exits with exit code 1.
+[2025-03-31T21:37:19.578] [DEBUG] debug-file - worker[1] exits with exit code 1.
+[2025-03-31T21:37:19.579] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-03-31T21:37:19.580] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2025-03-31T21:37:19.580] [DEBUG] debug-file - worker[17] exits with exit code 1.
+[2025-03-31T21:37:19.589] [DEBUG] debug-file - worker[18] exits with exit code 1.

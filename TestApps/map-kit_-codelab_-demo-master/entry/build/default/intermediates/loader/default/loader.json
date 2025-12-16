@@ -1,0 +1,25 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master",
+  "nodeModulesPath": "C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "anBuildOutPut": "C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "C:\\Users\\xsy\\labProject\\myDevEchoStudioProject\\map-kit_-codelab_-demo-master\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}
