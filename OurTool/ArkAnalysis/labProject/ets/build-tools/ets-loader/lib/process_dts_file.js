@@ -1,1 +1,0 @@
-"use strict";function ignoringFiles(){return this.cacheable&&this.cacheable(),""}module.exports=ignoringFiles;

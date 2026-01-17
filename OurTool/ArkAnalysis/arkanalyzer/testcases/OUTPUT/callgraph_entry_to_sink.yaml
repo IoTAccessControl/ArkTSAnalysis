@@ -1,0 +1,1099 @@
+- sink_api:
+    id: "M599"
+    signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+    rules: ["extra:sink:fs.writeSync"]
+  source_api:
+    id: "M142"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)"
+    rules: ["source:2ae243001c"]
+  target_variable: "options"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      step: "step1"
+      line: 89
+      type: "indirect"
+      api: "%dflt.writeSync"
+      api_id: "M599"
+      api_signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+      code: |
+        89 fs.writeSync(file.fd, buffer, options);
+- sink_api:
+    id: "M599"
+    signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+    rules: ["extra:sink:fs.writeSync"]
+  source_api:
+    id: "M144"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.[static]startRecord(string)"
+    rules: ["source:2ae243001c"]
+  target_variable: "options"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      step: "step1"
+      line: 95
+      type: "indirect"
+      api: "AudioCaptureManager.%AM0$startRecord"
+      api_id: "M142"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)"
+      code: |
+        95 AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      step: "step2"
+      line: 89
+      type: "indirect"
+      api: "%dflt.writeSync"
+      api_id: "M599"
+      api_signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+      code: |
+        89 fs.writeSync(file.fd, buffer, options);
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M181"
+    signature: "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)"
+    rules: ["source:manual:6d198ef111"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "entry/src/main/ets/utils/PhotoPickerUtils.ets"
+      type: "indirect"
+      api: "PhotoPickerUtils.%AM6$openGallery"
+      api_id: "M181"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)"
+      code: |
+        // no callsite captured for this path
+        // @WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M598"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      type: "indirect"
+      api: "%AC3$AudioCaptureManager.%AM0$startRecord.constructor"
+      api_id: "M598"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()"
+      code: |
+        // no callsite captured for this path
+        // @WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M606"
+    signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.audio.d.ts"
+      type: "indirect"
+      api: "AudioCapturer.start"
+      api_id: "M606"
+      api_signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M619"
+    signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.audio.d.ts"
+      type: "indirect"
+      api: "AudioRenderer.start"
+      api_id: "M619"
+      api_signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M628"
+    signature: "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)"
+    rules: ["source:4d1dd07a30"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.bundle.bundleManager.d.ts"
+      type: "indirect"
+      api: "%dflt.getBundleInfoForSelfSync"
+      api_id: "M628"
+      api_signature: "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M639"
+    signature: "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)"
+    rules: ["source:manual:6d198ef111"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.file.picker.d.ts"
+      type: "indirect"
+      api: "PhotoViewPicker.select"
+      api_id: "M639"
+      api_signature: "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M642"
+    signature: "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)"
+    rules: ["source:manual:8d599bf51f"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.cameraPicker.d.ts"
+      type: "indirect"
+      api: "%dflt.pick"
+      api_id: "M642"
+      api_signature: "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: "M23"
+    signature: "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: %dflt.%AM0()"
+  target_variable: "args"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/component/Toolbar.ets"
+      step: "step1"
+      line: 16
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        16 Image(this.backSrc)
+                  .width(22)
+                  .height(22)
+                  .margin({ left: 15 })
+                  .onClick(() => {
+                    router.back()
+                  })
+    - filePath: "entry/src/main/ets/component/Toolbar.ets"
+      step: "step2"
+      line: 30
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        30 Text(this.subTitle)
+                    .fontColor(Color.Black)
+                    .fontSize(16)
+                    .margin({ right: 15 })
+                    .fontWeight(400)
+                    .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/component/Toolbar.ets"
+      step: "step3"
+      line: 37
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        37 Image(this.subIconSrc)
+                    .width(25)
+                    .height(25)
+                    .margin({ right: 15 })
+                    .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/component/Toolbar.ets"
+      step: "step4"
+      line: 57
+      type: "indirect"
+      api: "Toast.show"
+      api_id: "M209"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)"
+      code: |
+        57 Toast.show("功能正在开发中...")
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step5"
+      line: 8
+      type: "indirect"
+      api: "Toast.showTime"
+      api_id: "M211"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)"
+      code: |
+        8 Toast.showTime(msg, 2000)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step6"
+      line: 24
+      type: "indirect"
+      api: "Log.e"
+      api_id: "M165"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])"
+      code: |
+        24 Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step7"
+      line: 54
+      type: "indirect"
+      api: "Log.et"
+      api_id: "M166"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])"
+      code: |
+        54 this.et(this._tag, format, args)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step8"
+      line: 59
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        59 hilog.error(this._domain, tag, format, args)
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: "M87"
+    signature: "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM10$build()"
+  target_variable: "args"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step1"
+      line: 355
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        355 Image($r("app.media.ic_use_voice"))
+                    .width(33)
+                    .height(33)
+                    .borderRadius(4)
+                    .margin({ left: 15, right: 15 })
+                    .objectFit(ImageFit.Cover)
+                    .onClick(async () => {
+                      const result = await PermissionUtils.request(["ohos.permission.MICROPHONE"])
+                      if (!result) {
+                        Toast.show("请先授权麦克风权限")
+                      }
+                      this.inputType = WXInputType.voice
+                      this.showFuncBarWithAnim(false)
+                    })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step2"
+      line: 393
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        393 Image($r("app.media.ic_use_keyboard"))
+                    .width(33)
+                    .height(33)
+                    .borderRadius(4)
+                    .margin({ left: 15, right: 15 })
+                    .objectFit(ImageFit.Cover)
+                    .onClick(() => {
+                      this.inputType = WXInputType.keyboard
+                    })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step3"
+      line: 416
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        416 Image($r("app.media.ic_emoji_pack"))
+                  .width(33)
+                  .height(33)
+                  .borderRadius(4)
+                  .margin({ left: 15, right: 5 })
+                  .objectFit(ImageFit.Cover)
+                  .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step4"
+      line: 425
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        425 Text("发送")
+                  .fontColor(Color.White)
+                  .width(65)
+                  .textAlign(TextAlign.Center)
+                  .height(36)
+                  .backgroundColor("#58BE6A")
+                  .fontSize(18)
+                  .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)
+                  .borderRadius(6)
+                  .margin({ left: 10, right: 10 })
+                  .onClick(() => {
+                    this.sendTextMsg()
+                  })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step5"
+      line: 439
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        439 Image($r("app.media.ic_add"))
+                  .width(33)
+                  .height(33)
+                  .borderRadius(4)
+                  .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)
+                  .margin({ left: 15, right: 8 })
+                  .objectFit(ImageFit.Cover)
+                  .onClick(() => {
+                    if (!this.showFuncBar) {
+                      this.inputType = WXInputType.keyboard
+                    }
+                    this.showFuncBarWithAnim(!this.showFuncBar)
+                  })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step6"
+      line: 364
+      type: "indirect"
+      api: "Toast.show"
+      api_id: "M209"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)"
+      code: |
+        364 Toast.show("请先授权麦克风权限")
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step7"
+      line: 8
+      type: "indirect"
+      api: "Toast.showTime"
+      api_id: "M211"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)"
+      code: |
+        8 Toast.showTime(msg, 2000)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step8"
+      line: 24
+      type: "indirect"
+      api: "Log.e"
+      api_id: "M165"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])"
+      code: |
+        24 Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step9"
+      line: 54
+      type: "indirect"
+      api: "Log.et"
+      api_id: "M166"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])"
+      code: |
+        54 this.et(this._tag, format, args)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step10"
+      line: 59
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        59 hilog.error(this._domain, tag, format, args)
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: "M66"
+    signature: "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: %dflt.%AM0()"
+  target_variable: "args"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step1"
+      line: 355
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        355 Image($r("app.media.ic_use_voice"))
+                    .width(33)
+                    .height(33)
+                    .borderRadius(4)
+                    .margin({ left: 15, right: 15 })
+                    .objectFit(ImageFit.Cover)
+                    .onClick(async () => {
+                      const result = await PermissionUtils.request(["ohos.permission.MICROPHONE"])
+                      if (!result) {
+                        Toast.show("请先授权麦克风权限")
+                      }
+                      this.inputType = WXInputType.voice
+                      this.showFuncBarWithAnim(false)
+                    })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step2"
+      line: 393
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        393 Image($r("app.media.ic_use_keyboard"))
+                    .width(33)
+                    .height(33)
+                    .borderRadius(4)
+                    .margin({ left: 15, right: 15 })
+                    .objectFit(ImageFit.Cover)
+                    .onClick(() => {
+                      this.inputType = WXInputType.keyboard
+                    })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step3"
+      line: 416
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        416 Image($r("app.media.ic_emoji_pack"))
+                  .width(33)
+                  .height(33)
+                  .borderRadius(4)
+                  .margin({ left: 15, right: 5 })
+                  .objectFit(ImageFit.Cover)
+                  .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step4"
+      line: 425
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        425 Text("发送")
+                  .fontColor(Color.White)
+                  .width(65)
+                  .textAlign(TextAlign.Center)
+                  .height(36)
+                  .backgroundColor("#58BE6A")
+                  .fontSize(18)
+                  .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)
+                  .borderRadius(6)
+                  .margin({ left: 10, right: 10 })
+                  .onClick(() => {
+                    this.sendTextMsg()
+                  })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step5"
+      line: 439
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        439 Image($r("app.media.ic_add"))
+                  .width(33)
+                  .height(33)
+                  .borderRadius(4)
+                  .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)
+                  .margin({ left: 15, right: 8 })
+                  .objectFit(ImageFit.Cover)
+                  .onClick(() => {
+                    if (!this.showFuncBar) {
+                      this.inputType = WXInputType.keyboard
+                    }
+                    this.showFuncBarWithAnim(!this.showFuncBar)
+                  })
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step6"
+      line: 682
+      type: "indirect"
+      api: "Toast.show"
+      api_id: "M209"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)"
+      code: |
+        682 Toast.show("功能正在开发中...")
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step7"
+      line: 8
+      type: "indirect"
+      api: "Toast.showTime"
+      api_id: "M211"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)"
+      code: |
+        8 Toast.showTime(msg, 2000)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step8"
+      line: 24
+      type: "indirect"
+      api: "Log.e"
+      api_id: "M165"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])"
+      code: |
+        24 Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step9"
+      line: 54
+      type: "indirect"
+      api: "Log.et"
+      api_id: "M166"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])"
+      code: |
+        54 this.et(this._tag, format, args)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step10"
+      line: 59
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        59 hilog.error(this._domain, tag, format, args)
+- sink_api:
+    id: "M599"
+    signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+    rules: ["extra:sink:fs.writeSync"]
+  source_api:
+    id: "M78"
+    signature: "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM1$%instInit(@etsSdk/component/common.d.ts: TouchEvent)"
+  target_variable: "options"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step1"
+      line: 403
+      type: "indirect"
+      api: "CommonMethod.onTouch"
+      api_id: "M444"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))"
+      code: |
+        403 Button("按住 说话")
+                    .fontColor(Color.Black)
+                    .layoutWeight(1)
+                    .type(ButtonType.Normal)
+                    .borderRadius(8)
+                    .backgroundColor(Color.White)
+                    .fontSize(18)
+                    .bindContentCover($$this.showTalkContainer, this.buildRecordVoiceView,
+                      { modalTransition: ModalTransition.NONE })
+                    .onTouch(this.onPressTalk)
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step2"
+      line: 216
+      type: "indirect"
+      api: "ChatPage.%AM2$%instInit"
+      api_id: "M79"
+      api_signature: "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM2$%instInit()"
+      code: |
+        216 this.onStartRecord()
+    - filePath: "entry/src/main/ets/pages/chat/ChatPage.ets"
+      step: "step3"
+      line: 276
+      type: "indirect"
+      api: "AudioCaptureManager.startRecord"
+      api_id: "M144"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.[static]startRecord(string)"
+      code: |
+        276 AudioCaptureManager.startRecord(this.recordFileName)
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      step: "step4"
+      line: 95
+      type: "indirect"
+      api: "AudioCaptureManager.%AM0$startRecord"
+      api_id: "M142"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)"
+      code: |
+        95 AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      step: "step5"
+      line: 89
+      type: "indirect"
+      api: "%dflt.writeSync"
+      api_id: "M599"
+      api_signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+      code: |
+        89 fs.writeSync(file.fd, buffer, options);
+- sink_api:
+    id: "M635"
+    signature: "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])"
+    rules: ["extra:sink:console.error"]
+  source_api:
+    id: "M124"
+    signature: "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.%AM1$build()"
+  target_variable: "'PhotoViewPicker failed with err: ' + JSON.stringify(err"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step1"
+      line: 16
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        16 Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))
+                  .width(70)
+                  .height(70)
+                  .margin({ left: 25, right: 10 })
+                  .borderRadius(8)
+                  .onClick(() => {
+                    PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+                  })
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step2"
+      line: 15
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        15 Row() {
+                Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))
+                  .width(70)
+                  .height(70)
+                  .margin({ left: 25, right: 10 })
+                  .borderRadius(8)
+                  .onClick(() => {
+                    PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+                  })
+        
+                Column() {
+                  Text("亚瑟王")
+                    .fontColor(Color.Black)
+                    .fontSize(26)
+                    .fontWeight(700)
+        
+                  Text("微信号：wx_023021")
+                    .fontColor(Color.Grey)
+                    .fontSize(16)
+                    .margin({ top: 15 })
+        
+                  Text('+ 状态')
+                    .fontColor(Color.Grey)
+                    .margin({ top: 20 })
+                    .padding({ left: 8, right: 8 })
+                    .height(25)
+                    .fontSize(15)
+                    .borderRadius(20)
+                    .height(26)
+                    .textAlign(TextAlign.Center)
+                    .borderWidth(0.7)
+                    .borderColor('#666')
+                    .backgroundColor(Color.White)
+                }
+                .margin({ top: 40 })
+                .alignItems(HorizontalAlign.Start)
+        
+                Blank()
+                Image($r('app.media.ic_qrcode'))
+                  .width(16)
+                  .height(16)
+                  .margin({ top: 38, right: 20 })
+        
+        
+                Image($r("app.media.ic_more"))
+                  .width(9)
+                  .height(16.364)
+                  .margin({ top: 38, right: 15 })
+        
+              }.width("100%")
+              .height(203)
+              .backgroundColor(Color.White)
+              .padding({ top: WindowManager.statusBarHeight })
+              .onClick(() => {
+                router.pushUrl({ url: 'pages/qrcode/MyQrCodePage' })
+              })
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step3"
+      line: 22
+      type: "indirect"
+      api: "PhotoPickerUtils.openGallery"
+      api_id: "M183"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.[static]openGallery(@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM0(string), @WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM1(string))"
+      code: |
+        22 PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+    - filePath: "entry/src/main/ets/utils/PhotoPickerUtils.ets"
+      step: "step4"
+      line: 65
+      type: "indirect"
+      api: "console.error"
+      api_id: "M635"
+      api_signature: "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])"
+      code: |
+        65 console.error('PhotoViewPicker failed with err: ' + JSON.stringify(err))
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: "M124"
+    signature: "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.%AM1$build()"
+  target_variable: "args"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step1"
+      line: 16
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        16 Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))
+                  .width(70)
+                  .height(70)
+                  .margin({ left: 25, right: 10 })
+                  .borderRadius(8)
+                  .onClick(() => {
+                    PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+                  })
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step2"
+      line: 15
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        15 Row() {
+                Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))
+                  .width(70)
+                  .height(70)
+                  .margin({ left: 25, right: 10 })
+                  .borderRadius(8)
+                  .onClick(() => {
+                    PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+                  })
+        
+                Column() {
+                  Text("亚瑟王")
+                    .fontColor(Color.Black)
+                    .fontSize(26)
+                    .fontWeight(700)
+        
+                  Text("微信号：wx_023021")
+                    .fontColor(Color.Grey)
+                    .fontSize(16)
+                    .margin({ top: 15 })
+        
+                  Text('+ 状态')
+                    .fontColor(Color.Grey)
+                    .margin({ top: 20 })
+                    .padding({ left: 8, right: 8 })
+                    .height(25)
+                    .fontSize(15)
+                    .borderRadius(20)
+                    .height(26)
+                    .textAlign(TextAlign.Center)
+                    .borderWidth(0.7)
+                    .borderColor('#666')
+                    .backgroundColor(Color.White)
+                }
+                .margin({ top: 40 })
+                .alignItems(HorizontalAlign.Start)
+        
+                Blank()
+                Image($r('app.media.ic_qrcode'))
+                  .width(16)
+                  .height(16)
+                  .margin({ top: 38, right: 20 })
+        
+        
+                Image($r("app.media.ic_more"))
+                  .width(9)
+                  .height(16.364)
+                  .margin({ top: 38, right: 15 })
+        
+              }.width("100%")
+              .height(203)
+              .backgroundColor(Color.White)
+              .padding({ top: WindowManager.statusBarHeight })
+              .onClick(() => {
+                router.pushUrl({ url: 'pages/qrcode/MyQrCodePage' })
+              })
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step3"
+      line: 22
+      type: "indirect"
+      api: "Mine.%AM3$%AM1$build"
+      api_id: "M123"
+      api_signature: "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.%AM3$%AM1$build(string)"
+      code: |
+        22 PhotoPickerUtils.openGallery(
+                      uri => {
+                        this.imgPath = uri;
+                      }, errMsg => {
+                      Toast.show(errMsg)
+                    })
+    - filePath: "entry/src/main/ets/pages/mine/Mine.ets"
+      step: "step4"
+      line: 26
+      type: "indirect"
+      api: "Toast.show"
+      api_id: "M209"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)"
+      code: |
+        26 Toast.show(errMsg)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step5"
+      line: 8
+      type: "indirect"
+      api: "Toast.showTime"
+      api_id: "M211"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)"
+      code: |
+        8 Toast.showTime(msg, 2000)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step6"
+      line: 24
+      type: "indirect"
+      api: "Log.e"
+      api_id: "M165"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])"
+      code: |
+        24 Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step7"
+      line: 54
+      type: "indirect"
+      api: "Log.et"
+      api_id: "M166"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])"
+      code: |
+        54 this.et(this._tag, format, args)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step8"
+      line: 59
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        59 hilog.error(this._domain, tag, format, args)
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: "M129"
+    signature: "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: %dflt.%AM0()"
+  target_variable: "args"
+  path_type: "entry_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step1"
+      line: 65
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        65 Image($r('app.media.ic_delete'))
+                        .width(20)
+                        .height(20)
+                        .colorBlend(Color.Gray)
+                        .onClick(() => {
+                          this.searchText = ""
+                        })
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step2"
+      line: 105
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        105 Text("取消")
+                  .fontColor("#5f6c8a")
+                  .width(70)
+                  .height("100%")
+                  .fontWeight(400)
+                  .textAlign(TextAlign.Center)
+                  .fontSize(19)// .alignRules({
+                    //   top: { anchor: "__container__", align: VerticalAlign.Top },
+                    //   right: { anchor: "__container__", align: HorizontalAlign.End }
+                    // })
+                    // .id("cancel")
+                  .onClick(() => {
+                    if ("1" === router.getLength()) {
+                      // app退出，一般不会走这里
+                      this.context.terminateSelf()
+                    } else {
+                      router.back()
+                    }
+                  })
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step3"
+      line: 142
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        142 Text("朋友圈")
+                  .width("25%")
+                  .fontColor("#5f6c8a")
+                  .fontSize(17)
+                  .fontWeight(500)
+                  .onClick(unDevTip)
+                  .textAlign(TextAlign.Center)
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step4"
+      line: 150
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        150 Text("公众号")
+                  .width("25%")
+                  .fontColor("#5f6c8a")
+                  .fontSize(17)
+                  .fontWeight(500)
+                  .textAlign(TextAlign.Center)
+                  .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step5"
+      line: 158
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        158 Text("小程序")
+                  .width("25%")
+                  .fontColor("#5f6c8a")
+                  .fontSize(17)
+                  .fontWeight(500)
+                  .textAlign(TextAlign.Center)
+                  .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step6"
+      line: 166
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        166 Text("视频号")
+                  .width("25%")
+                  .fontWeight(500)
+                  .fontColor("#5f6c8a")
+                  .fontSize(17)
+                  .textAlign(TextAlign.Center)
+                  .onClick(unDevTip)
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step7"
+      line: 178
+      type: "indirect"
+      api: "CommonMethod.onClick"
+      api_id: "M280"
+      api_signature: "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))"
+      code: |
+        178 Text("页面设置")
+                .fontColor("#5f6c8a")
+                .fontSize(17)
+                .fontWeight(500)
+                .onClick(unDevTip)
+                .alignSelf(ItemAlign.Center)
+                .margin({ bottom: 80 })
+    - filePath: "entry/src/main/ets/pages/search/SearchPage.ets"
+      step: "step8"
+      line: 204
+      type: "indirect"
+      api: "Toast.show"
+      api_id: "M209"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)"
+      code: |
+        204 Toast.show("功能正在开发中...")
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step9"
+      line: 8
+      type: "indirect"
+      api: "Toast.showTime"
+      api_id: "M211"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)"
+      code: |
+        8 Toast.showTime(msg, 2000)
+    - filePath: "entry/src/main/ets/utils/Toast.ets"
+      step: "step10"
+      line: 24
+      type: "indirect"
+      api: "Log.e"
+      api_id: "M165"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])"
+      code: |
+        24 Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step11"
+      line: 54
+      type: "indirect"
+      api: "Log.et"
+      api_id: "M166"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])"
+      code: |
+        54 this.et(this._tag, format, args)
+    - filePath: "entry/src/main/ets/utils/Log.ts"
+      step: "step12"
+      line: 59
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        59 hilog.error(this._domain, tag, format, args)

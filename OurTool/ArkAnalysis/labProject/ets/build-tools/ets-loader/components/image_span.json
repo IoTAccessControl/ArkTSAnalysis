@@ -1,8 +1,0 @@
-{
-  "name": "ImageSpan",
-  "parents": ["Text", "ContainerSpan"],
-  "atomic": true,
-  "attrs": [
-    "verticalAlign", "objectFit", "textBackgroundStyle", "alt", "colorFilter", "onComplete", "onError"
-  ]
-}

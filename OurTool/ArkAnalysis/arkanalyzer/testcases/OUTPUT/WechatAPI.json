@@ -1,0 +1,1537 @@
+{
+  "summary": {
+    "totalApis": 55,
+    "totalCallSites": 118
+  },
+  "modules": [
+    {
+      "moduleName": "@ohos.router",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "back",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.router.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/component/Toolbar.ets",
+                  "line": 21,
+                  "column": 13,
+                  "snippet": "router.back()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 121,
+                  "column": 15,
+                  "snippet": "router.back()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "pushUrl",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.router.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/component/WechatToolbar.ets",
+                  "line": 24,
+                  "column": 15,
+                  "snippet": "router.pushUrl({ url: 'pages/search/SearchPage' })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/component/WechatToolbar.ets",
+                  "line": 32,
+                  "column": 15,
+                  "snippet": "router.pushUrl({ url: 'pages/HardwareIndexPage' })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/contact/Contact.ets",
+                  "line": 103,
+                  "column": 19,
+                  "snippet": "router.pushUrl({\n                    url: 'pages/chat/ChatPage',\n                    params: { name: contact.name }\n                  })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/home/Home.ets",
+                  "line": 51,
+                  "column": 13,
+                  "snippet": "router.pushUrl({ url: 'pages/chat/ChatPage',\n              params: {name:item.nickname}\n            })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/mine/Mine.ets",
+                  "line": 74,
+                  "column": 9,
+                  "snippet": "router.pushUrl({ url: 'pages/qrcode/MyQrCodePage' })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getParams",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.router.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/chat/ChatPage.ets",
+                  "line": 260,
+                  "column": 5,
+                  "snippet": "this.name = (router.getParams() as ChatPageParam).name",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getLength",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.router.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 117,
+                  "column": 13,
+                  "snippet": "if (\"1\" === router.getLength()) {\n              // app退出，一般不会走这里\n              this.context.terminateSelf()\n            } else {\n              router.back()\n            }",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.promptAction",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "showToast",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.promptAction.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/component/WechatToolbar.ets",
+                  "line": 31,
+                  "column": 15,
+                  "snippet": "prompt.showToast({ message: \"功能正在开发中...\", duration: 2000 })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/contact/Contact.ets",
+                  "line": 145,
+                  "column": 15,
+                  "snippet": "prompt.showToast({ message: \"\" + target })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 194,
+                  "column": 9,
+                  "snippet": "prompt.showToast({\n          message: \"按了返回键\"\n        });",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 56,
+                  "column": 15,
+                  "snippet": "prompt.showToast({ message: this.searchText })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/Toast.ets",
+                  "line": 17,
+                  "column": 7,
+                  "snippet": "promptAction.showToast({\n        message: (typeof msg === \"number\" || typeof msg === \"boolean\") ?\n          String(msg) as string : msg,\n        duration: duration,\n        bottom: \"center\",\n      })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.hilog",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "info",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.hilog.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 11,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 15,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 21,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 34,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 39,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 44,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 28,
+                  "column": 7,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/Log.ts",
+                  "line": 39,
+                  "column": 7,
+                  "snippet": "hilog.info(this._domain, tag, format, args)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/test/Ability.test.ets",
+                  "line": 27,
+                  "column": 7,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'it begin');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 10,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onCreate');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 11,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'want param:' + JSON.stringify(want) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 12,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'launchParam:'+ JSON.stringify(launchParam) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 17,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'start run testcase!!!');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 22,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onDestroy');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 26,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onWindowStageCreate');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 38,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onWindowStageDestroy');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 42,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onForeground');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 46,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onBackground');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 32,
+                  "column": 13,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s',\n                JSON.stringify(data) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/pages/Index.ets",
+                  "line": 7,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility index aboutToAppear');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 9,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'onAbilityCreateCallback');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 13,
+                  "column": 5,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'addAbilityMonitorCallback : %{public}s', JSON.stringify(err) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 21,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner OnPrepare ');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 25,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun run');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 40,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'cmd : %{public}s', cmd);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 47,
+                  "column": 9,
+                  "snippet": "hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun end');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 43,
+                  "column": 17,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'executeShellCommand : err : %{public}s', JSON.stringify(err) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 44,
+                  "column": 17,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'executeShellCommand : data : %{public}s', d.stdResult ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 45,
+                  "column": 17,
+                  "snippet": "hilog.info(0x0000, 'testTag', 'executeShellCommand : data : %{public}s', d.exitCode ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "error",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.hilog.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 25,
+                  "column": 9,
+                  "snippet": "hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/Log.ts",
+                  "line": 59,
+                  "column": 7,
+                  "snippet": "hilog.error(this._domain, tag, format, args)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 29,
+                  "column": 17,
+                  "snippet": "hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "debug",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.hilog.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/Log.ts",
+                  "line": 29,
+                  "column": 7,
+                  "snippet": "hilog.debug(this._domain, tag, format, args)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "warn",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.hilog.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/Log.ts",
+                  "line": 49,
+                  "column": 7,
+                  "snippet": "hilog.warn(this._domain, tag, format, args)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.window",
+      "classes": [
+        {
+          "className": "WindowStage",
+          "methods": [
+            {
+              "methodName": "loadContent",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/entryability/EntryAbility.ets",
+                  "line": 23,
+                  "column": 5,
+                  "snippet": "windowStage.loadContent('pages/Index', (err, data) => {\n      if (err.code) {\n        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');\n        return;\n      }\n      hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');\n    });",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 27,
+                  "column": 9,
+                  "snippet": "windowStage.loadContent('testability/pages/Index', (err, data) => {\n            if (err.code) {\n                hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');\n                return;\n            }\n            hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s',\n                JSON.stringify(data) ?? '');\n        });",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getMainWindow",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 34,
+                  "column": 5,
+                  "snippet": "let windowClass: window.Window = await windowStage.getMainWindow()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getMainWindowSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 67,
+                  "column": 5,
+                  "snippet": "let windowClass: window.Window = windowStage.getMainWindowSync()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getLastWindow",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/chat/ChatPage.ets",
+                  "line": 261,
+                  "column": 5,
+                  "snippet": "await window.getLastWindow(getContext(this)).then(currentWindow => {\n      currentWindow.on('keyboardHeightChange', (height) => {\n        this.keyboardHeight = height;\n      })\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 17,
+                  "column": 5,
+                  "snippet": "await window.getLastWindow(getContext(this)).then(currentWindow => {\n      currentWindow.on('keyboardHeightChange', (height) => {\n        this.keyboardHeight = height;\n      })\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 14,
+                  "column": 5,
+                  "snippet": "let windowClass: window.Window = await window.getLastWindow(getContext())",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 99,
+                  "column": 5,
+                  "snippet": "let windowClass = await window.getLastWindow(getContext())",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "Window",
+          "methods": [
+            {
+              "methodName": "on",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/chat/ChatPage.ets",
+                  "line": 262,
+                  "column": 7,
+                  "snippet": "currentWindow.on('keyboardHeightChange', (height) => {\n        this.keyboardHeight = height;\n      })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/search/SearchPage.ets",
+                  "line": 18,
+                  "column": 7,
+                  "snippet": "currentWindow.on('keyboardHeightChange', (height) => {\n        this.keyboardHeight = height;\n      })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 36,
+                  "column": 5,
+                  "snippet": "windowClass.on(\"avoidAreaChange\", async data => {\n      if (data.type == window.AvoidAreaType.TYPE_SYSTEM) {\n        // 将值保存到静态变量中，以便后续使用\n        WindowManager.statusBarHeight = px2vp(data.area.topRect.height)\n        WindowManager.navBarHeight = px2vp(data.area.bottomRect.height)\n      }\n      if (data.type == window.AvoidAreaType.TYPE_NAVIGATION_INDICATOR) {\n        // 这里直接覆盖底部三键导航栏的高度，因为两者显示是互斥的\n        WindowManager.navBarHeight = px2vp(data.area.bottomRect.height)\n      }\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "setWindowSystemBarProperties",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 16,
+                  "column": 5,
+                  "snippet": "await windowClass.setWindowSystemBarProperties({\n      navigationBarColor: color,\n      statusBarColor: color,\n      navigationBarContentColor: color,\n      statusBarContentColor: color,\n      isStatusBarLightIcon: light,\n      isNavigationBarLightIcon: light\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 52,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowSystemBarProperties({\n      navigationBarColor: \"#00000000\",\n      statusBarColor: \"#00000000\",\n      // navigationBarContentColor: \"#FF000000\",\n      // statusBarContentColor: \"#FF000000\"\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 86,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowSystemBarProperties({\n      navigationBarColor: \"#00000000\",\n      statusBarColor: \"#00000000\",\n      // navigationBarContentColor: \"#FF000000\",\n      // statusBarContentColor: \"#FF000000\"\n    })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "setWindowLayoutFullScreen",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 48,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowLayoutFullScreen(true)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 83,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowLayoutFullScreen(true)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "setWindowSystemBarEnable",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 50,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowSystemBarEnable([\"status\", \"navigation\"])",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 84,
+                  "column": 5,
+                  "snippet": "windowClass.setWindowSystemBarEnable([\"status\", \"navigation\"])",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 101,
+                  "column": 5,
+                  "snippet": "await windowClass.setWindowSystemBarEnable([])",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getWindowAvoidArea",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.window.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 68,
+                  "column": 5,
+                  "snippet": "let area = windowClass.getWindowAvoidArea(window.AvoidAreaType.TYPE_NAVIGATION_INDICATOR);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/WindowManager.ets",
+                  "line": 70,
+                  "column": 5,
+                  "snippet": "area = windowClass.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.process",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "uptime",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.process.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 55,
+                  "column": 5,
+                  "snippet": "this.uptime = process.uptime()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.net.connection",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "hasDefaultNetSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.net.connection.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 62,
+                  "column": 5,
+                  "snippet": "const hasDefaultNet = connection.hasDefaultNetSync()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getDefaultNetSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.net.connection.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 76,
+                  "column": 5,
+                  "snippet": "const defaultNet = connection.getDefaultNetSync()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 93,
+                  "column": 5,
+                  "snippet": "const defaultNet = connection.getDefaultNetSync()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getNetCapabilitiesSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.net.connection.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 78,
+                  "column": 5,
+                  "snippet": "const netCapabilities = connection.getNetCapabilitiesSync(defaultNet)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getConnectionPropertiesSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.net.connection.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 95,
+                  "column": 5,
+                  "snippet": "const connectionProperties = connection.getConnectionPropertiesSync(defaultNet)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.display",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getDefaultDisplaySync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.display.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 153,
+                  "column": 5,
+                  "snippet": "const ScreenInfo = display.getDefaultDisplaySync()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.sensor",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getSensorList",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.sensor.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/HardwareIndexPage.ets",
+                  "line": 162,
+                  "column": 5,
+                  "snippet": "let SensorList = await sensor.getSensorList()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.vibrator",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "startVibration",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.vibrator.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/chat/ChatPage.ets",
+                  "line": 667,
+                  "column": 7,
+                  "snippet": "vibrator.startVibration({\n        type: 'time',\n        duration: 100,\n      }, {\n        id: 0,\n        usage: 'touch'\n      }, () => {\n      })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.arkui.componentUtils",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getRectangleById",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.arkui.componentUtils.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/pages/chat/ChatPage.ets",
+                  "line": 627,
+                  "column": 9,
+                  "snippet": "let modePosition: componentUtils.ComponentInfo = componentUtils.getRectangleById(\"bottom_bubble\");",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.file.fs",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "writeSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 89,
+                  "column": 9,
+                  "snippet": "fs.writeSync(file.fd, buffer, options);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "openSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 79,
+                  "column": 7,
+                  "snippet": "let file = fs.openSync(filePath, fs.OpenMode.READ_WRITE | fs.OpenMode.CREATE);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 46,
+                  "column": 7,
+                  "snippet": "let file: fileIo.File = fileIo.openSync(fileName, fileIo.OpenMode.READ_ONLY);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 137,
+                  "column": 7,
+                  "snippet": "const file = fs.openSync(uri, fs.OpenMode.READ_ONLY)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "readSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 53,
+                  "column": 9,
+                  "snippet": "fileIo.readSync(file.fd, buffer, options);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "statSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 47,
+                  "column": 7,
+                  "snippet": "const fileSize = fileIo.statSync(file.path).size",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "accessSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 132,
+                  "column": 7,
+                  "snippet": "if (!fs.accessSync(dir)) {\n        fs.mkdirSync(dir)\n      }",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "mkdirSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 133,
+                  "column": 9,
+                  "snippet": "fs.mkdirSync(dir)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "copyFile",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.fs.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 138,
+                  "column": 7,
+                  "snippet": "await fs.copyFile(file.fd, newPath)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.multimedia.audio",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "createAudioCapturer",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 50,
+                  "column": 5,
+                  "snippet": "AudioCaptureManager.audioCapturer = await audio.createAudioCapturer(audioCapturerOptions);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "createAudioRenderer",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 63,
+                  "column": 7,
+                  "snippet": "AudioRendererManager.audioRender = await audio.createAudioRenderer(audioRendererOptions)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "AudioCapturer",
+          "methods": [
+            {
+              "methodName": "on",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 95,
+                  "column": 7,
+                  "snippet": "AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "start",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 98,
+                  "column": 7,
+                  "snippet": "AudioCaptureManager.audioCapturer?.start();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "stop",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 111,
+                  "column": 5,
+                  "snippet": "AudioCaptureManager.audioCapturer?.stop();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "release",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioCapturerManager.ets",
+                  "line": 113,
+                  "column": 5,
+                  "snippet": "AudioCaptureManager.audioCapturer?.release();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "AudioRenderer",
+          "methods": [
+            {
+              "methodName": "on",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 64,
+                  "column": 7,
+                  "snippet": "AudioRendererManager.audioRender.on(\"writeData\", writeDataCallback)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "start",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 73,
+                  "column": 5,
+                  "snippet": "await AudioRendererManager.audioRender?.start();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "pause",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 78,
+                  "column": 5,
+                  "snippet": "await AudioRendererManager.audioRender?.pause()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "stop",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 83,
+                  "column": 5,
+                  "snippet": "await AudioRendererManager.audioRender?.stop()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "release",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.audio.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/AudioRendererManager.ets",
+                  "line": 88,
+                  "column": 5,
+                  "snippet": "await AudioRendererManager.audioRender?.release()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.abilityAccessCtrl",
+      "classes": [
+        {
+          "className": "AtManager",
+          "methods": [
+            {
+              "methodName": "checkAccessTokenSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.abilityAccessCtrl.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 18,
+                  "column": 51,
+                  "snippet": "atManager.checkAccessTokenSync(tokenID, item)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/permissionMananger.ets",
+                  "line": 25,
+                  "column": 7,
+                  "snippet": "abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED ===\n      atManager.checkAccessTokenSync(tokenID, permission)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "requestPermissionsFromUser",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.abilityAccessCtrl.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 31,
+                  "column": 5,
+                  "snippet": "const grantStatus = await atManager.requestPermissionsFromUser(getContext(), permissions)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/permissionMananger.ets",
+                  "line": 40,
+                  "column": 5,
+                  "snippet": "const result = await atManager.requestPermissionsFromUser(context, permissions);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "createAtManager",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.abilityAccessCtrl.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 12,
+                  "column": 5,
+                  "snippet": "const atManager = abilityAccessCtrl.createAtManager();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 29,
+                  "column": 5,
+                  "snippet": "const atManager = abilityAccessCtrl.createAtManager();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/permissionMananger.ets",
+                  "line": 8,
+                  "column": 5,
+                  "snippet": "let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/permissionMananger.ets",
+                  "line": 34,
+                  "column": 5,
+                  "snippet": "let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.bundle.bundleManager",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getBundleInfoForSelfSync",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.bundle.bundleManager.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 14,
+                  "column": 5,
+                  "snippet": "const bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PermissionUtils.ets",
+                  "line": 43,
+                  "column": 5,
+                  "snippet": "const bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/permissionMananger.ets",
+                  "line": 13,
+                  "column": 5,
+                  "snippet": "const bundleInfo =\n      bundleManager.getBundleInfoForSelfSync(bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION);",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.file.picker",
+      "classes": [
+        {
+          "className": "PhotoSelectOptions",
+          "methods": [
+            {
+              "methodName": "constructor",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.picker.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 41,
+                  "column": 7,
+                  "snippet": "let PhotoSelectOptions = new picker.PhotoSelectOptions()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "className": "PhotoViewPicker",
+          "methods": [
+            {
+              "methodName": "constructor",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.picker.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 44,
+                  "column": 7,
+                  "snippet": "let photoPicker = new picker.PhotoViewPicker()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "select",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.file.picker.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 45,
+                  "column": 7,
+                  "snippet": "photoPicker.select(PhotoSelectOptions)\n        .then(async res => {\n          if (res.photoUris.length < 1) {\n            onFailed(\"用户取消\")\n            return\n          }\n          const uri = res.photoUris[0]\n          const newFile = await PhotoPickerUtils.copyFileToCache(uri)\n          if (newFile.length < 1) {\n            onFailed(\"图片获取失败\")\n            res\n          }\n          onSuccess(newFile)\n        })\n        .catch((err: BusinessError) => {\n          onFailed(err.message)\n          console.error('PhotoViewPicker.select failed with err: ' + JSON.stringify(err))\n        })",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.multimedia.cameraPicker",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "pick",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.multimedia.cameraPicker.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/main/ets/utils/PhotoPickerUtils.ets",
+                  "line": 102,
+                  "column": 7,
+                  "snippet": "let pickerResult: cameraPicker.PickerResult =\n        await cameraPicker.pick(getContext(), [cameraPicker.PickerMediaType.PHOTO, cameraPicker.PickerMediaType.VIDEO],\n          pickerProfile)",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleName": "@ohos.app.ability.abilityDelegatorRegistry",
+      "classes": [
+        {
+          "className": "%dflt",
+          "methods": [
+            {
+              "methodName": "getAbilityDelegator",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.app.ability.abilityDelegatorRegistry.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 14,
+                  "column": 9,
+                  "snippet": "abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 27,
+                  "column": 9,
+                  "snippet": "abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            },
+            {
+              "methodName": "getArguments",
+              "isStatic": false,
+              "declaredIn": "api/@ohos.app.ability.abilityDelegatorRegistry.d.ts",
+              "callSites": [
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testability/TestAbility.ets",
+                  "line": 16,
+                  "column": 9,
+                  "snippet": "abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                },
+                {
+                  "projectFile": "/home/xsy/labProject/OurTool/ArkAnalysis/arkanalyzer/applications/Wechat_HarmonyOS/entry/src/ohosTest/ets/testrunner/OpenHarmonyTestRunner.ts",
+                  "line": 26,
+                  "column": 9,
+                  "snippet": "abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()",
+                  "contextBefore": [],
+                  "contextAfter": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

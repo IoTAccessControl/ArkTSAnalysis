@@ -1,1 +1,0 @@
-"use strict";function getMemoryReport(e,t){var r=process.memoryUsage.rss();return{timestamp:Date.now(),rss:r,stage:e,parentStage:t}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.getMemoryReport=getMemoryReport;

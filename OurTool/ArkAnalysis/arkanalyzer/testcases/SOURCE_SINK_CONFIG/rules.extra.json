@@ -1,0 +1,499 @@
+{
+  "generatedAt": "2025-12-17T07:03:02",
+  "project": "WeChatApp",
+  "extra": {
+    "uiEventRegisterApis": [
+      {
+        "id": "extra:b0db82018d",
+        "kind": "extra",
+        "apiKey": "AlphabetIndexerAttribute.onSelect",
+        "methodName": "onSelect",
+        "ownerHint": "AlphabetIndexerAttribute",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M262",
+          "signature": "@etsSdk/component/alphabet_indexer.d.ts: AlphabetIndexerAttribute.onSelect(@etsSdk/component/alphabet_indexer.d.ts: %dflt.[static]%dflt()#OnAlphabetIndexerSelectCallback)",
+          "desc": "UI 事件注册 API：AlphabetIndexerAttribute.onSelect（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:5645e07713",
+        "kind": "extra",
+        "apiKey": "CanvasAttribute.onReady",
+        "methodName": "onReady",
+        "ownerHint": "CanvasAttribute",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M216",
+          "signature": "@etsSdk/component/canvas.d.ts: CanvasAttribute.onReady(@etsSdk/component/units.d.ts: %dflt.[static]%dflt()#VoidCallback)",
+          "desc": "UI 事件注册 API：CanvasAttribute.onReady（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:d2092212de",
+        "kind": "extra",
+        "apiKey": "CommonMethod.onAppear",
+        "methodName": "onAppear",
+        "ownerHint": "CommonMethod",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M211",
+          "signature": "@etsSdk/component/common.d.ts: CommonMethod.onAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM8())",
+          "desc": "UI 事件注册 API：CommonMethod.onAppear（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:d0d86f669c",
+        "kind": "extra",
+        "apiKey": "CommonMethod.onClick",
+        "methodName": "onClick",
+        "ownerHint": "CommonMethod",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M24",
+          "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+          "desc": "UI 事件注册 API：CommonMethod.onClick（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:7ff572da7d",
+        "kind": "extra",
+        "apiKey": "CommonMethod.onDisAppear",
+        "methodName": "onDisAppear",
+        "ownerHint": "CommonMethod",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M214",
+          "signature": "@etsSdk/component/common.d.ts: CommonMethod.onDisAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM9())",
+          "desc": "UI 事件注册 API：CommonMethod.onDisAppear（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:885fa02946",
+        "kind": "extra",
+        "apiKey": "CommonMethod.onKeyEvent",
+        "methodName": "onKeyEvent",
+        "ownerHint": "CommonMethod",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M311",
+          "signature": "@etsSdk/component/common.d.ts: CommonMethod.onKeyEvent(@etsSdk/component/common.d.ts: CommonMethod.%AM5(@etsSdk/component/common.d.ts: KeyEvent))",
+          "desc": "UI 事件注册 API：CommonMethod.onKeyEvent（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:4391f502c1",
+        "kind": "extra",
+        "apiKey": "CommonMethod.onTouch",
+        "methodName": "onTouch",
+        "ownerHint": "CommonMethod",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M187",
+          "signature": "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))",
+          "desc": "UI 事件注册 API：CommonMethod.onTouch（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:ec5f343931",
+        "kind": "extra",
+        "apiKey": "TabsAttribute.onChange",
+        "methodName": "onChange",
+        "ownerHint": "TabsAttribute",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M141",
+          "signature": "@etsSdk/component/tabs.d.ts: TabsAttribute.onChange(@etsSdk/component/common.d.ts: Callback<number,void>)",
+          "desc": "UI 事件注册 API：TabsAttribute.onChange（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:726634ae23",
+        "kind": "extra",
+        "apiKey": "TextInputAttribute.onChange",
+        "methodName": "onChange",
+        "ownerHint": "TextInputAttribute",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M303",
+          "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onChange(@etsSdk/component/text_common.d.ts: %dflt.[static]%dflt()#EditableTextOnChangeCallback)",
+          "desc": "UI 事件注册 API：TextInputAttribute.onChange（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      },
+      {
+        "id": "extra:98287069e0",
+        "kind": "extra",
+        "apiKey": "TextInputAttribute.onSubmit",
+        "methodName": "onSubmit",
+        "ownerHint": "TextInputAttribute",
+        "moduleHint": null,
+        "meta": {
+          "category": "ui_event_register_api",
+          "uiApiId": "M305",
+          "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onSubmit(@etsSdk/component/text_input.d.ts: %dflt.[static]%dflt()#OnSubmitCallback)",
+          "desc": "UI 事件注册 API：TextInputAttribute.onSubmit（用于注册用户输入/事件回调，方案A可把caller当entry）",
+          "source": "ui_entry_summary.json"
+        }
+      }
+    ],
+    "lifecycleEntrypoints": [
+      {
+        "id": "extra:c1754b034b",
+        "kind": "extra",
+        "apiKey": "ListChatContentLeftItem.aboutToDisappear",
+        "methodName": "aboutToDisappear",
+        "ownerHint": "ListChatContentLeftItem",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentLeftItem.ets: ListChatContentLeftItem.aboutToDisappear()",
+          "file": "entry/src/main/ets/component/ListChatContentLeftItem.ets",
+          "desc": "生命周期入口：aboutToDisappear（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:3b4c20e79d",
+        "kind": "extra",
+        "apiKey": "ListChatContentRightItem.aboutToDisappear",
+        "methodName": "aboutToDisappear",
+        "ownerHint": "ListChatContentRightItem",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentRightItem.ets: ListChatContentRightItem.aboutToDisappear()",
+          "file": "entry/src/main/ets/component/ListChatContentRightItem.ets",
+          "desc": "生命周期入口：aboutToDisappear（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:e7d753344f",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onCreate",
+        "methodName": "onCreate",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onCreate(@etsSdk/api/@ohos.app.ability.Want.d.ts: Want, @etsSdk/api/@ohos.app.ability.AbilityConstant.d.ts: AbilityConstant.LaunchParam)",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onCreate（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:e9ef52fd56",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onDestroy",
+        "methodName": "onDestroy",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onDestroy()",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onDestroy（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:e57b6b6f6c",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onWindowStageCreate",
+        "methodName": "onWindowStageCreate",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onWindowStageCreate(@etsSdk/api/@ohos.window.d.ts: window.WindowStage)",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onWindowStageCreate（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:2b0c8f6699",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onWindowStageDestroy",
+        "methodName": "onWindowStageDestroy",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onWindowStageDestroy()",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onWindowStageDestroy（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:b3c5f82fbb",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onForeground",
+        "methodName": "onForeground",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onForeground()",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onForeground（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:541db4093f",
+        "kind": "extra",
+        "apiKey": "EntryAbility.onBackground",
+        "methodName": "onBackground",
+        "ownerHint": "EntryAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/entryability/EntryAbility.ets: EntryAbility.onBackground()",
+          "file": "entry/src/main/ets/entryability/EntryAbility.ets",
+          "desc": "生命周期入口：onBackground（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:1d943bf2fd",
+        "kind": "extra",
+        "apiKey": "HardwareIndexPage.onPageShow",
+        "methodName": "onPageShow",
+        "ownerHint": "HardwareIndexPage",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/pages/HardwareIndexPage.ets: HardwareIndexPage.onPageShow()",
+          "file": "entry/src/main/ets/pages/HardwareIndexPage.ets",
+          "desc": "生命周期入口：onPageShow（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:a7a991f48c",
+        "kind": "extra",
+        "apiKey": "ChatPage.aboutToAppear",
+        "methodName": "aboutToAppear",
+        "ownerHint": "ChatPage",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.aboutToAppear()",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "desc": "生命周期入口：aboutToAppear（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:1bb207d0a2",
+        "kind": "extra",
+        "apiKey": "ChatPage.onBackPress",
+        "methodName": "onBackPress",
+        "ownerHint": "ChatPage",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.onBackPress()",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "desc": "生命周期入口：onBackPress（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:060fa9b0ca",
+        "kind": "extra",
+        "apiKey": "SearchPage.aboutToAppear",
+        "methodName": "aboutToAppear",
+        "ownerHint": "SearchPage",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.aboutToAppear()",
+          "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "desc": "生命周期入口：aboutToAppear（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:1238350f34",
+        "kind": "extra",
+        "apiKey": "SearchPage.onBackPress",
+        "methodName": "onBackPress",
+        "ownerHint": "SearchPage",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.onBackPress()",
+          "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "desc": "生命周期入口：onBackPress（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:cd7709e95a",
+        "kind": "extra",
+        "apiKey": "TestAbility.onCreate",
+        "methodName": "onCreate",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onCreate(unknown, unknown)",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onCreate（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:9650eb615d",
+        "kind": "extra",
+        "apiKey": "TestAbility.onDestroy",
+        "methodName": "onDestroy",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onDestroy()",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onDestroy（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:009f89abac",
+        "kind": "extra",
+        "apiKey": "TestAbility.onWindowStageCreate",
+        "methodName": "onWindowStageCreate",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onWindowStageCreate(@etsSdk/api/@ohos.window.d.ts: window.WindowStage)",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onWindowStageCreate（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:c6520f68e8",
+        "kind": "extra",
+        "apiKey": "TestAbility.onWindowStageDestroy",
+        "methodName": "onWindowStageDestroy",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onWindowStageDestroy()",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onWindowStageDestroy（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:c66877cf26",
+        "kind": "extra",
+        "apiKey": "TestAbility.onForeground",
+        "methodName": "onForeground",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onForeground()",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onForeground（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:2bb1722202",
+        "kind": "extra",
+        "apiKey": "TestAbility.onBackground",
+        "methodName": "onBackground",
+        "ownerHint": "TestAbility",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/TestAbility.ets: TestAbility.onBackground()",
+          "file": "entry/src/ohosTest/ets/testability/TestAbility.ets",
+          "desc": "生命周期入口：onBackground（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      },
+      {
+        "id": "extra:ca4d21843a",
+        "kind": "extra",
+        "apiKey": "Index.aboutToAppear",
+        "methodName": "aboutToAppear",
+        "ownerHint": "Index",
+        "moduleHint": null,
+        "meta": {
+          "category": "lifecycle_entry",
+          "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/pages/Index.ets: Index.aboutToAppear()",
+          "file": "entry/src/ohosTest/ets/testability/pages/Index.ets",
+          "desc": "生命周期入口：aboutToAppear（可作为entry）",
+          "source": "callgraph_tagged.json"
+        }
+      }
+    ],
+    "entryIdListSuggestion": {
+      "schemeA": {
+        "description": "方案A：把所有调用 UI事件注册API 的 caller 方法作为 entry",
+        "all": [
+          "M2",
+          "M32",
+          "M60",
+          "M68",
+          "M129",
+          "M166",
+          "M184",
+          "M202",
+          "M247",
+          "M264",
+          "M274",
+          "M278",
+          "M295",
+          "M452"
+        ],
+        "main": [
+          "M2",
+          "M32",
+          "M60",
+          "M68",
+          "M129",
+          "M166",
+          "M184",
+          "M202",
+          "M247",
+          "M264",
+          "M274",
+          "M278",
+          "M295"
+        ],
+        "test": [
+          "M452"
+        ]
+      }
+    }
+  }
+}

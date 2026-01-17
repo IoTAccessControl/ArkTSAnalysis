@@ -1,6 +1,0 @@
-{
-  "name": "PageTransitionEnter",
-  "atomic": true,
-  "noDebugLine": true,
-  "attrs": ["onEnter"]
-}

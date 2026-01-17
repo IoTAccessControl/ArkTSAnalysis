@@ -1,0 +1,244 @@
+{
+  "moduleRules": [
+    {
+      "match": "^@ohos\\.router$",
+      "category": "页面导航",
+      "purpose": "页面跳转、路由栈管理、参数传递",
+      "risk": "low",
+      "tags": [
+        "navigation",
+        "ui"
+      ]
+    },
+    {
+      "match": "^@ohos\\.promptAction$",
+      "category": "交互提示",
+      "purpose": "Toast/对话框/提示等 UI 反馈",
+      "risk": "low",
+      "tags": [
+        "ui",
+        "toast"
+      ]
+    },
+    {
+      "match": "^@ohos\\.hilog$",
+      "category": "日志与调试",
+      "purpose": "系统日志打印（用于调试、埋点）",
+      "risk": "low",
+      "tags": [
+        "log"
+      ]
+    },
+    {
+      "match": "^@ohos\\.window$",
+      "category": "窗口管理",
+      "purpose": "窗口/系统栏/软键盘等窗口能力管理",
+      "risk": "low",
+      "tags": [
+        "window",
+        "ui"
+      ]
+    },
+    {
+      "match": "^@ohos\\.process$",
+      "category": "进程与运行时",
+      "purpose": "获取进程运行信息（如 uptime）",
+      "risk": "low",
+      "tags": [
+        "runtime"
+      ]
+    },
+    {
+      "match": "^@ohos\\.net\\..+",
+      "category": "网络",
+      "purpose": "网络状态、连接能力查询与管理",
+      "risk": "medium",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "match": "^@ohos\\.display$",
+      "category": "设备信息",
+      "purpose": "显示设备/屏幕信息获取",
+      "risk": "low",
+      "tags": [
+        "device"
+      ]
+    },
+    {
+      "match": "^@ohos\\.sensor$",
+      "category": "传感器",
+      "purpose": "访问设备传感器能力（列表/数据）",
+      "risk": "medium",
+      "tags": [
+        "sensor"
+      ]
+    },
+    {
+      "match": "^@ohos\\.vibrator$",
+      "category": "触觉反馈",
+      "purpose": "控制震动（触觉反馈）",
+      "risk": "low",
+      "tags": [
+        "haptics"
+      ]
+    },
+    {
+      "match": "^@ohos\\.arkui\\..+",
+      "category": "ArkUI",
+      "purpose": "ArkUI 组件与 UI 工具能力",
+      "risk": "low",
+      "tags": [
+        "arkui"
+      ]
+    },
+    {
+      "match": "^@ohos\\.file\\..+",
+      "category": "文件与存储",
+      "purpose": "文件读写、目录操作、文件选择等",
+      "risk": "medium",
+      "tags": [
+        "storage",
+        "file"
+      ]
+    },
+    {
+      "match": "^@ohos\\.multimedia\\..+",
+      "category": "多媒体",
+      "purpose": "音视频/相机/媒体相关能力",
+      "risk": "high",
+      "tags": [
+        "multimedia"
+      ]
+    },
+    {
+      "match": "^@ohos\\.abilityAccessCtrl$",
+      "category": "权限管理",
+      "purpose": "检查/申请运行时权限（敏感能力入口）",
+      "risk": "high",
+      "tags": [
+        "permission",
+        "privacy"
+      ]
+    },
+    {
+      "match": "^@ohos\\.bundle\\..+",
+      "category": "应用包信息",
+      "purpose": "查询应用包/自身信息（Bundle 信息）",
+      "risk": "low",
+      "tags": [
+        "bundle"
+      ]
+    },
+    {
+      "match": "^@ohos\\.app\\.ability\\..+",
+      "category": "测试框架",
+      "purpose": "测试 Ability/用例执行相关能力",
+      "risk": "low",
+      "tags": [
+        "test"
+      ]
+    }
+  ],
+  "methodRules": [
+    {
+      "match": ".*",
+      "module": "@ohos.abilityAccessCtrl",
+      "class": "AtManager",
+      "method": "requestPermissionsFromUser",
+      "category": "权限管理",
+      "purpose": "向用户弹窗申请运行时权限",
+      "risk": "high",
+      "tags": [
+        "permission",
+        "runtime"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.multimedia.audio",
+      "class": "AudioCapturer",
+      "method": "start",
+      "category": "音频采集",
+      "purpose": "开始音频采集（录音）",
+      "risk": "high",
+      "tags": [
+        "audio",
+        "mic"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.multimedia.cameraPicker",
+      "method": "pick",
+      "category": "相机与相册",
+      "purpose": "拉起相机/相册选择媒体（照片/视频）",
+      "risk": "high",
+      "tags": [
+        "camera",
+        "media"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.file.picker",
+      "method": "select",
+      "category": "文件选择",
+      "purpose": "拉起选择器选择照片/文件",
+      "risk": "medium",
+      "tags": [
+        "picker",
+        "media"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.file.fs",
+      "method": "openSync",
+      "category": "文件与存储",
+      "purpose": "打开/创建文件（同步）",
+      "risk": "medium",
+      "tags": [
+        "file",
+        "io"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.file.fs",
+      "method": "readSync",
+      "category": "文件与存储",
+      "purpose": "读取文件内容（同步）",
+      "risk": "medium",
+      "tags": [
+        "file",
+        "io"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.file.fs",
+      "method": "writeSync",
+      "category": "文件与存储",
+      "purpose": "写入文件内容（同步）",
+      "risk": "medium",
+      "tags": [
+        "file",
+        "io"
+      ]
+    },
+    {
+      "match": ".*",
+      "module": "@ohos.file.fs",
+      "method": "copyFile",
+      "category": "文件与存储",
+      "purpose": "复制文件",
+      "risk": "medium",
+      "tags": [
+        "file",
+        "io"
+      ]
+    }
+  ]
+}

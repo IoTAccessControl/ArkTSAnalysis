@@ -1,8 +1,0 @@
-{
-  "symbols": {
-    "media": {
-      "source": "@ohos.multimedia.media.d.ts",
-      "bindings": "default"
-    }
-  }
-}

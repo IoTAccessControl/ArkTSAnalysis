@@ -1,0 +1,972 @@
+{
+  "meta": {
+    "targetProject": "WeChatApp",
+    "generatedAt": "2025-12-17T06:46:22Z",
+    "generatedFrom": "callgraph_tagged.json",
+    "uiEventApiHeuristic": {
+      "description": "UI事件注册API = component/*.d.ts 中 methodName 以 on 开头的 API（例如 onClick/onChange/onTouch/onSubmit/onKeyEvent/onAppear/onDisAppear/onReady/onSelect）",
+      "filePrefix": "component/",
+      "methodNamePrefix": "on"
+    },
+    "uiEventApiCount": 10,
+    "uiEntryCallerCount": 14,
+    "uiEntryCallerCountMain": 13,
+    "uiEntryCallerCountTest": 1,
+    "edgesToUiEventApis": 19,
+    "callgraphNodeCount": 667,
+    "callgraphEdgeCount": 829
+  },
+  "uiEventApis": [
+    {
+      "uiApiNode": {
+        "id": "M262",
+        "signature": "@etsSdk/component/alphabet_indexer.d.ts: AlphabetIndexerAttribute.onSelect(@etsSdk/component/alphabet_indexer.d.ts: %dflt.[static]%dflt()#OnAlphabetIndexerSelectCallback)",
+        "className": "AlphabetIndexerAttribute",
+        "methodName": "onSelect",
+        "file": "component/alphabet_indexer.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M247",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.build()",
+          "callerClassName": "Contact",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/contact/Contact.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M216",
+        "signature": "@etsSdk/component/canvas.d.ts: CanvasAttribute.onReady(@etsSdk/component/units.d.ts: %dflt.[static]%dflt()#VoidCallback)",
+        "className": "CanvasAttribute",
+        "methodName": "onReady",
+        "file": "component/canvas.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M202",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+          "callerClassName": "ChatPage",
+          "callerMethodName": "vocalPrint",
+          "callerFile": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M211",
+        "signature": "@etsSdk/component/common.d.ts: CommonMethod.onAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM8())",
+        "className": "CommonMethod",
+        "methodName": "onAppear",
+        "file": "component/common.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M184",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.buildRecordVoiceView()",
+          "callerClassName": "ChatPage",
+          "callerMethodName": "buildRecordVoiceView",
+          "callerFile": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M24",
+        "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+        "className": "CommonMethod",
+        "methodName": "onClick",
+        "file": "component/common.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 10,
+      "callers": [
+        {
+          "callerId": "M2",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/ListChatContentLeftItem.ets: ListChatContentLeftItem.build()",
+          "callerClassName": "ListChatContentLeftItem",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/component/ListChatContentLeftItem.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M32",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/ListChatContentRightItem.ets: ListChatContentRightItem.build()",
+          "callerClassName": "ListChatContentRightItem",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/component/ListChatContentRightItem.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M60",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: Toolbar.build()",
+          "callerClassName": "Toolbar",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/component/Toolbar.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M68",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/WechatToolbar.ets: WechatToolbar.build()",
+          "callerClassName": "WechatToolbar",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/component/WechatToolbar.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M166",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "callerClassName": "ChatPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M264",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.%AM1$%AM0$build(@WeChatApp/entry/src/main/ets/pages/contact/DataItem.ets: ContactItem)",
+          "callerClassName": "Contact",
+          "callerMethodName": "%AM1$%AM0$build",
+          "callerFile": "entry/src/main/ets/pages/contact/Contact.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M274",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/home/Home.ets: Home.%AM0$build(@WeChatApp/entry/src/main/ets/component/ListChatItem.ets: ChatItemData, number)",
+          "callerClassName": "Home",
+          "callerMethodName": "%AM0$build",
+          "callerFile": "entry/src/main/ets/pages/home/Home.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M278",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.build()",
+          "callerClassName": "Mine",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/mine/Mine.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M295",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "callerClassName": "SearchPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        },
+        {
+          "callerId": "M452",
+          "callerSignature": "@WeChatApp/entry/src/ohosTest/ets/testability/pages/Index.ets: Index.build()",
+          "callerClassName": "Index",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/ohosTest/ets/testability/pages/Index.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M214",
+        "signature": "@etsSdk/component/common.d.ts: CommonMethod.onDisAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM9())",
+        "className": "CommonMethod",
+        "methodName": "onDisAppear",
+        "file": "component/common.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M202",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+          "callerClassName": "ChatPage",
+          "callerMethodName": "vocalPrint",
+          "callerFile": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M311",
+        "signature": "@etsSdk/component/common.d.ts: CommonMethod.onKeyEvent(@etsSdk/component/common.d.ts: CommonMethod.%AM5(@etsSdk/component/common.d.ts: KeyEvent))",
+        "className": "CommonMethod",
+        "methodName": "onKeyEvent",
+        "file": "component/common.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M295",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "callerClassName": "SearchPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M187",
+        "signature": "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))",
+        "className": "CommonMethod",
+        "methodName": "onTouch",
+        "file": "component/common.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M166",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "callerClassName": "ChatPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M141",
+        "signature": "@etsSdk/component/tabs.d.ts: TabsAttribute.onChange(@etsSdk/component/common.d.ts: Callback<number,void>)",
+        "className": "TabsAttribute",
+        "methodName": "onChange",
+        "file": "component/tabs.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M129",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/Index.ets: Index.build()",
+          "callerClassName": "Index",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/Index.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M303",
+        "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onChange(@etsSdk/component/text_common.d.ts: %dflt.[static]%dflt()#EditableTextOnChangeCallback)",
+        "className": "TextInputAttribute",
+        "methodName": "onChange",
+        "file": "component/text_input.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M295",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "callerClassName": "SearchPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    },
+    {
+      "uiApiNode": {
+        "id": "M305",
+        "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onSubmit(@etsSdk/component/text_input.d.ts: %dflt.[static]%dflt()#OnSubmitCallback)",
+        "className": "TextInputAttribute",
+        "methodName": "onSubmit",
+        "file": "component/text_input.d.ts",
+        "isSdk": true,
+        "kind": "REAL"
+      },
+      "callerCount": 1,
+      "callers": [
+        {
+          "callerId": "M295",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "callerClassName": "SearchPage",
+          "callerMethodName": "build",
+          "callerFile": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "callerIsSdk": false,
+          "callerKind": "REAL",
+          "edgeKind": "EXPLICIT"
+        }
+      ]
+    }
+  ],
+  "uiEntryCallers": {
+    "all": [
+      {
+        "id": "M2",
+        "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentLeftItem.ets: ListChatContentLeftItem.build()",
+        "className": "ListChatContentLeftItem",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/ListChatContentLeftItem.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M32",
+        "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentRightItem.ets: ListChatContentRightItem.build()",
+        "className": "ListChatContentRightItem",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/ListChatContentRightItem.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M60",
+        "signature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: Toolbar.build()",
+        "className": "Toolbar",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/Toolbar.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M68",
+        "signature": "@WeChatApp/entry/src/main/ets/component/WechatToolbar.ets: WechatToolbar.build()",
+        "className": "WechatToolbar",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/WechatToolbar.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M129",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/Index.ets: Index.build()",
+        "className": "Index",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/Index.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M141",
+            "uiApiSignature": "@etsSdk/component/tabs.d.ts: TabsAttribute.onChange(@etsSdk/component/common.d.ts: Callback<number,void>)",
+            "uiApiMethodName": "onChange",
+            "uiApiClassName": "TabsAttribute",
+            "uiApiFile": "component/tabs.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M166",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+        "className": "ChatPage",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M187",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))",
+            "uiApiMethodName": "onTouch",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M184",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.buildRecordVoiceView()",
+        "className": "ChatPage",
+        "methodName": "buildRecordVoiceView",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M211",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM8())",
+            "uiApiMethodName": "onAppear",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M202",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+        "className": "ChatPage",
+        "methodName": "vocalPrint",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M216",
+            "uiApiSignature": "@etsSdk/component/canvas.d.ts: CanvasAttribute.onReady(@etsSdk/component/units.d.ts: %dflt.[static]%dflt()#VoidCallback)",
+            "uiApiMethodName": "onReady",
+            "uiApiClassName": "CanvasAttribute",
+            "uiApiFile": "component/canvas.d.ts"
+          },
+          {
+            "uiApiId": "M214",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onDisAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM9())",
+            "uiApiMethodName": "onDisAppear",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M247",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.build()",
+        "className": "Contact",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/contact/Contact.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M262",
+            "uiApiSignature": "@etsSdk/component/alphabet_indexer.d.ts: AlphabetIndexerAttribute.onSelect(@etsSdk/component/alphabet_indexer.d.ts: %dflt.[static]%dflt()#OnAlphabetIndexerSelectCallback)",
+            "uiApiMethodName": "onSelect",
+            "uiApiClassName": "AlphabetIndexerAttribute",
+            "uiApiFile": "component/alphabet_indexer.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M264",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.%AM1$%AM0$build(@WeChatApp/entry/src/main/ets/pages/contact/DataItem.ets: ContactItem)",
+        "className": "Contact",
+        "methodName": "%AM1$%AM0$build",
+        "file": "entry/src/main/ets/pages/contact/Contact.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M274",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/home/Home.ets: Home.%AM0$build(@WeChatApp/entry/src/main/ets/component/ListChatItem.ets: ChatItemData, number)",
+        "className": "Home",
+        "methodName": "%AM0$build",
+        "file": "entry/src/main/ets/pages/home/Home.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M278",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.build()",
+        "className": "Mine",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/mine/Mine.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M295",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+        "className": "SearchPage",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M311",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onKeyEvent(@etsSdk/component/common.d.ts: CommonMethod.%AM5(@etsSdk/component/common.d.ts: KeyEvent))",
+            "uiApiMethodName": "onKeyEvent",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M303",
+            "uiApiSignature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onChange(@etsSdk/component/text_common.d.ts: %dflt.[static]%dflt()#EditableTextOnChangeCallback)",
+            "uiApiMethodName": "onChange",
+            "uiApiClassName": "TextInputAttribute",
+            "uiApiFile": "component/text_input.d.ts"
+          },
+          {
+            "uiApiId": "M305",
+            "uiApiSignature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onSubmit(@etsSdk/component/text_input.d.ts: %dflt.[static]%dflt()#OnSubmitCallback)",
+            "uiApiMethodName": "onSubmit",
+            "uiApiClassName": "TextInputAttribute",
+            "uiApiFile": "component/text_input.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M452",
+        "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/pages/Index.ets: Index.build()",
+        "className": "Index",
+        "methodName": "build",
+        "file": "entry/src/ohosTest/ets/testability/pages/Index.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      }
+    ],
+    "main": [
+      {
+        "id": "M2",
+        "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentLeftItem.ets: ListChatContentLeftItem.build()",
+        "className": "ListChatContentLeftItem",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/ListChatContentLeftItem.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M32",
+        "signature": "@WeChatApp/entry/src/main/ets/component/ListChatContentRightItem.ets: ListChatContentRightItem.build()",
+        "className": "ListChatContentRightItem",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/ListChatContentRightItem.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M60",
+        "signature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: Toolbar.build()",
+        "className": "Toolbar",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/Toolbar.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M68",
+        "signature": "@WeChatApp/entry/src/main/ets/component/WechatToolbar.ets: WechatToolbar.build()",
+        "className": "WechatToolbar",
+        "methodName": "build",
+        "file": "entry/src/main/ets/component/WechatToolbar.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M129",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/Index.ets: Index.build()",
+        "className": "Index",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/Index.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M141",
+            "uiApiSignature": "@etsSdk/component/tabs.d.ts: TabsAttribute.onChange(@etsSdk/component/common.d.ts: Callback<number,void>)",
+            "uiApiMethodName": "onChange",
+            "uiApiClassName": "TabsAttribute",
+            "uiApiFile": "component/tabs.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M166",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+        "className": "ChatPage",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M187",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))",
+            "uiApiMethodName": "onTouch",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M184",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.buildRecordVoiceView()",
+        "className": "ChatPage",
+        "methodName": "buildRecordVoiceView",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M211",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM8())",
+            "uiApiMethodName": "onAppear",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M202",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+        "className": "ChatPage",
+        "methodName": "vocalPrint",
+        "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M216",
+            "uiApiSignature": "@etsSdk/component/canvas.d.ts: CanvasAttribute.onReady(@etsSdk/component/units.d.ts: %dflt.[static]%dflt()#VoidCallback)",
+            "uiApiMethodName": "onReady",
+            "uiApiClassName": "CanvasAttribute",
+            "uiApiFile": "component/canvas.d.ts"
+          },
+          {
+            "uiApiId": "M214",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onDisAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM9())",
+            "uiApiMethodName": "onDisAppear",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M247",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.build()",
+        "className": "Contact",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/contact/Contact.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M262",
+            "uiApiSignature": "@etsSdk/component/alphabet_indexer.d.ts: AlphabetIndexerAttribute.onSelect(@etsSdk/component/alphabet_indexer.d.ts: %dflt.[static]%dflt()#OnAlphabetIndexerSelectCallback)",
+            "uiApiMethodName": "onSelect",
+            "uiApiClassName": "AlphabetIndexerAttribute",
+            "uiApiFile": "component/alphabet_indexer.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M264",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.%AM1$%AM0$build(@WeChatApp/entry/src/main/ets/pages/contact/DataItem.ets: ContactItem)",
+        "className": "Contact",
+        "methodName": "%AM1$%AM0$build",
+        "file": "entry/src/main/ets/pages/contact/Contact.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M274",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/home/Home.ets: Home.%AM0$build(@WeChatApp/entry/src/main/ets/component/ListChatItem.ets: ChatItemData, number)",
+        "className": "Home",
+        "methodName": "%AM0$build",
+        "file": "entry/src/main/ets/pages/home/Home.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M278",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.build()",
+        "className": "Mine",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/mine/Mine.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      },
+      {
+        "id": "M295",
+        "signature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+        "className": "SearchPage",
+        "methodName": "build",
+        "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M311",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onKeyEvent(@etsSdk/component/common.d.ts: CommonMethod.%AM5(@etsSdk/component/common.d.ts: KeyEvent))",
+            "uiApiMethodName": "onKeyEvent",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          },
+          {
+            "uiApiId": "M303",
+            "uiApiSignature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onChange(@etsSdk/component/text_common.d.ts: %dflt.[static]%dflt()#EditableTextOnChangeCallback)",
+            "uiApiMethodName": "onChange",
+            "uiApiClassName": "TextInputAttribute",
+            "uiApiFile": "component/text_input.d.ts"
+          },
+          {
+            "uiApiId": "M305",
+            "uiApiSignature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onSubmit(@etsSdk/component/text_input.d.ts: %dflt.[static]%dflt()#OnSubmitCallback)",
+            "uiApiMethodName": "onSubmit",
+            "uiApiClassName": "TextInputAttribute",
+            "uiApiFile": "component/text_input.d.ts"
+          }
+        ]
+      }
+    ],
+    "test": [
+      {
+        "id": "M452",
+        "signature": "@WeChatApp/entry/src/ohosTest/ets/testability/pages/Index.ets: Index.build()",
+        "className": "Index",
+        "methodName": "build",
+        "file": "entry/src/ohosTest/ets/testability/pages/Index.ets",
+        "isSdk": false,
+        "kind": "REAL",
+        "registers": [
+          {
+            "uiApiId": "M24",
+            "uiApiSignature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "uiApiMethodName": "onClick",
+            "uiApiClassName": "CommonMethod",
+            "uiApiFile": "component/common.d.ts"
+          }
+        ]
+      }
+    ]
+  },
+  "entryIdListSuggestion": {
+    "schemeA": {
+      "description": "方案A：把所有调用 UI事件注册API 的 caller 方法作为 entry",
+      "all": [
+        "M2",
+        "M32",
+        "M60",
+        "M68",
+        "M129",
+        "M166",
+        "M184",
+        "M202",
+        "M247",
+        "M264",
+        "M274",
+        "M278",
+        "M295",
+        "M452"
+      ],
+      "main": [
+        "M2",
+        "M32",
+        "M60",
+        "M68",
+        "M129",
+        "M166",
+        "M184",
+        "M202",
+        "M247",
+        "M264",
+        "M274",
+        "M278",
+        "M295"
+      ],
+      "test": [
+        "M452"
+      ]
+    }
+  }
+}

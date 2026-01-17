@@ -1,6 +1,0 @@
-{
-  "name": "Counter",
-  "attrs": [
-    "onInc", "onDec"
-  ]
-}

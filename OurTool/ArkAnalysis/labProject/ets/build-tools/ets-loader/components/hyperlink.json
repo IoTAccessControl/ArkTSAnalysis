@@ -1,5 +1,0 @@
-{
-  "name": "Hyperlink",
-  "attrs": ["color"],
-  "children": ["Image"]
-}

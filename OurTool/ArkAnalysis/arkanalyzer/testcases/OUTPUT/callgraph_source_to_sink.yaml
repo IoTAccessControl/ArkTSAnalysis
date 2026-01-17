@@ -1,0 +1,293 @@
+- sink_api:
+    id: "M599"
+    signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+    rules: ["extra:sink:fs.writeSync"]
+  source_api:
+    id: "M142"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)"
+    rules: ["source:2ae243001c"]
+  target_variable: "options"
+  path_type: "source_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      line: 89
+      type: "indirect"
+      api: "%dflt.writeSync"
+      api_id: "M599"
+      api_signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+      code: |
+        89 fs.writeSync(file.fd, buffer, options);
+- sink_api:
+    id: "M599"
+    signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+    rules: ["extra:sink:fs.writeSync"]
+  source_api:
+    id: "M144"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.[static]startRecord(string)"
+    rules: ["source:2ae243001c"]
+  target_variable: "options"
+  path_type: "source_to_sink"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      line: 95
+      type: "indirect"
+      api: "AudioCaptureManager.%AM0$startRecord"
+      api_id: "M142"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)"
+      code: |
+        95 AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      line: 89
+      type: "indirect"
+      api: "%dflt.writeSync"
+      api_id: "M599"
+      api_signature: "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)"
+      code: |
+        89 fs.writeSync(file.fd, buffer, options);
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M181"
+    signature: "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)"
+    rules: ["source:manual:6d198ef111"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "entry/src/main/ets/utils/PhotoPickerUtils.ets"
+      type: "indirect"
+      api: "PhotoPickerUtils.%AM6$openGallery"
+      api_id: "M181"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)"
+      code: |
+        // no callsite captured for this path
+        // @WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M598"
+    signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "entry/src/main/ets/utils/AudioCapturerManager.ets"
+      type: "indirect"
+      api: "%AC3$AudioCaptureManager.%AM0$startRecord.constructor"
+      api_id: "M598"
+      api_signature: "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()"
+      code: |
+        // no callsite captured for this path
+        // @WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M606"
+    signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.audio.d.ts"
+      type: "indirect"
+      api: "AudioCapturer.start"
+      api_id: "M606"
+      api_signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M619"
+    signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+    rules: ["source:2ae243001c"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.audio.d.ts"
+      type: "indirect"
+      api: "AudioRenderer.start"
+      api_id: "M619"
+      api_signature: "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M628"
+    signature: "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)"
+    rules: ["source:4d1dd07a30"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.bundle.bundleManager.d.ts"
+      type: "indirect"
+      api: "%dflt.getBundleInfoForSelfSync"
+      api_id: "M628"
+      api_signature: "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M639"
+    signature: "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)"
+    rules: ["source:manual:6d198ef111"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.file.picker.d.ts"
+      type: "indirect"
+      api: "PhotoViewPicker.select"
+      api_id: "M639"
+      api_signature: "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)
+- sink_api:
+    id: null
+    signature: null
+  source_api:
+    id: "M642"
+    signature: "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)"
+    rules: ["source:manual:8d599bf51f"]
+  target_variable: "N/A"
+  path_type: "source_only"
+  note: "no sink reachable in callgraph"
+  hops:
+    - filePath: "api/@ohos.multimedia.cameraPicker.d.ts"
+      type: "indirect"
+      api: "%dflt.pick"
+      api_id: "M642"
+      api_signature: "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)
+- sink_api:
+    id: "M337"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.info(number, string, string, any[])"
+    rules: ["extra:sink:hilog.info"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/@ohos.hilog.d.ts"
+      type: "indirect"
+      api: "%dflt.info"
+      api_id: "M337"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.info(number, string, string, any[])"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.info(number, string, string, any[])
+- sink_api:
+    id: "M340"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+    rules: ["extra:sink:hilog.error"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/@ohos.hilog.d.ts"
+      type: "indirect"
+      api: "%dflt.error"
+      api_id: "M340"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])
+- sink_api:
+    id: "M624"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.debug(number, string, string, any[])"
+    rules: ["extra:sink:hilog.debug"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/@ohos.hilog.d.ts"
+      type: "indirect"
+      api: "%dflt.debug"
+      api_id: "M624"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.debug(number, string, string, any[])"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.debug(number, string, string, any[])
+- sink_api:
+    id: "M625"
+    signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.warn(number, string, string, any[])"
+    rules: ["extra:sink:hilog.warn"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/@ohos.hilog.d.ts"
+      type: "indirect"
+      api: "%dflt.warn"
+      api_id: "M625"
+      api_signature: "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.warn(number, string, string, any[])"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.warn(number, string, string, any[])
+- sink_api:
+    id: "M632"
+    signature: "@etsSdk/api/application/UIAbilityContext.d.ts: UIAbilityContext.startAbility(@etsSdk/api/@ohos.app.ability.Want.d.ts: Want, @etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+    rules: ["extra:sink:ability.startAbility"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/application/UIAbilityContext.d.ts"
+      type: "indirect"
+      api: "UIAbilityContext.startAbility"
+      api_id: "M632"
+      api_signature: "@etsSdk/api/application/UIAbilityContext.d.ts: UIAbilityContext.startAbility(@etsSdk/api/@ohos.app.ability.Want.d.ts: Want, @etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/application/UIAbilityContext.d.ts: UIAbilityContext.startAbility(@etsSdk/api/@ohos.app.ability.Want.d.ts: Want, @etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)
+- sink_api:
+    id: "M635"
+    signature: "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])"
+    rules: ["extra:sink:console.error"]
+  source_api:
+    id: null
+    signature: null
+  target_variable: "N/A"
+  path_type: "sink_only"
+  note: "no start reached this sink in callgraph"
+  hops:
+    - filePath: "api/@internal/full/global.d.ts"
+      type: "indirect"
+      api: "console.error"
+      api_id: "M635"
+      api_signature: "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])"
+      code: |
+        // no callsite captured for this path
+        // @etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])

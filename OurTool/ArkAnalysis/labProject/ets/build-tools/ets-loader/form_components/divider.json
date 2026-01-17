@@ -1,5 +1,0 @@
-{
-  "name": "Divider",
-  "atomic": true,
-  "attrs": ["color", "vertical", "strokeWidth", "lineCap"]
-}

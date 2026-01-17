@@ -1,7 +1,0 @@
-{
-  "name": "Gauge",
-  "atomic": true,
-  "attrs": [
-    "value", "startAngle", "endAngle", "colors", "strokeWidth"
-  ]
-}

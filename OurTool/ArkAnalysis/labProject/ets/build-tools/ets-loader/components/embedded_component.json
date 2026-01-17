@@ -1,9 +1,0 @@
-{
-  "name": "EmbeddedComponent",
-  "attrs": [
-    "onTerminated",
-    "onError"
-  ],
-  "atomic": true
-}
-

@@ -1,8 +1,0 @@
-{
-  "symbols": {
-    "drm": {
-      "source": "@ohos.multimedia.drm.d.ts",
-      "bindings": "default"
-    }
-  }
-}

@@ -1,0 +1,2057 @@
+{
+  "meta": {
+    "targetProject": "WeChatApp",
+    "uiEntryMode": "handler",
+    "uiEntryCount": 28,
+    "flowKind": "entry_to_sink",
+    "flowNodeCount": 25,
+    "flowEdgeCount": 16,
+    "flowStartCount": 15,
+    "flowSinkCount": 3,
+    "pathCount": 16,
+    "pathMaxDepth": 25,
+    "pathMaxPerStart": 4,
+    "coverage": {
+      "startsAll": 38,
+      "startsKept": 15,
+      "startsOrphanIncluded": 9,
+      "sinksAll": 7,
+      "sinksCovered": 3,
+      "sinksUncovered": 4
+    }
+  },
+  "starts": [
+    "M142",
+    "M144",
+    "M181",
+    "M598",
+    "M606",
+    "M619",
+    "M628",
+    "M639",
+    "M642",
+    "M23",
+    "M87",
+    "M66",
+    "M78",
+    "M124",
+    "M129"
+  ],
+  "startCandidates": [
+    "M142",
+    "M144",
+    "M181",
+    "M598",
+    "M606",
+    "M619",
+    "M628",
+    "M639",
+    "M642",
+    "M4",
+    "M9",
+    "M26",
+    "M23",
+    "M30",
+    "M31",
+    "M59",
+    "M87",
+    "M88",
+    "M66",
+    "M89",
+    "M90",
+    "M78",
+    "M92",
+    "M95",
+    "M94",
+    "M106",
+    "M103",
+    "M115",
+    "M124",
+    "M121",
+    "M138",
+    "M137",
+    "M139",
+    "M140",
+    "M129",
+    "M136",
+    "M245",
+    "M452"
+  ],
+  "startDetails": [
+    {
+      "id": "M142",
+      "kind": "source"
+    },
+    {
+      "id": "M144",
+      "kind": "source"
+    },
+    {
+      "id": "M181",
+      "kind": "source"
+    },
+    {
+      "id": "M598",
+      "kind": "source"
+    },
+    {
+      "id": "M606",
+      "kind": "source"
+    },
+    {
+      "id": "M619",
+      "kind": "source"
+    },
+    {
+      "id": "M628",
+      "kind": "source"
+    },
+    {
+      "id": "M639",
+      "kind": "source"
+    },
+    {
+      "id": "M642",
+      "kind": "source"
+    },
+    {
+      "id": "M23",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M25",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: Toolbar.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 16,
+              "col": 9,
+              "text": "Image(this.backSrc)\n          .width(22)\n          .height(22)\n          .margin({ left: 15 })\n          .onClick(() => {\n            router.back()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 30,
+              "col": 11,
+              "text": "Text(this.subTitle)\n            .fontColor(Color.Black)\n            .fontSize(16)\n            .margin({ right: 15 })\n            .fontWeight(400)\n            .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 37,
+              "col": 11,
+              "text": "Image(this.subIconSrc)\n            .width(25)\n            .height(25)\n            .margin({ right: 15 })\n            .onClick(unDevTip)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M87",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 355,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_voice\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(async () => {\n              const result = await PermissionUtils.request([\"ohos.permission.MICROPHONE\"])\n              if (!result) {\n                Toast.show(\"请先授权麦克风权限\")\n              }\n              this.inputType = WXInputType.voice\n              this.showFuncBarWithAnim(false)\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 393,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_keyboard\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(() => {\n              this.inputType = WXInputType.keyboard\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 416,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_emoji_pack\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .margin({ left: 15, right: 5 })\n          .objectFit(ImageFit.Cover)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 425,
+              "col": 9,
+              "text": "Text(\"发送\")\n          .fontColor(Color.White)\n          .width(65)\n          .textAlign(TextAlign.Center)\n          .height(36)\n          .backgroundColor(\"#58BE6A\")\n          .fontSize(18)\n          .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)\n          .borderRadius(6)\n          .margin({ left: 10, right: 10 })\n          .onClick(() => {\n            this.sendTextMsg()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 439,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_add\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)\n          .margin({ left: 15, right: 8 })\n          .objectFit(ImageFit.Cover)\n          .onClick(() => {\n            if (!this.showFuncBar) {\n              this.inputType = WXInputType.keyboard\n            }\n            this.showFuncBarWithAnim(!this.showFuncBar)\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M66",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 355,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_voice\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(async () => {\n              const result = await PermissionUtils.request([\"ohos.permission.MICROPHONE\"])\n              if (!result) {\n                Toast.show(\"请先授权麦克风权限\")\n              }\n              this.inputType = WXInputType.voice\n              this.showFuncBarWithAnim(false)\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 393,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_keyboard\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(() => {\n              this.inputType = WXInputType.keyboard\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 416,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_emoji_pack\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .margin({ left: 15, right: 5 })\n          .objectFit(ImageFit.Cover)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 425,
+              "col": 9,
+              "text": "Text(\"发送\")\n          .fontColor(Color.White)\n          .width(65)\n          .textAlign(TextAlign.Center)\n          .height(36)\n          .backgroundColor(\"#58BE6A\")\n          .fontSize(18)\n          .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)\n          .borderRadius(6)\n          .margin({ left: 10, right: 10 })\n          .onClick(() => {\n            this.sendTextMsg()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 439,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_add\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)\n          .margin({ left: 15, right: 8 })\n          .objectFit(ImageFit.Cover)\n          .onClick(() => {\n            if (!this.showFuncBar) {\n              this.inputType = WXInputType.keyboard\n            }\n            this.showFuncBarWithAnim(!this.showFuncBar)\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M78",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onTouch",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onTouch(@etsSdk/component/common.d.ts: CommonMethod.%AM4(@etsSdk/component/common.d.ts: TouchEvent))",
+            "nodeId": "M444"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 403,
+              "col": 11,
+              "text": "Button(\"按住 说话\")\n            .fontColor(Color.Black)\n            .layoutWeight(1)\n            .type(ButtonType.Normal)\n            .borderRadius(8)\n            .backgroundColor(Color.White)\n            .fontSize(18)\n            .bindContentCover($$this.showTalkContainer, this.buildRecordVoiceView,\n              { modalTransition: ModalTransition.NONE })\n            .onTouch(this.onPressTalk)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M124",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M120",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/mine/Mine.ets",
+              "line": 16,
+              "col": 9,
+              "text": "Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))\n          .width(70)\n          .height(70)\n          .margin({ left: 25, right: 10 })\n          .borderRadius(8)\n          .onClick(() => {\n            PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/mine/Mine.ets",
+              "line": 15,
+              "col": 7,
+              "text": "Row() {\n        Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))\n          .width(70)\n          .height(70)\n          .margin({ left: 25, right: 10 })\n          .borderRadius(8)\n          .onClick(() => {\n            PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })\n          })\n\n        Column() {\n          Text(\"亚瑟王\")\n            .fontColor(Color.Black)\n            .fontSize(26)\n            .fontWeight(700)\n\n          Text(\"微信号：wx_023021\")\n            .fontColor(Color.Grey)\n            .fontSize(16)\n            .margin({ top: 15 })\n\n          Text('+ 状态')\n            .fontColor(Color.Grey)\n            .margin({ top: 20 })\n            .padding({ left: 8, right: 8 })\n            .height(25)\n            .fontSize(15)\n            .borderRadius(20)\n            .height(26)\n            .textAlign(TextAlign.Center)\n            .borderWidth(0.7)\n            .borderColor('#666')\n            .backgroundColor(Color.White)\n        }\n        .margin({ top: 40 })\n        .alignItems(HorizontalAlign.Start)\n\n        Blank()\n        Image($r('app.media.ic_qrcode'))\n          .width(16)\n          .height(16)\n          .margin({ top: 38, right: 20 })\n\n\n        Image($r(\"app.media.ic_more\"))\n          .width(9)\n          .height(16.364)\n          .margin({ top: 38, right: 15 })\n\n      }.width(\"100%\")\n      .height(203)\n      .backgroundColor(Color.White)\n      .padding({ top: WindowManager.statusBarHeight })\n      .onClick(() => {\n        router.pushUrl({ url: 'pages/qrcode/MyQrCodePage' })\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M129",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 65,
+              "col": 15,
+              "text": "Image($r('app.media.ic_delete'))\n                .width(20)\n                .height(20)\n                .colorBlend(Color.Gray)\n                .onClick(() => {\n                  this.searchText = \"\"\n                })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 105,
+              "col": 9,
+              "text": "Text(\"取消\")\n          .fontColor(\"#5f6c8a\")\n          .width(70)\n          .height(\"100%\")\n          .fontWeight(400)\n          .textAlign(TextAlign.Center)\n          .fontSize(19)// .alignRules({\n            //   top: { anchor: \"__container__\", align: VerticalAlign.Top },\n            //   right: { anchor: \"__container__\", align: HorizontalAlign.End }\n            // })\n            // .id(\"cancel\")\n          .onClick(() => {\n            if (\"1\" === router.getLength()) {\n              // app退出，一般不会走这里\n              this.context.terminateSelf()\n            } else {\n              router.back()\n            }\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 142,
+              "col": 9,
+              "text": "Text(\"朋友圈\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .onClick(unDevTip)\n          .textAlign(TextAlign.Center)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 150,
+              "col": 9,
+              "text": "Text(\"公众号\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 158,
+              "col": 9,
+              "text": "Text(\"小程序\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 166,
+              "col": 9,
+              "text": "Text(\"视频号\")\n          .width(\"25%\")\n          .fontWeight(500)\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 178,
+              "col": 7,
+              "text": "Text(\"页面设置\")\n        .fontColor(\"#5f6c8a\")\n        .fontSize(17)\n        .fontWeight(500)\n        .onClick(unDevTip)\n        .alignSelf(ItemAlign.Center)\n        .margin({ bottom: 80 })"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "droppedStartDetails": [
+    {
+      "id": "M4",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M2",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/ListChatContentLeftItem.ets: ListChatContentLeftItem.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/ListChatContentLeftItem.ets",
+              "line": 42,
+              "col": 11,
+              "text": "Row() {\n            Text(this.data?.msg)\n              .fontColor(Color.Black)\n              .fontSize(18)\n              .fontWeight(500)\n\n            Image(this.data?.img)\n              .width(28)\n              .width(28)\n              .margin({ left: 1 })\n              .objectFit(ImageFit.Auto)\n          }\n          .padding({\n            left: 14,\n            right: 14,\n            top: 10,\n            bottom: 10\n          })\n          .borderRadius(4)\n          .backgroundColor(\"#a9ea7a\")\n          .onClick(this.playVoice)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M9",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M7",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/ListChatContentRightItem.ets: ListChatContentRightItem.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/ListChatContentRightItem.ets",
+              "line": 26,
+              "col": 11,
+              "text": "Row() {\n            Text(this.data?.msg)\n              .fontColor(Color.Black)\n              .fontSize(18)\n              .fontWeight(500)\n\n            Image(this.data?.img)\n              .width(28)\n              .width(28)\n              .margin({ left: 1 })\n              .objectFit(ImageFit.Auto)\n          }\n          .padding({\n            left: 14,\n            right: 14,\n            top: 10,\n            bottom: 10\n          })\n          .borderRadius(4)\n          .backgroundColor(\"#a9ea7a\")\n          .onClick(this.playVoice)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M26",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M25",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: Toolbar.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 16,
+              "col": 9,
+              "text": "Image(this.backSrc)\n          .width(22)\n          .height(22)\n          .margin({ left: 15 })\n          .onClick(() => {\n            router.back()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 30,
+              "col": 11,
+              "text": "Text(this.subTitle)\n            .fontColor(Color.Black)\n            .fontSize(16)\n            .margin({ right: 15 })\n            .fontWeight(400)\n            .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/Toolbar.ets",
+              "line": 37,
+              "col": 11,
+              "text": "Image(this.subIconSrc)\n            .width(25)\n            .height(25)\n            .margin({ right: 15 })\n            .onClick(unDevTip)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M30",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M29",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/WechatToolbar.ets: WechatToolbar.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/WechatToolbar.ets",
+              "line": 19,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_search\"))\n            .width(22)\n            .height(22)\n            .margin({ right: 20 })\n            .onClick(() => {\n              router.pushUrl({ url: 'pages/search/SearchPage' })\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/WechatToolbar.ets",
+              "line": 26,
+              "col": 11,
+              "text": "Image($r('app.media.ic_add'))\n            .width(25)\n            .height(25)\n            .margin({ right: 18 })\n            .onClick(() => {\n              prompt.showToast({ message: \"功能正在开发中...\", duration: 2000 })\n              router.pushUrl({ url: 'pages/HardwareIndexPage' })\n            })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M31",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M29",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/component/WechatToolbar.ets: WechatToolbar.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/WechatToolbar.ets",
+              "line": 19,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_search\"))\n            .width(22)\n            .height(22)\n            .margin({ right: 20 })\n            .onClick(() => {\n              router.pushUrl({ url: 'pages/search/SearchPage' })\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/component/WechatToolbar.ets",
+              "line": 26,
+              "col": 11,
+              "text": "Image($r('app.media.ic_add'))\n            .width(25)\n            .height(25)\n            .margin({ right: 18 })\n            .onClick(() => {\n              prompt.showToast({ message: \"功能正在开发中...\", duration: 2000 })\n              router.pushUrl({ url: 'pages/HardwareIndexPage' })\n            })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M59",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "TabsAttribute",
+            "methodName": "onChange",
+            "signature": "@etsSdk/component/tabs.d.ts: TabsAttribute.onChange(@etsSdk/component/common.d.ts: Callback<number,void>)",
+            "nodeId": "M397"
+          },
+          "callerId": "M57",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/Index.ets: Index.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/Index.ets",
+              "line": 18,
+              "col": 7,
+              "text": "Tabs({ barPosition: BarPosition.End, controller: this.tabController }) {\n        // 微信（首页）\n        TabContent() {\n          home()\n        }\n        .tabBar(this.createTabMenu(0))\n\n        // 通讯录\n        TabContent() {\n          contact()\n        }\n        .tabBar(this.createTabMenu(1))\n\n        // 发现\n        TabContent() {\n          discovery()\n        }\n        .tabBar(this.createTabMenu(2))\n\n        // 我的\n        TabContent() {\n          mine()\n        }\n        .tabBar(this.createTabMenu(3))\n      }\n      .width(\"100%\")\n      .height(\"100%\")\n      .barHeight(65)\n      .backgroundColor(\"#f4f4f4\")\n      .vertical(false)\n      .layoutWeight(1)\n      .padding({ bottom: WindowManager.navBarHeight })\n      .onChange((index: number) => {\n        this.currentIndex = index\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M88",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 355,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_voice\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(async () => {\n              const result = await PermissionUtils.request([\"ohos.permission.MICROPHONE\"])\n              if (!result) {\n                Toast.show(\"请先授权麦克风权限\")\n              }\n              this.inputType = WXInputType.voice\n              this.showFuncBarWithAnim(false)\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 393,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_keyboard\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(() => {\n              this.inputType = WXInputType.keyboard\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 416,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_emoji_pack\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .margin({ left: 15, right: 5 })\n          .objectFit(ImageFit.Cover)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 425,
+              "col": 9,
+              "text": "Text(\"发送\")\n          .fontColor(Color.White)\n          .width(65)\n          .textAlign(TextAlign.Center)\n          .height(36)\n          .backgroundColor(\"#58BE6A\")\n          .fontSize(18)\n          .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)\n          .borderRadius(6)\n          .margin({ left: 10, right: 10 })\n          .onClick(() => {\n            this.sendTextMsg()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 439,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_add\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)\n          .margin({ left: 15, right: 8 })\n          .objectFit(ImageFit.Cover)\n          .onClick(() => {\n            if (!this.showFuncBar) {\n              this.inputType = WXInputType.keyboard\n            }\n            this.showFuncBarWithAnim(!this.showFuncBar)\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M89",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 355,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_voice\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(async () => {\n              const result = await PermissionUtils.request([\"ohos.permission.MICROPHONE\"])\n              if (!result) {\n                Toast.show(\"请先授权麦克风权限\")\n              }\n              this.inputType = WXInputType.voice\n              this.showFuncBarWithAnim(false)\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 393,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_keyboard\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(() => {\n              this.inputType = WXInputType.keyboard\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 416,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_emoji_pack\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .margin({ left: 15, right: 5 })\n          .objectFit(ImageFit.Cover)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 425,
+              "col": 9,
+              "text": "Text(\"发送\")\n          .fontColor(Color.White)\n          .width(65)\n          .textAlign(TextAlign.Center)\n          .height(36)\n          .backgroundColor(\"#58BE6A\")\n          .fontSize(18)\n          .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)\n          .borderRadius(6)\n          .margin({ left: 10, right: 10 })\n          .onClick(() => {\n            this.sendTextMsg()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 439,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_add\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)\n          .margin({ left: 15, right: 8 })\n          .objectFit(ImageFit.Cover)\n          .onClick(() => {\n            if (!this.showFuncBar) {\n              this.inputType = WXInputType.keyboard\n            }\n            this.showFuncBarWithAnim(!this.showFuncBar)\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M90",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M71",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 355,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_voice\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(async () => {\n              const result = await PermissionUtils.request([\"ohos.permission.MICROPHONE\"])\n              if (!result) {\n                Toast.show(\"请先授权麦克风权限\")\n              }\n              this.inputType = WXInputType.voice\n              this.showFuncBarWithAnim(false)\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 393,
+              "col": 11,
+              "text": "Image($r(\"app.media.ic_use_keyboard\"))\n            .width(33)\n            .height(33)\n            .borderRadius(4)\n            .margin({ left: 15, right: 15 })\n            .objectFit(ImageFit.Cover)\n            .onClick(() => {\n              this.inputType = WXInputType.keyboard\n            })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 416,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_emoji_pack\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .margin({ left: 15, right: 5 })\n          .objectFit(ImageFit.Cover)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 425,
+              "col": 9,
+              "text": "Text(\"发送\")\n          .fontColor(Color.White)\n          .width(65)\n          .textAlign(TextAlign.Center)\n          .height(36)\n          .backgroundColor(\"#58BE6A\")\n          .fontSize(18)\n          .visibility(this.chatText.length == 0 ? Visibility.None : Visibility.Visible)\n          .borderRadius(6)\n          .margin({ left: 10, right: 10 })\n          .onClick(() => {\n            this.sendTextMsg()\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 439,
+              "col": 9,
+              "text": "Image($r(\"app.media.ic_add\"))\n          .width(33)\n          .height(33)\n          .borderRadius(4)\n          .visibility(this.chatText.length == 0 ? Visibility.Visible : Visibility.None)\n          .margin({ left: 15, right: 8 })\n          .objectFit(ImageFit.Cover)\n          .onClick(() => {\n            if (!this.showFuncBar) {\n              this.inputType = WXInputType.keyboard\n            }\n            this.showFuncBarWithAnim(!this.showFuncBar)\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M92",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onAppear",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM8())",
+            "nodeId": "M479"
+          },
+          "callerId": "M74",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.buildRecordVoiceView()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 602,
+              "col": 7,
+              "text": "Stack() {\n        Text()\n          .width(800)\n          .height(800)\n          .backgroundColor(\"#AAAAAA\")\n          .borderRadius(\"50%\")// .position({ top: 0 ,left:\"-50%\"})\n            // .position({ top: 0 ,left:\"-50%\"})\n          .position({ top: 0, left: \"50%\" })\n          .translate({\n            x: \"-50%\",\n          })\n\n        Image($r(\"app.media.ic_voice_msg_left\"))\n          .width(33)\n          .height(33)\n          .objectFit(ImageFit.Cover)\n      }\n      .width(\"100%\")\n      .height(150)\n      .alignContent(Alignment.Center)\n      .position({\n        bottom: 0\n      })\n      .id(\"bottom_bubble\")\n      .onAppear(() => {\n        let modePosition: componentUtils.ComponentInfo = componentUtils.getRectangleById(\"bottom_bubble\");\n        this.bubbleScreenOffset.x = px2vp(modePosition.localOffset.x)\n        this.bubbleScreenOffset.y = px2vp(modePosition.localOffset.y)\n        this.bubbleScreenOffset.width = px2vp(modePosition.size.width)\n        this.bubbleScreenOffset.height = px2vp(modePosition.size.height)\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M95",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onDisAppear",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onDisAppear(@etsSdk/component/common.d.ts: CommonMethod.%AM9())",
+            "nodeId": "M481"
+          },
+          "callerId": "M75",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 645,
+              "col": 5,
+              "text": "Canvas(this.context)\n      .onDisAppear(() => {\n        clearInterval(this.voiceTimeId)\n      })\n      .width('80%')\n      .height('80%')\n      .onReady(() => {\n        clearInterval(this.voiceTimeId)\n        this.voiceTimeId = setInterval(() => {\n          this.context.clearRect(0, 0, 200, 200)\n          for (let index = 0; index < 35; index++) {\n            const random = Math.floor(Math.random() * 20)\n            let height = 5 + random\n            this.context.fillRect(10 + index * 5, 32 - height / 2, 2, height);\n          }\n        }, 100)\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M94",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CanvasAttribute",
+            "methodName": "onReady",
+            "signature": "@etsSdk/component/canvas.d.ts: CanvasAttribute.onReady(@etsSdk/component/units.d.ts: %dflt.[static]%dflt()#VoidCallback)",
+            "nodeId": "M482"
+          },
+          "callerId": "M75",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.vocalPrint()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+              "line": 645,
+              "col": 5,
+              "text": "Canvas(this.context)\n      .onDisAppear(() => {\n        clearInterval(this.voiceTimeId)\n      })\n      .width('80%')\n      .height('80%')\n      .onReady(() => {\n        clearInterval(this.voiceTimeId)\n        this.voiceTimeId = setInterval(() => {\n          this.context.clearRect(0, 0, 200, 200)\n          for (let index = 0; index < 35; index++) {\n            const random = Math.floor(Math.random() * 20)\n            let height = 5 + random\n            this.context.fillRect(10 + index * 5, 32 - height / 2, 2, height);\n          }\n        }, 100)\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M106",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "AlphabetIndexerAttribute",
+            "methodName": "onSelect",
+            "signature": "@etsSdk/component/alphabet_indexer.d.ts: AlphabetIndexerAttribute.onSelect(@etsSdk/component/alphabet_indexer.d.ts: %dflt.[static]%dflt()#OnAlphabetIndexerSelectCallback)",
+            "nodeId": "M521"
+          },
+          "callerId": "M102",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/contact/Contact.ets",
+              "line": 126,
+              "col": 7,
+              "text": "AlphabetIndexer({ arrayValue: this.letterList, selected: 0 })\n        .color(Color.Black)\n        .font({ size: 14 })\n        .selectedFont({ size: 14 })\n        .selectedColor(Color.Black)\n        .selectedBackgroundColor(Color.Transparent)\n        .usingPopup(true)\n        .popupColor(Color.Red)\n        .popupBackground(\"#57be6a\")\n        .popupFont({ size: 32, weight: FontWeight.Bolder })\n        .itemSize(20)\n        .alignStyle(IndexerAlign.Right)\n        .margin({ top: 80 })\n        .onSelect((index: number) => {\n          let letter = this.letterList[index]\n          let target: number = 0\n          for (const item of this.dataList) {\n            if (letter === item.title) {\n              this.scroller.scrollToIndex(target)\n              prompt.showToast({ message: \"\" + target })\n              break\n            }\n            target++\n          }\n        })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M103",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M104",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/contact/Contact.ets: Contact.%AM1$%AM0$build(@WeChatApp/entry/src/main/ets/pages/contact/DataItem.ets: ContactItem)",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/contact/Contact.ets",
+              "line": 99,
+              "col": 17,
+              "text": "ListItem() {\n                  ListContactItem({ head: contact.head, name: contact.name })\n                }\n                .onClick(() => {\n                  router.pushUrl({\n                    url: 'pages/chat/ChatPage',\n                    params: { name: contact.name }\n                  })\n                })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M115",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M116",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/home/Home.ets: Home.%AM0$build(@WeChatApp/entry/src/main/ets/component/ListChatItem.ets: ChatItemData, number)",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/home/Home.ets",
+              "line": 47,
+              "col": 11,
+              "text": "ListItem() {\n            ListChatItem({ data: item })\n          }\n          .onClick(() => {\n            router.pushUrl({ url: 'pages/chat/ChatPage',\n              params: {name:item.nickname}\n            })\n          })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M121",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M120",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/mine/Mine.ets",
+              "line": 16,
+              "col": 9,
+              "text": "Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))\n          .width(70)\n          .height(70)\n          .margin({ left: 25, right: 10 })\n          .borderRadius(8)\n          .onClick(() => {\n            PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/mine/Mine.ets",
+              "line": 15,
+              "col": 7,
+              "text": "Row() {\n        Image(this.imgPath ? this.imgPath : $r('app.media.ic_user_head1'))\n          .width(70)\n          .height(70)\n          .margin({ left: 25, right: 10 })\n          .borderRadius(8)\n          .onClick(() => {\n            PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })\n          })\n\n        Column() {\n          Text(\"亚瑟王\")\n            .fontColor(Color.Black)\n            .fontSize(26)\n            .fontWeight(700)\n\n          Text(\"微信号：wx_023021\")\n            .fontColor(Color.Grey)\n            .fontSize(16)\n            .margin({ top: 15 })\n\n          Text('+ 状态')\n            .fontColor(Color.Grey)\n            .margin({ top: 20 })\n            .padding({ left: 8, right: 8 })\n            .height(25)\n            .fontSize(15)\n            .borderRadius(20)\n            .height(26)\n            .textAlign(TextAlign.Center)\n            .borderWidth(0.7)\n            .borderColor('#666')\n            .backgroundColor(Color.White)\n        }\n        .margin({ top: 40 })\n        .alignItems(HorizontalAlign.Start)\n\n        Blank()\n        Image($r('app.media.ic_qrcode'))\n          .width(16)\n          .height(16)\n          .margin({ top: 38, right: 20 })\n\n\n        Image($r(\"app.media.ic_more\"))\n          .width(9)\n          .height(16.364)\n          .margin({ top: 38, right: 15 })\n\n      }.width(\"100%\")\n      .height(203)\n      .backgroundColor(Color.White)\n      .padding({ top: WindowManager.statusBarHeight })\n      .onClick(() => {\n        router.pushUrl({ url: 'pages/qrcode/MyQrCodePage' })\n      })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M138",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "TextInputAttribute",
+            "methodName": "onChange",
+            "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onChange(@etsSdk/component/text_common.d.ts: %dflt.[static]%dflt()#EditableTextOnChangeCallback)",
+            "nodeId": "M583"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 32,
+              "col": 11,
+              "text": "TextInput({ text: this.searchText, placeholder: '搜索', controller: this.controller })\n            .placeholderFont({ size: 20, weight: 400 })\n            .caretColor(Color.Green)\n            .placeholderColor(Color.Grey)\n            .width('100%')\n            .height(\"100%\")\n            .padding({ left: 40, right: 60 })\n            .fontSize(20)\n            .fontColor(Color.Black)\n            .borderRadius(8)// 设置stateStyles，解决点击编辑框会变色的问题\n            .stateStyles({\n              normal: {.backgroundColor(Color.White)\n              },\n              pressed: {.backgroundColor(Color.White)\n              },\n              clicked: {.backgroundColor(Color.White)\n              },\n              focused: {.backgroundColor(Color.White)\n              }\n            })\n            .onChange((value: string) => {\n              this.searchText = value\n            })\n            .onSubmit(() => {\n              prompt.showToast({ message: this.searchText })\n            })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M137",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "TextInputAttribute",
+            "methodName": "onSubmit",
+            "signature": "@etsSdk/component/text_input.d.ts: TextInputAttribute.onSubmit(@etsSdk/component/text_input.d.ts: %dflt.[static]%dflt()#OnSubmitCallback)",
+            "nodeId": "M584"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 32,
+              "col": 11,
+              "text": "TextInput({ text: this.searchText, placeholder: '搜索', controller: this.controller })\n            .placeholderFont({ size: 20, weight: 400 })\n            .caretColor(Color.Green)\n            .placeholderColor(Color.Grey)\n            .width('100%')\n            .height(\"100%\")\n            .padding({ left: 40, right: 60 })\n            .fontSize(20)\n            .fontColor(Color.Black)\n            .borderRadius(8)// 设置stateStyles，解决点击编辑框会变色的问题\n            .stateStyles({\n              normal: {.backgroundColor(Color.White)\n              },\n              pressed: {.backgroundColor(Color.White)\n              },\n              clicked: {.backgroundColor(Color.White)\n              },\n              focused: {.backgroundColor(Color.White)\n              }\n            })\n            .onChange((value: string) => {\n              this.searchText = value\n            })\n            .onSubmit(() => {\n              prompt.showToast({ message: this.searchText })\n            })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M139",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 65,
+              "col": 15,
+              "text": "Image($r('app.media.ic_delete'))\n                .width(20)\n                .height(20)\n                .colorBlend(Color.Gray)\n                .onClick(() => {\n                  this.searchText = \"\"\n                })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 105,
+              "col": 9,
+              "text": "Text(\"取消\")\n          .fontColor(\"#5f6c8a\")\n          .width(70)\n          .height(\"100%\")\n          .fontWeight(400)\n          .textAlign(TextAlign.Center)\n          .fontSize(19)// .alignRules({\n            //   top: { anchor: \"__container__\", align: VerticalAlign.Top },\n            //   right: { anchor: \"__container__\", align: HorizontalAlign.End }\n            // })\n            // .id(\"cancel\")\n          .onClick(() => {\n            if (\"1\" === router.getLength()) {\n              // app退出，一般不会走这里\n              this.context.terminateSelf()\n            } else {\n              router.back()\n            }\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 142,
+              "col": 9,
+              "text": "Text(\"朋友圈\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .onClick(unDevTip)\n          .textAlign(TextAlign.Center)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 150,
+              "col": 9,
+              "text": "Text(\"公众号\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 158,
+              "col": 9,
+              "text": "Text(\"小程序\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 166,
+              "col": 9,
+              "text": "Text(\"视频号\")\n          .width(\"25%\")\n          .fontWeight(500)\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 178,
+              "col": 7,
+              "text": "Text(\"页面设置\")\n        .fontColor(\"#5f6c8a\")\n        .fontSize(17)\n        .fontWeight(500)\n        .onClick(unDevTip)\n        .alignSelf(ItemAlign.Center)\n        .margin({ bottom: 80 })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M140",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 65,
+              "col": 15,
+              "text": "Image($r('app.media.ic_delete'))\n                .width(20)\n                .height(20)\n                .colorBlend(Color.Gray)\n                .onClick(() => {\n                  this.searchText = \"\"\n                })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 105,
+              "col": 9,
+              "text": "Text(\"取消\")\n          .fontColor(\"#5f6c8a\")\n          .width(70)\n          .height(\"100%\")\n          .fontWeight(400)\n          .textAlign(TextAlign.Center)\n          .fontSize(19)// .alignRules({\n            //   top: { anchor: \"__container__\", align: VerticalAlign.Top },\n            //   right: { anchor: \"__container__\", align: HorizontalAlign.End }\n            // })\n            // .id(\"cancel\")\n          .onClick(() => {\n            if (\"1\" === router.getLength()) {\n              // app退出，一般不会走这里\n              this.context.terminateSelf()\n            } else {\n              router.back()\n            }\n          })"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 142,
+              "col": 9,
+              "text": "Text(\"朋友圈\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .onClick(unDevTip)\n          .textAlign(TextAlign.Center)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 150,
+              "col": 9,
+              "text": "Text(\"公众号\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 158,
+              "col": 9,
+              "text": "Text(\"小程序\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 166,
+              "col": 9,
+              "text": "Text(\"视频号\")\n          .width(\"25%\")\n          .fontWeight(500)\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)"
+            },
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 178,
+              "col": 7,
+              "text": "Text(\"页面设置\")\n        .fontColor(\"#5f6c8a\")\n        .fontSize(17)\n        .fontWeight(500)\n        .onClick(unDevTip)\n        .alignSelf(ItemAlign.Center)\n        .margin({ bottom: 80 })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M136",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onKeyEvent",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onKeyEvent(@etsSdk/component/common.d.ts: CommonMethod.%AM5(@etsSdk/component/common.d.ts: KeyEvent))",
+            "nodeId": "M592"
+          },
+          "callerId": "M133",
+          "callerSignature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: SearchPage.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+              "line": 29,
+              "col": 5,
+              "text": "Column() {\n      Row() {\n        Stack() {\n          TextInput({ text: this.searchText, placeholder: '搜索', controller: this.controller })\n            .placeholderFont({ size: 20, weight: 400 })\n            .caretColor(Color.Green)\n            .placeholderColor(Color.Grey)\n            .width('100%')\n            .height(\"100%\")\n            .padding({ left: 40, right: 60 })\n            .fontSize(20)\n            .fontColor(Color.Black)\n            .borderRadius(8)// 设置stateStyles，解决点击编辑框会变色的问题\n            .stateStyles({\n              normal: {.backgroundColor(Color.White)\n              },\n              pressed: {.backgroundColor(Color.White)\n              },\n              clicked: {.backgroundColor(Color.White)\n              },\n              focused: {.backgroundColor(Color.White)\n              }\n            })\n            .onChange((value: string) => {\n              this.searchText = value\n            })\n            .onSubmit(() => {\n              prompt.showToast({ message: this.searchText })\n            })\n\n          Row() {\n            Image($r(\"app.media.ic_search\"))\n              .colorBlend(Color.Grey)\n              .width(20)\n              .height(20)\n            if (this.searchText.length != 0) {\n              Image($r('app.media.ic_delete'))\n                .width(20)\n                .height(20)\n                .colorBlend(Color.Gray)\n                .onClick(() => {\n                  this.searchText = \"\"\n                })\n            } else {\n              Image($r(\"app.media.ic_voice\"))\n                .width(23)\n                .height(23)\n            }\n          }\n          .width(\"100%\")\n          .padding({ left: 10, right: 10 })\n          .hitTestBehavior(HitTestMode.None) // NOTE：父组件不消耗触摸事件\n          .justifyContent(FlexAlign.SpaceBetween)\n\n          // ,({ placeholder: \"搜索\", controller: this.controller })\n          //   .height(\"100%\")\n          //   .textFont({ size: 20, weight: 400 })\n          //   .placeholderFont({ size: 20, weight: 400 })\n          //   .backgroundColor(Color.White)\n          //   .placeholderColor(Color.Grey)\n          //   .margin({ left: 20, right: 65 })\n          //   .alignRules({\n          //     top: { anchor: \"__container__\", align: VerticalAlign.Top },\n          //     left: { anchor: \"__container__\", align: HorizontalAlign.Start }\n          //   })\n          //   .id(\"search\")\n          //   .onSubmit((value: string) => {\n          //     if (value !== null && \"\" !== value) {\n          //       prompt.showToast({ message: value })\n          //     }\n          //   })\n          //   .borderRadius(8)\n        }\n        .margin({ left: 20 })\n        .layoutWeight(1)\n\n        Text(\"取消\")\n          .fontColor(\"#5f6c8a\")\n          .width(70)\n          .height(\"100%\")\n          .fontWeight(400)\n          .textAlign(TextAlign.Center)\n          .fontSize(19)// .alignRules({\n            //   top: { anchor: \"__container__\", align: VerticalAlign.Top },\n            //   right: { anchor: \"__container__\", align: HorizontalAlign.End }\n            // })\n            // .id(\"cancel\")\n          .onClick(() => {\n            if (\"1\" === router.getLength()) {\n              // app退出，一般不会走这里\n              this.context.terminateSelf()\n            } else {\n              router.back()\n            }\n          })\n      }\n      .width(\"100%\")\n      .height(40)\n      .justifyContent(FlexAlign.SpaceBetween)\n      .margin({ top: 10 })\n\n\n      Text(\"搜索指定内容\")\n        .fontColor(Color.Gray)\n        .margin({ left: 25, top: 25 })\n        .fontSize(15)\n\n      Divider()\n        .margin({ left: 25, right: 25, top: 12 })\n        .height(0.6)\n        .color(\"#e6e6e6\")\n\n      Row() {\n        Text(\"朋友圈\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .onClick(unDevTip)\n          .textAlign(TextAlign.Center)\n\n        Text(\"公众号\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)\n\n        Text(\"小程序\")\n          .width(\"25%\")\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .fontWeight(500)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)\n\n        Text(\"视频号\")\n          .width(\"25%\")\n          .fontWeight(500)\n          .fontColor(\"#5f6c8a\")\n          .fontSize(17)\n          .textAlign(TextAlign.Center)\n          .onClick(unDevTip)\n      }\n      .margin({ top: 12 })\n\n      Blank()\n\n      Text(\"页面设置\")\n        .fontColor(\"#5f6c8a\")\n        .fontSize(17)\n        .fontWeight(500)\n        .onClick(unDevTip)\n        .alignSelf(ItemAlign.Center)\n        .margin({ bottom: 80 })\n\n    }\n    .width(\"100%\")\n    .height(\"100%\")\n    .alignItems(HorizontalAlign.Start)\n    .backgroundColor(\"#f3f3f3\")\n    .padding({ top: WindowManager.statusBarHeight, bottom: WindowManager.navBarHeight })\n    .onKeyEvent((event: KeyEvent) => {\n      if (event.type === KeyType.Up) {\n        prompt.showToast({\n          message: \"按了返回键\"\n        });\n      }\n      event.stopPropagation()\n    })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M245",
+      "kind": "ui_handler",
+      "uiOrigins": [
+        {
+          "uiApi": {
+            "className": "CommonMethod",
+            "methodName": "onClick",
+            "signature": "@etsSdk/component/common.d.ts: CommonMethod.onClick(@etsSdk/component/common.d.ts: CommonMethod.%AM1(@etsSdk/component/common.d.ts: ClickEvent))",
+            "nodeId": "M280"
+          },
+          "callerId": "M244",
+          "callerSignature": "@WeChatApp/entry/src/ohosTest/ets/testability/pages/Index.ets: Index.build()",
+          "via": "functionArg",
+          "callSites": [
+            {
+              "type": "indirect",
+              "file": "entry/src/ohosTest/ets/testability/pages/Index.ets",
+              "line": 16,
+              "col": 14,
+              "text": "Button() {\n               Text('next page')\n                 .fontSize(20)\n                 .fontWeight(FontWeight.Bold)\n             }.type(ButtonType.Capsule)\n             .margin({\n               top: 20\n             })\n             .backgroundColor('#0D9FFB')\n             .width('35%')\n             .height('5%')\n             .onClick(()=>{\n             })"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M452",
+      "kind": "test"
+    }
+  ],
+  "sinks": [
+    "M599",
+    "M340",
+    "M635"
+  ],
+  "nodes": [
+    {
+      "id": "M142",
+      "nodeId": 142,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)",
+      "className": "AudioCaptureManager",
+      "methodName": "%AM0$startRecord",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M599",
+      "nodeId": 599,
+      "signature": "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)",
+      "className": "%dflt",
+      "methodName": "writeSync",
+      "file": "api/@ohos.file.fs.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:fs.writeSync"
+        ],
+        "labels": [
+          "本地持久化写入"
+        ]
+      }
+    },
+    {
+      "id": "M144",
+      "nodeId": 144,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.[static]startRecord(string)",
+      "className": "AudioCaptureManager",
+      "methodName": "startRecord",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M181",
+      "nodeId": 181,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)",
+      "className": "PhotoPickerUtils",
+      "methodName": "%AM6$openGallery",
+      "file": "entry/src/main/ets/utils/PhotoPickerUtils.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:6d198ef111"
+        ],
+        "labels": [
+          "文件/图片选择"
+        ]
+      }
+    },
+    {
+      "id": "M598",
+      "nodeId": 598,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()",
+      "className": "%AC3$AudioCaptureManager.%AM0$startRecord",
+      "methodName": "constructor",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M606",
+      "nodeId": 606,
+      "signature": "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)",
+      "className": "AudioCapturer",
+      "methodName": "start",
+      "file": "api/@ohos.multimedia.audio.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M619",
+      "nodeId": 619,
+      "signature": "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)",
+      "className": "AudioRenderer",
+      "methodName": "start",
+      "file": "api/@ohos.multimedia.audio.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M628",
+      "nodeId": 628,
+      "signature": "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)",
+      "className": "%dflt",
+      "methodName": "getBundleInfoForSelfSync",
+      "file": "api/@ohos.bundle.bundleManager.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:4d1dd07a30"
+        ],
+        "labels": [
+          "读应用软件列表"
+        ]
+      }
+    },
+    {
+      "id": "M639",
+      "nodeId": 639,
+      "signature": "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)",
+      "className": "PhotoViewPicker",
+      "methodName": "select",
+      "file": "api/@ohos.file.picker.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:6d198ef111"
+        ],
+        "labels": [
+          "文件/图片选择"
+        ]
+      }
+    },
+    {
+      "id": "M642",
+      "nodeId": 642,
+      "signature": "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)",
+      "className": "%dflt",
+      "methodName": "pick",
+      "file": "api/@ohos.multimedia.cameraPicker.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:8d599bf51f"
+        ],
+        "labels": [
+          "相机/相册选择"
+        ]
+      }
+    },
+    {
+      "id": "M23",
+      "nodeId": 23,
+      "signature": "@WeChatApp/entry/src/main/ets/component/Toolbar.ets: %dflt.%AM0()",
+      "className": "%dflt",
+      "methodName": "%AM0",
+      "file": "entry/src/main/ets/component/Toolbar.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M209",
+      "nodeId": 209,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]show(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg)",
+      "className": "Toast",
+      "methodName": "show",
+      "file": "entry/src/main/ets/utils/Toast.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M211",
+      "nodeId": 211,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/Toast.ets: Toast.[static]showTime(@WeChatApp/entry/src/main/ets/utils/Toast.ets: %dflt.[static]%dflt()#Msg, number)",
+      "className": "Toast",
+      "methodName": "showTime",
+      "file": "entry/src/main/ets/utils/Toast.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M165",
+      "nodeId": 165,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.e(string, any[])",
+      "className": "Log",
+      "methodName": "e",
+      "file": "entry/src/main/ets/utils/Log.ts",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M166",
+      "nodeId": 166,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/Log.ts: Log.et(string, string, any[])",
+      "className": "Log",
+      "methodName": "et",
+      "file": "entry/src/main/ets/utils/Log.ts",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M340",
+      "nodeId": 340,
+      "signature": "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])",
+      "className": "%dflt",
+      "methodName": "error",
+      "file": "api/@ohos.hilog.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:hilog.error"
+        ],
+        "labels": [
+          "日志输出"
+        ]
+      }
+    },
+    {
+      "id": "M87",
+      "nodeId": 87,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM10$build()",
+      "className": "ChatPage",
+      "methodName": "%AM10$build",
+      "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M66",
+      "nodeId": 66,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: %dflt.%AM0()",
+      "className": "%dflt",
+      "methodName": "%AM0",
+      "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M78",
+      "nodeId": 78,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM1$%instInit(@etsSdk/component/common.d.ts: TouchEvent)",
+      "className": "ChatPage",
+      "methodName": "%AM1$%instInit",
+      "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M79",
+      "nodeId": 79,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/chat/ChatPage.ets: ChatPage.%AM2$%instInit()",
+      "className": "ChatPage",
+      "methodName": "%AM2$%instInit",
+      "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M124",
+      "nodeId": 124,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.%AM1$build()",
+      "className": "Mine",
+      "methodName": "%AM1$build",
+      "file": "entry/src/main/ets/pages/mine/Mine.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M183",
+      "nodeId": 183,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.[static]openGallery(@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM0(string), @WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM1(string))",
+      "className": "PhotoPickerUtils",
+      "methodName": "openGallery",
+      "file": "entry/src/main/ets/utils/PhotoPickerUtils.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M635",
+      "nodeId": 635,
+      "signature": "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])",
+      "className": "console",
+      "methodName": "error",
+      "file": "api/@internal/full/global.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:console.error"
+        ],
+        "labels": [
+          "控制台输出"
+        ]
+      }
+    },
+    {
+      "id": "M123",
+      "nodeId": 123,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/mine/Mine.ets: Mine.%AM3$%AM1$build(string)",
+      "className": "Mine",
+      "methodName": "%AM3$%AM1$build",
+      "file": "entry/src/main/ets/pages/mine/Mine.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    },
+    {
+      "id": "M129",
+      "nodeId": 129,
+      "signature": "@WeChatApp/entry/src/main/ets/pages/search/SearchPage.ets: %dflt.%AM0()",
+      "className": "%dflt",
+      "methodName": "%AM0",
+      "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+      "isSdk": false,
+      "kind": "REAL"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E646",
+      "from": "M142",
+      "to": "M599",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+          "line": 89,
+          "col": 9,
+          "text": "fs.writeSync(file.fd, buffer, options);"
+        }
+      ]
+    },
+    {
+      "id": "E652",
+      "from": "M144",
+      "to": "M142",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+          "line": 95,
+          "col": 7,
+          "text": "AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);"
+        }
+      ]
+    },
+    {
+      "id": "E109",
+      "from": "M23",
+      "to": "M209",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/component/Toolbar.ets",
+          "line": 57,
+          "col": 3,
+          "text": "Toast.show(\"功能正在开发中...\")"
+        }
+      ]
+    },
+    {
+      "id": "E745",
+      "from": "M209",
+      "to": "M211",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/Toast.ets",
+          "line": 8,
+          "col": 5,
+          "text": "Toast.showTime(msg, 2000)"
+        }
+      ]
+    },
+    {
+      "id": "E748",
+      "from": "M211",
+      "to": "M165",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/Toast.ets",
+          "line": 24,
+          "col": 7,
+          "text": "Log.e(`Toast -->  Catch error! The error code is ${error.code}, The error message is ${error.message}`)"
+        }
+      ]
+    },
+    {
+      "id": "E682",
+      "from": "M165",
+      "to": "M166",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/Log.ts",
+          "line": 54,
+          "col": 5,
+          "text": "this.et(this._tag, format, args)"
+        }
+      ]
+    },
+    {
+      "id": "E683",
+      "from": "M166",
+      "to": "M340",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/Log.ts",
+          "line": 59,
+          "col": 7,
+          "text": "hilog.error(this._domain, tag, format, args)"
+        }
+      ]
+    },
+    {
+      "id": "E428",
+      "from": "M87",
+      "to": "M209",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "line": 364,
+          "col": 17,
+          "text": "Toast.show(\"请先授权麦克风权限\")"
+        }
+      ]
+    },
+    {
+      "id": "E297",
+      "from": "M66",
+      "to": "M209",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "line": 682,
+          "col": 3,
+          "text": "Toast.show(\"功能正在开发中...\")"
+        }
+      ]
+    },
+    {
+      "id": "E403",
+      "from": "M78",
+      "to": "M79",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "line": 216,
+          "col": 7,
+          "text": "this.onStartRecord()"
+        }
+      ]
+    },
+    {
+      "id": "E410",
+      "from": "M79",
+      "to": "M144",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/chat/ChatPage.ets",
+          "line": 276,
+          "col": 5,
+          "text": "AudioCaptureManager.startRecord(this.recordFileName)"
+        }
+      ]
+    },
+    {
+      "id": "E561",
+      "from": "M124",
+      "to": "M183",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/mine/Mine.ets",
+          "line": 22,
+          "col": 13,
+          "text": "PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })"
+        }
+      ]
+    },
+    {
+      "id": "E717",
+      "from": "M183",
+      "to": "M635",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/PhotoPickerUtils.ets",
+          "line": 65,
+          "col": 7,
+          "text": "console.error('PhotoViewPicker failed with err: ' + JSON.stringify(err))"
+        }
+      ]
+    },
+    {
+      "id": "E560",
+      "from": "M124",
+      "to": "M123",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/mine/Mine.ets",
+          "line": 22,
+          "col": 13,
+          "text": "PhotoPickerUtils.openGallery(\n              uri => {\n                this.imgPath = uri;\n              }, errMsg => {\n              Toast.show(errMsg)\n            })"
+        }
+      ]
+    },
+    {
+      "id": "E558",
+      "from": "M123",
+      "to": "M209",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/mine/Mine.ets",
+          "line": 26,
+          "col": 15,
+          "text": "Toast.show(errMsg)"
+        }
+      ]
+    },
+    {
+      "id": "E589",
+      "from": "M129",
+      "to": "M209",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/pages/search/SearchPage.ets",
+          "line": 204,
+          "col": 3,
+          "text": "Toast.show(\"功能正在开发中...\")"
+        }
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "start": "M142",
+      "sink": "M599",
+      "length": 1,
+      "nodes": [
+        "M142",
+        "M599"
+      ],
+      "edges": [
+        "E646"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M144",
+      "sink": "M599",
+      "length": 2,
+      "nodes": [
+        "M144",
+        "M142",
+        "M599"
+      ],
+      "edges": [
+        "E652",
+        "E646"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M181",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M181"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M598",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M598"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M606",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M606"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M619",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M619"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M628",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M628"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M639",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M639"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M642",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M642"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M23",
+      "sink": "M340",
+      "length": 5,
+      "nodes": [
+        "M23",
+        "M209",
+        "M211",
+        "M165",
+        "M166",
+        "M340"
+      ],
+      "edges": [
+        "E109",
+        "E745",
+        "E748",
+        "E682",
+        "E683"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M87",
+      "sink": "M340",
+      "length": 5,
+      "nodes": [
+        "M87",
+        "M209",
+        "M211",
+        "M165",
+        "M166",
+        "M340"
+      ],
+      "edges": [
+        "E428",
+        "E745",
+        "E748",
+        "E682",
+        "E683"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M66",
+      "sink": "M340",
+      "length": 5,
+      "nodes": [
+        "M66",
+        "M209",
+        "M211",
+        "M165",
+        "M166",
+        "M340"
+      ],
+      "edges": [
+        "E297",
+        "E745",
+        "E748",
+        "E682",
+        "E683"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M78",
+      "sink": "M599",
+      "length": 4,
+      "nodes": [
+        "M78",
+        "M79",
+        "M144",
+        "M142",
+        "M599"
+      ],
+      "edges": [
+        "E403",
+        "E410",
+        "E652",
+        "E646"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M124",
+      "sink": "M635",
+      "length": 2,
+      "nodes": [
+        "M124",
+        "M183",
+        "M635"
+      ],
+      "edges": [
+        "E561",
+        "E717"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M124",
+      "sink": "M340",
+      "length": 6,
+      "nodes": [
+        "M124",
+        "M123",
+        "M209",
+        "M211",
+        "M165",
+        "M166",
+        "M340"
+      ],
+      "edges": [
+        "E560",
+        "E558",
+        "E745",
+        "E748",
+        "E682",
+        "E683"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    },
+    {
+      "start": "M129",
+      "sink": "M340",
+      "length": 5,
+      "nodes": [
+        "M129",
+        "M209",
+        "M211",
+        "M165",
+        "M166",
+        "M340"
+      ],
+      "edges": [
+        "E589",
+        "E745",
+        "E748",
+        "E682",
+        "E683"
+      ],
+      "truncated": false,
+      "pathType": "entry_to_sink"
+    }
+  ]
+}

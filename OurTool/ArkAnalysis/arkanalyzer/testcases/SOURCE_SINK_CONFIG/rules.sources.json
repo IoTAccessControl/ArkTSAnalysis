@@ -1,0 +1,757 @@
+{
+  "generatedAt": "2025-12-17T07:03:02",
+  "generatedFrom": [
+    "sensitiveAPILists.csv",
+    "extra-rules.json"
+  ],
+  "kind": "source",
+  "count": 35,
+  "rules": [
+    {
+      "id": "source:4d1dd07a30",
+      "kind": "source",
+      "apiKey": "@ohos.bundle.bundleManager.getBundleInfo",
+      "methodName": "getBundleInfo",
+      "ownerHint": "bundleManager",
+      "moduleHint": "ohos.bundle.bundleManager.getBundleInfo",
+      "meta": {
+        "behavior": "读应用软件列表",
+        "subBehavior": "读应用软件列表",
+        "dataItem": "已安装列表",
+        "dataSubItem": "已安装应用列表",
+        "permissions": [
+          "ohos.permission.GET_INSTALLED_BUNDLE_LIST"
+        ],
+        "desc": "敏感数据获取：读应用软件列表（读应用软件列表）；数据=已安装应用列表；权限=ohos.permission.GET_INSTALLED_BUNDLE_LIST",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bundle.bundleManager.getBundleInfo(bundleName: string, bundleFlags: number): Promise<BundleInfo>"
+      }
+    },
+    {
+      "id": "source:b3d97aa62f",
+      "kind": "source",
+      "apiKey": "@ohos.bundle.getAllApplicationInfo",
+      "methodName": "getAllApplicationInfo",
+      "ownerHint": "bundle",
+      "moduleHint": "ohos.bundle.getAllApplicationInfo",
+      "meta": {
+        "behavior": "读取应用信息",
+        "subBehavior": "获取指定用户下所有已安装的应用信息",
+        "dataItem": "已安装列表",
+        "dataSubItem": "已安装应用列表",
+        "permissions": [
+          "ohos.permission.GET_BUNDLE_INFO_PRIVILEGED"
+        ],
+        "desc": "敏感数据获取：读取应用信息（获取指定用户下所有已安装的应用信息）；数据=已安装应用列表；权限=ohos.permission.GET_BUNDLE_INFO_PRIVILEGED",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bundle.getAllApplicationInfo(bundleFlags: number, userId?: number): Promise<Array<ApplicationInfo>>"
+      }
+    },
+    {
+      "id": "source:fb79338529",
+      "kind": "source",
+      "apiKey": "@ohos.contact.queryContact",
+      "methodName": "queryContact",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.queryContact",
+      "meta": {
+        "behavior": "读取通讯录",
+        "subBehavior": "获取联系人列表",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据获取：读取通讯录（获取联系人列表）；数据=通讯录；权限=ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.queryContact(context: Context, key: string, callback: AsyncCallback<Contact>): void"
+      }
+    },
+    {
+      "id": "source:5235fcd763",
+      "kind": "source",
+      "apiKey": "@ohos.contact.queryContacts",
+      "methodName": "queryContacts",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.queryContacts",
+      "meta": {
+        "behavior": "读取通讯录",
+        "subBehavior": "获取联系人列表",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据获取：读取通讯录（获取联系人列表）；数据=通讯录；权限=ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.queryContacts(context: Context, callback: AsyncCallback<Array<Contact>>): void"
+      }
+    },
+    {
+      "id": "source:3e0d91e577",
+      "kind": "source",
+      "apiKey": "@ohos.contact.queryContactsByEmail",
+      "methodName": "queryContactsByEmail",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.queryContactsByEmail",
+      "meta": {
+        "behavior": "读取通讯录",
+        "subBehavior": "获取联系人列表",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据获取：读取通讯录（获取联系人列表）；数据=通讯录；权限=ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.queryContactsByEmail(context: Context, email: string, callback: AsyncCallback<Array<Contact>>): void"
+      }
+    },
+    {
+      "id": "source:e90c20e847",
+      "kind": "source",
+      "apiKey": "@ohos.contact.queryContactsByPhoneNumber",
+      "methodName": "queryContactsByPhoneNumber",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.queryContactsByPhoneNumber",
+      "meta": {
+        "behavior": "读取通讯录",
+        "subBehavior": "获取联系人列表",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据获取：读取通讯录（获取联系人列表）；数据=通讯录；权限=ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.queryContactsByPhoneNumber(context: Context, phoneNumber: string, callback: AsyncCallback<Array<Contact>>): void"
+      }
+    },
+    {
+      "id": "source:af8d20b1dc",
+      "kind": "source",
+      "apiKey": "@ohos.contact.queryGroups",
+      "methodName": "queryGroups",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.queryGroups",
+      "meta": {
+        "behavior": "读取通讯录",
+        "subBehavior": "获取群组",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据获取：读取通讯录（获取群组）；数据=通讯录；权限=ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact->queryGroups(context: Context, callback: AsyncCallback<Array<Group>>): void"
+      }
+    },
+    {
+      "id": "source:31a7c2bb37",
+      "kind": "source",
+      "apiKey": "@ohos.file.photoAccessHelper.getAssets",
+      "methodName": "getAssets",
+      "ownerHint": "photoAccessHelper",
+      "moduleHint": "ohos.file.photoAccessHelper.getAssets",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取图片和视频资源",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取图片和视频资源）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.file.photoAccessHelper.getAssets(options: FetchOptions): Promise<FetchResult<PhotoAsset>>"
+      }
+    },
+    {
+      "id": "source:1cb53614be",
+      "kind": "source",
+      "apiKey": "@ohos.geoLocation.on",
+      "methodName": "on",
+      "ownerHint": "geoLocation",
+      "moduleHint": "ohos.geoLocation.on",
+      "meta": {
+        "behavior": "获取地理位置",
+        "subBehavior": "获取GPS定位信息",
+        "dataItem": "精确位置信息",
+        "dataSubItem": "经纬度信息",
+        "permissions": [
+          "ohos.permission.APPROXIMATELY_LOCATION",
+          "ohos.permission.LOCATION（可选）"
+        ],
+        "desc": "敏感数据获取：获取地理位置（获取GPS定位信息）；数据=经纬度信息；权限=ohos.permission.APPROXIMATELY_LOCATION, ohos.permission.LOCATION（可选）",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.geoLocation.on(type: ‘locationChange’, request: LocationRequest, callback: Callback<Location>): void"
+      }
+    },
+    {
+      "id": "source:d3f2590a8d",
+      "kind": "source",
+      "apiKey": "@ohos.geolocation.getCurrentLocation",
+      "methodName": "getCurrentLocation",
+      "ownerHint": "geolocation",
+      "moduleHint": "ohos.geolocation.getCurrentLocation",
+      "meta": {
+        "behavior": "获取地理位置",
+        "subBehavior": "获取GPS定位信息",
+        "dataItem": "精确位置信息",
+        "dataSubItem": "经纬度信息",
+        "permissions": [
+          "ohos.permission.APPROXIMATELY_LOCATION",
+          "ohos.permission.LOCATION"
+        ],
+        "desc": "敏感数据获取：获取地理位置（获取GPS定位信息）；数据=经纬度信息；权限=ohos.permission.APPROXIMATELY_LOCATION, ohos.permission.LOCATION",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.geolocation.getCurrentLocation(request: CurrentLocationRequest, callback: AsyncCallback<Location>): void"
+      }
+    },
+    {
+      "id": "source:def37115ee",
+      "kind": "source",
+      "apiKey": "@ohos.geolocation.getLastLocation",
+      "methodName": "getLastLocation",
+      "ownerHint": "geolocation",
+      "moduleHint": "ohos.geolocation.getLastLocation",
+      "meta": {
+        "behavior": "获取地理位置",
+        "subBehavior": "获取GPS定位信息",
+        "dataItem": "精确位置信息",
+        "dataSubItem": "经纬度信息",
+        "permissions": [
+          "ohos.permission.APPROXIMATELY_LOCATION",
+          "ohos.permission.LOCATION（可选）"
+        ],
+        "desc": "敏感数据获取：获取地理位置（获取GPS定位信息）；数据=经纬度信息；权限=ohos.permission.APPROXIMATELY_LOCATION, ohos.permission.LOCATION（可选）",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.geolocation.getLastLocation(callback: AsyncCallback<Location>): void"
+      }
+    },
+    {
+      "id": "source:54ba144c58",
+      "kind": "source",
+      "apiKey": "@ohos.geolocation.requestEnableLocation",
+      "methodName": "requestEnableLocation",
+      "ownerHint": "geolocation",
+      "moduleHint": "ohos.geolocation.requestEnableLocation",
+      "meta": {
+        "behavior": "开启/关闭位置服务",
+        "subBehavior": "打开位置服务",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "打开位置服务",
+        "permissions": [
+          "ohos.permission.MANAGE_SECURE_SETTINGS"
+        ],
+        "desc": "敏感数据获取：开启/关闭位置服务（打开位置服务）；数据=打开位置服务；权限=ohos.permission.MANAGE_SECURE_SETTINGS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.geolocation.requestEnableLocation(callback: AsyncCallback<void>): void;"
+      }
+    },
+    {
+      "id": "source:2ae243001c",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.audio.AudioCapturer.start",
+      "methodName": "start",
+      "ownerHint": "AudioCapturer",
+      "moduleHint": "ohos.multimedia.audio",
+      "meta": {
+        "behavior": "本地录音",
+        "subBehavior": "本地录音",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "音频/录音",
+        "permissions": [
+          "ohos.permission.MICROPHONE"
+        ],
+        "desc": "敏感数据获取：本地录音（本地录音）；数据=音频/录音；权限=ohos.permission.MICROPHONE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.multimedia.audio.AudioCapturer.start(callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "source:8bfaee62b1",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.camera.CameraInput.open",
+      "methodName": "open",
+      "ownerHint": "CameraInput",
+      "moduleHint": "ohos.multimedia.camera",
+      "meta": {
+        "behavior": "拍照/摄像（打开摄像头）",
+        "subBehavior": "打开相机",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "打开相机",
+        "permissions": [
+          "ohos.permission.CAMERA"
+        ],
+        "desc": "敏感数据获取：拍照/摄像（打开摄像头）（打开相机）；数据=打开相机；权限=ohos.permission.CAMERA",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.multimedia.camera.CameraInput.open(): Promise<void>;"
+      }
+    },
+    {
+      "id": "source:e279f73ddb",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.camera.PhotoOutput.capture",
+      "methodName": "capture",
+      "ownerHint": "PhotoOutput",
+      "moduleHint": "ohos.multimedia.camera",
+      "meta": {
+        "behavior": "拍照/摄像（打开摄像头）",
+        "subBehavior": "拍照",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "拍照",
+        "permissions": [
+          "ohos.permission.CAMERA"
+        ],
+        "desc": "敏感数据获取：拍照/摄像（打开摄像头）（拍照）；数据=拍照；权限=ohos.permission.CAMERA",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.multimedia.camera.PhotoOutput.capture(setting?: camera.PhotoCaptureSetting): Promise<void>;"
+      }
+    },
+    {
+      "id": "source:c15f2678f0",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.media.AVRecorder.start",
+      "methodName": "start",
+      "ownerHint": "AVRecorder",
+      "moduleHint": "ohos.multimedia.media",
+      "meta": {
+        "behavior": "本地录音",
+        "subBehavior": "本地录音",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "音频/录音",
+        "permissions": [
+          "ohos.permission.CAPTURE_SCREEN",
+          "ohos.permission.MICROPHONE"
+        ],
+        "desc": "敏感数据获取：本地录音（本地录音）；数据=音频/录音；权限=ohos.permission.MICROPHONE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.multimedia.media.AVRecorder.start(callback: AsyncCallback<void>): void",
+        "descAlt": [
+          "敏感数据获取：后台截屏/录屏（录屏）；数据=照片/视频；权限=ohos.permission.CAPTURE_SCREEN, ohos.permission.MICROPHONE"
+        ]
+      }
+    },
+    {
+      "id": "source:fff1a97a6d",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.media.AudioRecorder.start",
+      "methodName": "start",
+      "ownerHint": "AudioRecorder",
+      "moduleHint": "ohos.multimedia.media",
+      "meta": {
+        "behavior": "本地录音",
+        "subBehavior": "本地录音",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "音频/录音",
+        "permissions": [
+          "ohos.permission.MICROPHONE"
+        ],
+        "desc": "敏感数据获取：本地录音（本地录音）；数据=音频/录音；权限=ohos.permission.MICROPHONE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.multimedia.media.AudioRecorder.start(callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "source:6fa1abdc30",
+      "kind": "source",
+      "apiKey": "@ohos.telephony.radio.getCellInformation",
+      "methodName": "getCellInformation",
+      "ownerHint": "radio",
+      "moduleHint": "ohos.telephony.radio.getCellInformation",
+      "meta": {
+        "behavior": "获取地理位置",
+        "subBehavior": "获取小区信息",
+        "dataItem": "粗略位置信息",
+        "dataSubItem": "小区位置",
+        "permissions": [
+          "ohos.permission.LOCATION",
+          "ohos.permission.APPROXIMATELY_LOCATION"
+        ],
+        "desc": "敏感数据获取：获取地理位置（获取小区信息）；数据=小区位置；权限=ohos.permission.LOCATION, ohos.permission.APPROXIMATELY_LOCATION",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.radio->getCellInformation(callback: AsyncCallback<Array<CellInformation>>): void"
+      }
+    },
+    {
+      "id": "source:5818ddaf26",
+      "kind": "source",
+      "apiKey": "@ohos.telephony.sim.getActiveSimAccountInfoList",
+      "methodName": "getActiveSimAccountInfoList",
+      "ownerHint": "sim",
+      "moduleHint": "ohos.telephony.sim.getActiveSimAccountInfoList",
+      "meta": {
+        "behavior": "读取用户本机号码",
+        "subBehavior": "读取本机电话号码",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "desc": "敏感数据获取：读取用户本机号码（读取本机电话号码）；数据=通讯录；权限=ohos.permission.GET_TELEPHONY_STATE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sim.getActiveSimAccountInfoList(callback: AsyncCallback<Array<IccAccountInfo>>): void"
+      }
+    },
+    {
+      "id": "source:0751108529",
+      "kind": "source",
+      "apiKey": "@ohos.telephony.sim.getShowNumber",
+      "methodName": "getShowNumber",
+      "ownerHint": "sim",
+      "moduleHint": "ohos.telephony.sim.getShowNumber",
+      "meta": {
+        "behavior": "读取用户本机号码",
+        "subBehavior": "读取本机电话号码",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.GET_PHONE_NUMBERS",
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "desc": "敏感数据获取：读取用户本机号码（读取本机电话号码）；数据=通讯录；权限=ohos.permission.GET_PHONE_NUMBERS, ohos.permission.GET_TELEPHONY_STATE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sim.getShowNumber(slotId: number, callback: AsyncCallback<string>): void"
+      }
+    },
+    {
+      "id": "source:03997cc3bb",
+      "kind": "source",
+      "apiKey": "@ohos.telephony.sim.getSimAccountInfo",
+      "methodName": "getSimAccountInfo",
+      "ownerHint": "sim",
+      "moduleHint": "ohos.telephony.sim.getSimAccountInfo",
+      "meta": {
+        "behavior": "读取用户本机号码",
+        "subBehavior": "读取本机电话号码",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.GET_TELEPHONY_STATE"
+        ],
+        "desc": "敏感数据获取：读取用户本机号码（读取本机电话号码）；数据=通讯录；权限=ohos.permission.GET_TELEPHONY_STATE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sim.getSimAccountInfo(slotId: number, callback: AsyncCallback<IccAccountInfo>): void"
+      }
+    },
+    {
+      "id": "source:6393b2d2d6",
+      "kind": "source",
+      "apiKey": "@ohos.telephony.sim.getSimTelephoneNumber",
+      "methodName": "getSimTelephoneNumber",
+      "ownerHint": "sim",
+      "moduleHint": "ohos.telephony.sim.getSimTelephoneNumber",
+      "meta": {
+        "behavior": "读取用户本机号码",
+        "subBehavior": "读取本机电话号码",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.GET_PHONE_NUMBERS"
+        ],
+        "desc": "敏感数据获取：读取用户本机号码（读取本机电话号码）；数据=通讯录；权限=ohos.permission.GET_PHONE_NUMBERS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sim.getSimTelephoneNumber(slotId: number, callback: AsyncCallback<string>): void"
+      }
+    },
+    {
+      "id": "source:db7d9bb6bc",
+      "kind": "source",
+      "apiKey": "@ohos.wifi.enableWifi",
+      "methodName": "enableWifi",
+      "ownerHint": "wifi",
+      "moduleHint": "ohos.wifi.enableWifi",
+      "meta": {
+        "behavior": "开启 WLAN",
+        "subBehavior": "使能WLAN",
+        "dataItem": "网络状态",
+        "dataSubItem": "WiFi状态",
+        "permissions": [
+          "ohos.permission.SET_WIFI_INFO",
+          "ohos.permission.MANAGE_WIFI_CONNECTION"
+        ],
+        "desc": "敏感数据获取：开启 WLAN（使能WLAN）；数据=WiFi状态；权限=ohos.permission.SET_WIFI_INFO, ohos.permission.MANAGE_WIFI_CONNECTION",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.wifi.enableWifi(): boolean"
+      }
+    },
+    {
+      "id": "source:e24bcee2f5",
+      "kind": "source",
+      "apiKey": "@ohos.wifi.getDeviceMacAddress",
+      "methodName": "getDeviceMacAddress",
+      "ownerHint": "wifi",
+      "moduleHint": "ohos.wifi.getDeviceMacAddress",
+      "meta": {
+        "behavior": "获取mac地址",
+        "subBehavior": "获取mac地址",
+        "dataItem": "网络地址",
+        "dataSubItem": "mac地址",
+        "permissions": [
+          "ohos.permission.GET_WIFI_LOCAL_MAC",
+          "ohos.permission.GET_WIFI_INFO"
+        ],
+        "desc": "敏感数据获取：获取mac地址（获取mac地址）；数据=mac地址；权限=ohos.permission.GET_WIFI_LOCAL_MAC, ohos.permission.GET_WIFI_INFO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.wifi.getDeviceMacAddress(): string[]"
+      }
+    },
+    {
+      "id": "source:df933f09c2",
+      "kind": "source",
+      "apiKey": "@ohos.wifiManager.disconnect",
+      "methodName": "disconnect",
+      "ownerHint": "wifiManager",
+      "moduleHint": "ohos.wifiManager.disconnect",
+      "meta": {
+        "behavior": "开启 WLAN",
+        "subBehavior": "禁用wifi",
+        "dataItem": "网络状态",
+        "dataSubItem": "WiFi状态",
+        "permissions": [
+          "ohos.permission.SET_WIFI_INFO",
+          "ohos.permission.MANAGE_WIFI_CONNECTION"
+        ],
+        "desc": "敏感数据获取：开启 WLAN（禁用wifi）；数据=WiFi状态；权限=ohos.permission.SET_WIFI_INFO, ohos.permission.MANAGE_WIFI_CONNECTION",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.wifiManager.disconnect(): void"
+      }
+    },
+    {
+      "id": "source:cb4ee42a9f",
+      "kind": "source",
+      "apiKey": "@ohos.wifiManager.enableWifi",
+      "methodName": "enableWifi",
+      "ownerHint": "wifiManager",
+      "moduleHint": "ohos.wifiManager.enableWifi",
+      "meta": {
+        "behavior": "开启 WLAN",
+        "subBehavior": "使能WLAN",
+        "dataItem": "网络状态",
+        "dataSubItem": "WiFi状态",
+        "permissions": [
+          "ohos.permission.SET_WIFI_INFO",
+          "ohos.permission.MANAGE_WIFI_CONNECTION"
+        ],
+        "desc": "敏感数据获取：开启 WLAN（使能WLAN）；数据=WiFi状态；权限=ohos.permission.SET_WIFI_INFO, ohos.permission.MANAGE_WIFI_CONNECTION",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.wifiManager.enableWifi(): void"
+      }
+    },
+    {
+      "id": "source:9beafa6036",
+      "kind": "source",
+      "apiKey": "@ohos.calendarManager.Calendar.getEvents",
+      "methodName": "getEvents",
+      "ownerHint": "Calendar",
+      "moduleHint": "ohos.calendarManager",
+      "meta": {
+        "behavior": "读取日程表",
+        "subBehavior": "获取日程表记录",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "日程表",
+        "permissions": [
+          "ohos.permission.READ_WHOLE_CALENDAR",
+          "ohos.permission.READ_CALENDAR"
+        ],
+        "desc": "敏感数据获取：读取日程表（获取日程表记录）；数据=日程表；权限=ohos.permission.READ_WHOLE_CALENDAR, ohos.permission.READ_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.calendarManager.Calendar.getEvents(callback: AsyncCallback<Event[]>): void"
+      }
+    },
+    {
+      "id": "source:d8b887157a",
+      "kind": "source",
+      "apiKey": "@ohos.file.photoAccessHelper.album.getAssets",
+      "methodName": "getAssets",
+      "ownerHint": "album",
+      "moduleHint": "ohos.file.photoAccessHelper.album",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "读取相册图片",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（读取相册图片）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.file.photoAccessHelper.album.getAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<PhotoAsset>>): void"
+      }
+    },
+    {
+      "id": "source:0da6007b49",
+      "kind": "source",
+      "apiKey": "@ohos.file.photoAccessHelper.photoAsset.getReadOnlyFd",
+      "methodName": "getReadOnlyFd",
+      "ownerHint": "photoAsset",
+      "moduleHint": "ohos.file.photoAccessHelper.photoAsset",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取图片",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取图片）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.file.photoAccessHelper.photoAsset.getReadOnlyFd(callback: AsyncCallback<number>): void"
+      }
+    },
+    {
+      "id": "source:d5fbe541ac",
+      "kind": "source",
+      "apiKey": "@ohos.file.photoAccessHelper.photoAsset.getThumbnail",
+      "methodName": "getThumbnail",
+      "ownerHint": "photoAsset",
+      "moduleHint": "ohos.file.photoAccessHelper.photoAsset",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "读取缩略图",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（读取缩略图）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.file.photoAccessHelper.photoAsset.getThumbnail(callback: AsyncCallback<image.PixelMap>): void"
+      }
+    },
+    {
+      "id": "source:8f154d8a70",
+      "kind": "source",
+      "apiKey": "@ohos.filemanagement.userFileManager.album.getPhotoAssets",
+      "methodName": "getPhotoAssets",
+      "ownerHint": "album",
+      "moduleHint": "ohos.filemanagement.userFileManager.album",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取相册图片",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取相册图片）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.filemanagement.userFileManager.album.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void"
+      }
+    },
+    {
+      "id": "source:38edb6030e",
+      "kind": "source",
+      "apiKey": "@ohos.filemanagement.userFileManager.fileAssets.getThumbnail",
+      "methodName": "getThumbnail",
+      "ownerHint": "fileAssets",
+      "moduleHint": "ohos.filemanagement.userFileManager.fileAssets",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取缩略图",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取缩略图）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.filemanagement.userFileManager.fileAssets.getThumbnail(callback: AsyncCallback<image.PixelMap>): void"
+      }
+    },
+    {
+      "id": "source:1af9b49137",
+      "kind": "source",
+      "apiKey": "@ohos.filemanagement.userFileManager.getAudioAssets",
+      "methodName": "getAudioAssets",
+      "ownerHint": "userFileManager",
+      "moduleHint": "ohos.filemanagement.userFileManager.getAudioAssets",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取音频",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "音频/录音",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取音频）；数据=音频/录音；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.filemanagement.userFileManager.getAudioAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void"
+      }
+    },
+    {
+      "id": "source:0c0d796cfd",
+      "kind": "source",
+      "apiKey": "@ohos.filemanagement.userFileManager.getPhotoAssets",
+      "methodName": "getPhotoAssets",
+      "ownerHint": "userFileManager",
+      "moduleHint": "ohos.filemanagement.userFileManager.getPhotoAssets",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取图片",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取图片）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.filemanagement.userFileManager.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void"
+      }
+    },
+    {
+      "id": "source:792bb6591b",
+      "kind": "source",
+      "apiKey": "@ohos.filemanagement.userFileManager.privateAlbum.getPhotoAssets",
+      "methodName": "getPhotoAssets",
+      "ownerHint": "privateAlbum",
+      "moduleHint": "ohos.filemanagement.userFileManager.privateAlbum",
+      "meta": {
+        "behavior": "读取媒体资源",
+        "subBehavior": "获取缩略图",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "图片/视频",
+        "permissions": [
+          "ohos.permission.READ_IMAGEVIDEO"
+        ],
+        "desc": "敏感数据获取：读取媒体资源（获取缩略图）；数据=图片/视频；权限=ohos.permission.READ_IMAGEVIDEO",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.filemanagement.userFileManager.privateAlbum.getPhotoAssets(options: FetchOptions, callback: AsyncCallback<FetchResult<FileAsset>>): void"
+      }
+    },
+    {
+      "id": "source:manual:8d599bf51f",
+      "kind": "source",
+      "apiKey": "@ohos.multimedia.cameraPicker.pick",
+      "methodName": "pick",
+      "ownerHint": "cameraPicker",
+      "moduleHint": "ohos.multimedia.cameraPicker",
+      "meta": {
+        "behavior": "相机/相册选择",
+        "dataItem": "图片/视频",
+        "permissions": [],
+        "desc": "补充：相机/相册 Picker 可能返回用户选择的媒体内容，作为 taint source",
+        "source": "WechatAPI.json (manual patch)"
+      }
+    },
+    {
+      "id": "source:manual:6d198ef111",
+      "kind": "source",
+      "apiKey": "@ohos.file.picker.PhotoViewPicker.select",
+      "methodName": "select",
+      "ownerHint": "PhotoViewPicker",
+      "moduleHint": "ohos.file.picker",
+      "meta": {
+        "behavior": "文件/图片选择",
+        "dataItem": "图片(相册选择)",
+        "permissions": [],
+        "desc": "补充：相册选择器返回用户选择的图片资源，作为 taint source",
+        "source": "WechatAPI.json (manual patch)"
+      }
+    }
+  ],
+  "patchedAt": "2025-12-17T00:00:00Z",
+  "patchNote": "Normalized apiKey to start with '@' for ohos/kit rules; strengthened moduleHint for @kit rules (was too generic 'kit').; Added WeChatDemo picker APIs as sources."
+}

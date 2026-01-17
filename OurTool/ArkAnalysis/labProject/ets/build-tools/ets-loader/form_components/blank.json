@@ -1,6 +1,0 @@
-{
-  "name": "Blank",
-  "parents": ["Row", "Column", "Flex"],
-  "atomic": true,
-  "attrs": ["color"]
-}

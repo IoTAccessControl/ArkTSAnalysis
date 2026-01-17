@@ -1,6 +1,0 @@
-{
-  "name": "ArcListItem",
-  "parents": ["ArcList"],
-  "single": true,
-  "attrs": ["autoScale", "swipeAction"]
-}

@@ -1,7 +1,0 @@
-{
-    "name": "GridRow",
-    "children": ["GridCol"],
-    "attrs": [
-      "onBreakpointChange", "alignItems"
-    ]
-}

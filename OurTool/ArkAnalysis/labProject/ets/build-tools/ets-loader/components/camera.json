@@ -1,5 +1,0 @@
-{
-  "name": "Camera",
-  "atomic": true,
-  "attrs": ["devicePosition"]
-}

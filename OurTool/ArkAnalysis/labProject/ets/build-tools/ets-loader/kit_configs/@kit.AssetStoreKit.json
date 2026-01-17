@@ -1,8 +1,0 @@
-{
-  "symbols": {
-    "asset": {
-      "source": "@ohos.security.asset.d.ts",
-      "bindings": "default"
-    }
-  }
-}

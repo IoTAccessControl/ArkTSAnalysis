@@ -1,4 +1,0 @@
-{
-  "name": "Rating",
-  "attrs": ["stars", "stepSize", "starStyle", "onChange", "contentModifier"]
-}

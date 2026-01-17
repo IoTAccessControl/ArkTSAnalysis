@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "targetProject": "WeChatApp",
+    "flowKind": "source_to_sink",
+    "flowNodeCount": 16,
+    "flowEdgeCount": 2,
+    "flowStartCount": 9,
+    "flowSinkCount": 1,
+    "pathCount": 15,
+    "pathMaxDepth": 25,
+    "pathMaxPerStart": 4,
+    "coverage": {
+      "startsAll": 9,
+      "startsKept": 9,
+      "startsOrphanIncluded": 9,
+      "sinksAll": 7,
+      "sinksCovered": 1,
+      "sinksUncovered": 6
+    }
+  },
+  "starts": [
+    "M142",
+    "M144",
+    "M181",
+    "M598",
+    "M606",
+    "M619",
+    "M628",
+    "M639",
+    "M642"
+  ],
+  "startDetails": [
+    {
+      "id": "M142",
+      "kind": "source"
+    },
+    {
+      "id": "M144",
+      "kind": "source"
+    },
+    {
+      "id": "M181",
+      "kind": "source"
+    },
+    {
+      "id": "M598",
+      "kind": "source"
+    },
+    {
+      "id": "M606",
+      "kind": "source"
+    },
+    {
+      "id": "M619",
+      "kind": "source"
+    },
+    {
+      "id": "M628",
+      "kind": "source"
+    },
+    {
+      "id": "M639",
+      "kind": "source"
+    },
+    {
+      "id": "M642",
+      "kind": "source"
+    }
+  ],
+  "sinks": [
+    "M599"
+  ],
+  "nodes": [
+    {
+      "id": "M142",
+      "nodeId": 142,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.%AM0$startRecord([file, bufferSize], @built-in/lib.es5.d.ts: ArrayBuffer)",
+      "className": "AudioCaptureManager",
+      "methodName": "%AM0$startRecord",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M599",
+      "nodeId": 599,
+      "signature": "@etsSdk/api/@ohos.file.fs.d.ts: %dflt.writeSync(number, @built-in/lib.es5.d.ts: ArrayBuffer|string, @etsSdk/api/@ohos.file.fs.d.ts: WriteOptions)",
+      "className": "%dflt",
+      "methodName": "writeSync",
+      "file": "api/@ohos.file.fs.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:fs.writeSync"
+        ],
+        "labels": [
+          "本地持久化写入"
+        ]
+      }
+    },
+    {
+      "id": "M144",
+      "nodeId": 144,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: AudioCaptureManager.[static]startRecord(string)",
+      "className": "AudioCaptureManager",
+      "methodName": "startRecord",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M181",
+      "nodeId": 181,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/PhotoPickerUtils.ets: PhotoPickerUtils.%AM6$openGallery([onFailed, onSuccess], @etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectResult)",
+      "className": "PhotoPickerUtils",
+      "methodName": "%AM6$openGallery",
+      "file": "entry/src/main/ets/utils/PhotoPickerUtils.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:6d198ef111"
+        ],
+        "labels": [
+          "文件/图片选择"
+        ]
+      }
+    },
+    {
+      "id": "M598",
+      "nodeId": 598,
+      "signature": "@WeChatApp/entry/src/main/ets/utils/AudioCapturerManager.ets: %AC3$AudioCaptureManager.%AM0$startRecord.constructor()",
+      "className": "%AC3$AudioCaptureManager.%AM0$startRecord",
+      "methodName": "constructor",
+      "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+      "isSdk": false,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M606",
+      "nodeId": 606,
+      "signature": "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioCapturer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)",
+      "className": "AudioCapturer",
+      "methodName": "start",
+      "file": "api/@ohos.multimedia.audio.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M619",
+      "nodeId": 619,
+      "signature": "@etsSdk/api/@ohos.multimedia.audio.d.ts: audio.AudioRenderer.start(@etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)",
+      "className": "AudioRenderer",
+      "methodName": "start",
+      "file": "api/@ohos.multimedia.audio.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:2ae243001c"
+        ],
+        "labels": [
+          "本地录音"
+        ]
+      }
+    },
+    {
+      "id": "M628",
+      "nodeId": 628,
+      "signature": "@etsSdk/api/@ohos.bundle.bundleManager.d.ts: bundleManager.%dflt.getBundleInfoForSelfSync(number)",
+      "className": "%dflt",
+      "methodName": "getBundleInfoForSelfSync",
+      "file": "api/@ohos.bundle.bundleManager.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:4d1dd07a30"
+        ],
+        "labels": [
+          "读应用软件列表"
+        ]
+      }
+    },
+    {
+      "id": "M639",
+      "nodeId": 639,
+      "signature": "@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoViewPicker.select(@etsSdk/api/@ohos.file.picker.d.ts: picker.PhotoSelectOptions)",
+      "className": "PhotoViewPicker",
+      "methodName": "select",
+      "file": "api/@ohos.file.picker.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:6d198ef111"
+        ],
+        "labels": [
+          "文件/图片选择"
+        ]
+      }
+    },
+    {
+      "id": "M642",
+      "nodeId": 642,
+      "signature": "@etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.%dflt.pick(@etsSdk/api/application/Context.d.ts: Context, @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerMediaType[], @etsSdk/api/@ohos.multimedia.cameraPicker.d.ts: cameraPicker.PickerProfile)",
+      "className": "%dflt",
+      "methodName": "pick",
+      "file": "api/@ohos.multimedia.cameraPicker.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": true,
+        "isSink": false,
+        "sourceRules": [
+          "source:manual:8d599bf51f"
+        ],
+        "labels": [
+          "相机/相册选择"
+        ]
+      }
+    },
+    {
+      "id": "M337",
+      "nodeId": 337,
+      "signature": "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.info(number, string, string, any[])",
+      "className": "%dflt",
+      "methodName": "info",
+      "file": "api/@ohos.hilog.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:hilog.info"
+        ],
+        "labels": [
+          "日志输出"
+        ]
+      }
+    },
+    {
+      "id": "M340",
+      "nodeId": 340,
+      "signature": "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.error(number, string, string, any[])",
+      "className": "%dflt",
+      "methodName": "error",
+      "file": "api/@ohos.hilog.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:hilog.error"
+        ],
+        "labels": [
+          "日志输出"
+        ]
+      }
+    },
+    {
+      "id": "M624",
+      "nodeId": 624,
+      "signature": "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.debug(number, string, string, any[])",
+      "className": "%dflt",
+      "methodName": "debug",
+      "file": "api/@ohos.hilog.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:hilog.debug"
+        ],
+        "labels": [
+          "日志输出"
+        ]
+      }
+    },
+    {
+      "id": "M625",
+      "nodeId": 625,
+      "signature": "@etsSdk/api/@ohos.hilog.d.ts: hilog.%dflt.warn(number, string, string, any[])",
+      "className": "%dflt",
+      "methodName": "warn",
+      "file": "api/@ohos.hilog.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:hilog.warn"
+        ],
+        "labels": [
+          "日志输出"
+        ]
+      }
+    },
+    {
+      "id": "M632",
+      "nodeId": 632,
+      "signature": "@etsSdk/api/application/UIAbilityContext.d.ts: UIAbilityContext.startAbility(@etsSdk/api/@ohos.app.ability.Want.d.ts: Want, @etsSdk/api/@ohos.base.d.ts: AsyncCallback<void,void>)",
+      "className": "UIAbilityContext",
+      "methodName": "startAbility",
+      "file": "api/application/UIAbilityContext.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:ability.startAbility"
+        ],
+        "labels": [
+          "跨Ability边界传递"
+        ]
+      }
+    },
+    {
+      "id": "M635",
+      "nodeId": 635,
+      "signature": "@etsSdk/api/@internal/full/global.d.ts: console.[static]error(string, any[])",
+      "className": "console",
+      "methodName": "error",
+      "file": "api/@internal/full/global.d.ts",
+      "isSdk": true,
+      "kind": "REAL",
+      "taint": {
+        "isSource": false,
+        "isSink": true,
+        "sinkRules": [
+          "extra:sink:console.error"
+        ],
+        "labels": [
+          "控制台输出"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "E646",
+      "from": "M142",
+      "to": "M599",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+          "line": 89,
+          "col": 9,
+          "text": "fs.writeSync(file.fd, buffer, options);"
+        }
+      ]
+    },
+    {
+      "id": "E652",
+      "from": "M144",
+      "to": "M142",
+      "kind": "EXPLICIT",
+      "callSites": [
+        {
+          "type": "indirect",
+          "file": "entry/src/main/ets/utils/AudioCapturerManager.ets",
+          "line": 95,
+          "col": 7,
+          "text": "AudioCaptureManager.audioCapturer?.on('readData', readDataCallback);"
+        }
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "start": "M142",
+      "sink": "M599",
+      "length": 1,
+      "nodes": [
+        "M142",
+        "M599"
+      ],
+      "edges": [
+        "E646"
+      ],
+      "truncated": false,
+      "pathType": "source_to_sink"
+    },
+    {
+      "start": "M144",
+      "sink": "M599",
+      "length": 2,
+      "nodes": [
+        "M144",
+        "M142",
+        "M599"
+      ],
+      "edges": [
+        "E652",
+        "E646"
+      ],
+      "truncated": false,
+      "pathType": "source_to_sink"
+    },
+    {
+      "start": "M181",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M181"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M598",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M598"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M606",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M606"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M619",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M619"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M628",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M628"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M639",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M639"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M642",
+      "sink": null,
+      "length": 0,
+      "nodes": [
+        "M642"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "source_only",
+      "note": "no sink reachable in callgraph"
+    },
+    {
+      "start": "M337",
+      "sink": "M337",
+      "length": 0,
+      "nodes": [
+        "M337"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    },
+    {
+      "start": "M340",
+      "sink": "M340",
+      "length": 0,
+      "nodes": [
+        "M340"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    },
+    {
+      "start": "M624",
+      "sink": "M624",
+      "length": 0,
+      "nodes": [
+        "M624"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    },
+    {
+      "start": "M625",
+      "sink": "M625",
+      "length": 0,
+      "nodes": [
+        "M625"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    },
+    {
+      "start": "M632",
+      "sink": "M632",
+      "length": 0,
+      "nodes": [
+        "M632"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    },
+    {
+      "start": "M635",
+      "sink": "M635",
+      "length": 0,
+      "nodes": [
+        "M635"
+      ],
+      "edges": [],
+      "truncated": false,
+      "pathType": "sink_only",
+      "note": "no start reached this sink in callgraph"
+    }
+  ]
+}

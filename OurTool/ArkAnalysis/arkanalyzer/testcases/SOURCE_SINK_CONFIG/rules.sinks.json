@@ -1,0 +1,803 @@
+{
+  "generatedAt": "2025-12-17T07:03:02",
+  "generatedFrom": [
+    "sensitiveAPILists.csv",
+    "extra-rules.json"
+  ],
+  "kind": "sink",
+  "count": 39,
+  "rules": [
+    {
+      "id": "sink:48326f1869",
+      "kind": "sink",
+      "apiKey": "@kit.CalendarKit.calendarManager.getCalendarManager.deleteCalendar",
+      "methodName": "deleteCalendar",
+      "ownerHint": "getCalendarManager",
+      "moduleHint": "kit.CalendarKit.calendarManager",
+      "meta": {
+        "behavior": "删除日程表数据",
+        "subBehavior": "删除整个日历",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "日程表",
+        "permissions": [
+          "ohos.permission.WRITE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：删除日程表数据（删除整个日历）；可能涉及=日程表；权限=ohos.permission.WRITE_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@kit.CalendarKit.calendarManager.getCalendarManager(context).deleteCalendar(calendar: Calendar): Promise<boolean>"
+      }
+    },
+    {
+      "id": "sink:d9346f7d59",
+      "kind": "sink",
+      "apiKey": "@kit.CalendarKit.calendarManager.getCalendarManager.getCalendar.deleteEvent",
+      "methodName": "deleteEvent",
+      "ownerHint": "getCalendar",
+      "moduleHint": "kit.CalendarKit.calendarManager",
+      "meta": {
+        "behavior": "删除日程表数据",
+        "subBehavior": "删除单个日历事件",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "日程表",
+        "permissions": [
+          "ohos.permission.WRITE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：删除日程表数据（删除单个日历事件）；可能涉及=日程表；权限=ohos.permission.WRITE_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@kit.CalendarKit.calendarManager.getCalendarManager(context).getCalendar().deleteEvent(eventId: number): Promise<void>"
+      }
+    },
+    {
+      "id": "sink:f4b42c3de2",
+      "kind": "sink",
+      "apiKey": "@kit.CalendarKit.calendarManager.getCalendarManager.getCalendar.deleteEvents",
+      "methodName": "deleteEvents",
+      "ownerHint": "getCalendar",
+      "moduleHint": "kit.CalendarKit.calendarManager",
+      "meta": {
+        "behavior": "删除日程表数据",
+        "subBehavior": "删除日历事件",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "日程表",
+        "permissions": [
+          "ohos.permission.WRITE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：删除日程表数据（删除日历事件）；可能涉及=日程表；权限=ohos.permission.WRITE_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@kit.CalendarKit.calendarManager.getCalendarManager(context).getCalendar().deleteEvents(eventIds: number[]): Promise<void>",
+        "descAlt": [
+          "敏感数据出口/敏感操作：删除日程表数据（删除普通类型日历事件）；可能涉及=日程表；权限=ohos.permission.WRITE_CALENDAR"
+        ]
+      }
+    },
+    {
+      "id": "sink:c6d879ea36",
+      "kind": "sink",
+      "apiKey": "@kit.PaymentKit.paymentService.requestContract",
+      "methodName": "requestContract",
+      "ownerHint": "paymentService",
+      "moduleHint": "kit.PaymentKit.paymentService",
+      "meta": {
+        "behavior": "支付和签约",
+        "subBehavior": "签约功能(Promise方式)",
+        "dataItem": "支付记录",
+        "dataSubItem": "支付方式",
+        "permissions": [],
+        "desc": "敏感数据出口/敏感操作：支付和签约（签约功能(Promise方式)）；可能涉及=支付方式",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@kit.PaymentKit.paymentService.requestContract(context: common.UIAbilityContext, contractStr: string): Promise<void>",
+        "descAlt": [
+          "敏感数据出口/敏感操作：支付和签约（签约功能(回调方式)）；可能涉及=支付方式"
+        ]
+      }
+    },
+    {
+      "id": "sink:f76d5d9d5b",
+      "kind": "sink",
+      "apiKey": "@kit.PaymentKit.paymentService.requestPayment",
+      "methodName": "requestPayment",
+      "ownerHint": "paymentService",
+      "moduleHint": "kit.PaymentKit.paymentService",
+      "meta": {
+        "behavior": "支付和签约",
+        "subBehavior": "支付功能(Promise方式)",
+        "dataItem": "支付记录",
+        "dataSubItem": "支付方式",
+        "permissions": [],
+        "desc": "敏感数据出口/敏感操作：支付和签约（支付功能(Promise方式)）；可能涉及=支付方式",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@kit.PaymentKit.paymentService.requestPayment(context: common.UIAbilityContext, orderStr: string): Promise<void>",
+        "descAlt": [
+          "敏感数据出口/敏感操作：支付和签约（支付功能(回调方式)）；可能涉及=支付方式"
+        ]
+      }
+    },
+    {
+      "id": "extra:sink:ability.startAbility",
+      "kind": "sink",
+      "apiKey": "@ohos.app.ability.startAbility",
+      "methodName": "startAbility",
+      "ownerHint": "UIAbilityContext",
+      "moduleHint": "UIAbilityContext",
+      "meta": {
+        "behavior": "跨Ability边界传递",
+        "subBehavior": "startAbility(Want)",
+        "dataItem": "Want参数/携带数据",
+        "dataSubItem": "跨组件传递",
+        "permissions": [],
+        "desc": "跨 Ability 调用（startAbility）。如果 Want 中携带敏感数据，可当作边界 sink（跨组件/跨进程）。"
+      }
+    },
+    {
+      "id": "sink:6cc03f8a2f",
+      "kind": "sink",
+      "apiKey": "@ohos.bluetooth.access.enableBluetooth",
+      "methodName": "enableBluetooth",
+      "ownerHint": "access",
+      "moduleHint": "ohos.bluetooth.access.enableBluetooth",
+      "meta": {
+        "behavior": "开启无线外围接口",
+        "subBehavior": "开启蓝牙",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "开启蓝牙",
+        "permissions": [
+          "ohos.permission.ACCESS_BLUETOOTH"
+        ],
+        "desc": "敏感数据出口/敏感操作：开启无线外围接口（开启蓝牙）；可能涉及=开启蓝牙；权限=ohos.permission.ACCESS_BLUETOOTH",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bluetooth.access.enableBluetooth(): boolean;"
+      }
+    },
+    {
+      "id": "sink:ac79350818",
+      "kind": "sink",
+      "apiKey": "@ohos.bluetooth.enableBluetooth",
+      "methodName": "enableBluetooth",
+      "ownerHint": "bluetooth",
+      "moduleHint": "ohos.bluetooth.enableBluetooth",
+      "meta": {
+        "behavior": "开启无线外围接口",
+        "subBehavior": "开启蓝牙",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "开启蓝牙",
+        "permissions": [
+          "ohos.permission.ACCESS_BLUETOOTH"
+        ],
+        "desc": "敏感数据出口/敏感操作：开启无线外围接口（开启蓝牙）；可能涉及=开启蓝牙；权限=ohos.permission.ACCESS_BLUETOOTH",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bluetooth.enableBluetooth(): boolean;"
+      }
+    },
+    {
+      "id": "sink:89cdc4b6e4",
+      "kind": "sink",
+      "apiKey": "@ohos.bluetooth.socket.sppWrite",
+      "methodName": "sppWrite",
+      "ownerHint": "socket",
+      "moduleHint": "ohos.bluetooth.socket.sppWrite",
+      "meta": {
+        "behavior": "移动通信网络数据连接传送数据",
+        "subBehavior": "通过socket向远端发送数据",
+        "dataItem": "网络数据",
+        "dataSubItem": "发送数据",
+        "permissions": [
+          "ohos.permission.ACCESS_BLUETOOTH"
+        ],
+        "desc": "敏感数据出口/敏感操作：移动通信网络数据连接传送数据（通过socket向远端发送数据）；可能涉及=发送数据；权限=ohos.permission.ACCESS_BLUETOOTH",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bluetooth.socket.sppWrite(clientSocket: number, data: ArrayBuffer): void"
+      }
+    },
+    {
+      "id": "sink:c5ed0fb482",
+      "kind": "sink",
+      "apiKey": "@ohos.bluetooth.sppWrite",
+      "methodName": "sppWrite",
+      "ownerHint": "bluetooth",
+      "moduleHint": "ohos.bluetooth.sppWrite",
+      "meta": {
+        "behavior": "移动通信网络数据连接传送数据",
+        "subBehavior": "通过socket向远端发送数据",
+        "dataItem": "网络数据",
+        "dataSubItem": "发送数据",
+        "permissions": [
+          "ohos.permission.ACCESS_BLUETOOTH"
+        ],
+        "desc": "敏感数据出口/敏感操作：移动通信网络数据连接传送数据（通过socket向远端发送数据）；可能涉及=发送数据；权限=ohos.permission.ACCESS_BLUETOOTH",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.bluetooth.sppWrite(clientSocket: number, data: ArrayBuffer): boolean"
+      }
+    },
+    {
+      "id": "sink:6b84401ee1",
+      "kind": "sink",
+      "apiKey": "@ohos.calendarManager.Calendar.addEvent",
+      "methodName": "addEvent",
+      "ownerHint": "Calendar",
+      "moduleHint": "ohos.calendarManager",
+      "meta": {
+        "behavior": "修改日程表数据（包含新增）",
+        "subBehavior": "新增日程",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "新增日程",
+        "permissions": [
+          "ohos.permission.WRITE_CALENDAR",
+          "ohos.permission.WRITE_WHOLE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改日程表数据（包含新增）（新增日程）；可能涉及=新增日程；权限=ohos.permission.WRITE_WHOLE_CALENDAR, ohos.permission.WRITE_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.calendarManager.Calendar.addEvent(event: Event, callback: AsyncCallback<number>): void",
+        "descAlt": [
+          "敏感数据出口/敏感操作：修改日程表数据（包含新增）（新增日程）；可能涉及=新增日程；权限=ohos.permission.WRITE_CALENDAR"
+        ]
+      }
+    },
+    {
+      "id": "sink:50a91fe219",
+      "kind": "sink",
+      "apiKey": "@ohos.calendarManager.Calendar.addEvents",
+      "methodName": "addEvents",
+      "ownerHint": "Calendar",
+      "moduleHint": "ohos.calendarManager",
+      "meta": {
+        "behavior": "修改日程表数据（包含新增）",
+        "subBehavior": "批量新增日程",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "新增日程",
+        "permissions": [
+          "ohos.permission.WRITE_CALENDAR",
+          "ohos.permission.WRITE_WHOLE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改日程表数据（包含新增）（批量新增日程）；可能涉及=新增日程；权限=ohos.permission.WRITE_WHOLE_CALENDAR, ohos.permission.WRITE_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.calendarManager.Calendar.addEvents(events: Event[], callback: AsyncCallback<void>): void",
+        "descAlt": [
+          "敏感数据出口/敏感操作：修改日程表数据（包含新增）（批量新增日程）；可能涉及=新增日程；权限=ohos.permission.WRITE_CALENDAR"
+        ]
+      }
+    },
+    {
+      "id": "sink:f389e9acb5",
+      "kind": "sink",
+      "apiKey": "@ohos.calendarManager.Calendar.updateEvent",
+      "methodName": "updateEvent",
+      "ownerHint": "Calendar",
+      "moduleHint": "ohos.calendarManager",
+      "meta": {
+        "behavior": "修改日程表数据（包含新增）",
+        "subBehavior": "更新日程",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "更新日程",
+        "permissions": [
+          "ohos.permission.WRITE_WHOLE_CALENDAR",
+          "ohos.permission.READ_WHOLE_CALENDAR",
+          "ohos.permission.WRITE_CALENDAR",
+          "ohos.permission.READ_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改日程表数据（包含新增）（更新日程）；可能涉及=更新日程；权限=ohos.permission.WRITE_WHOLE_CALENDAR, ohos.permission.READ_WHOLE_CALENDAR, ohos.permission.WRITE_CALENDAR, ohos.permission.READ_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.calendarManager.Calendar.updateEvent(event: Event, callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "sink:7d40e574b2",
+      "kind": "sink",
+      "apiKey": "@ohos.commonEventManager.subscribe",
+      "methodName": "subscribe",
+      "ownerHint": "commonEventManager",
+      "moduleHint": "ohos.commonEventManager.subscribe",
+      "meta": {
+        "behavior": "接收短信",
+        "subBehavior": "接收短信",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "信息/短信",
+        "permissions": [
+          "ohos.permission.RECEIVE_SMS"
+        ],
+        "desc": "敏感数据出口/敏感操作：接收短信（接收短信）；可能涉及=信息/短信；权限=ohos.permission.RECEIVE_SMS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.commonEventManager.subscribe(subscriber: CommonEventSubscriber, callback: AsyncCallback<CommonEventData>): void"
+      }
+    },
+    {
+      "id": "sink:29cd43066d",
+      "kind": "sink",
+      "apiKey": "@ohos.contact.addContact",
+      "methodName": "addContact",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.addContact",
+      "meta": {
+        "behavior": "修改用户电话本数据（包含新增）",
+        "subBehavior": "新增数据",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "增加联系人",
+        "permissions": [
+          "ohos.permission.WRITE_CONTACTS"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改用户电话本数据（包含新增）（新增数据）；可能涉及=增加联系人；权限=ohos.permission.WRITE_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.addContact(context: common.UIAbilityContext, contact: Contact): Promise<number>",
+        "descAlt": [
+          "敏感数据出口/敏感操作：修改用户电话本数据（包含新增）（新增联系人）；可能涉及=增加联系人；权限=ohos.permission.WRITE_CONTACTS"
+        ]
+      }
+    },
+    {
+      "id": "sink:2024b1537a",
+      "kind": "sink",
+      "apiKey": "@ohos.contact.deleteContact",
+      "methodName": "deleteContact",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.deleteContact",
+      "meta": {
+        "behavior": "开启无线外围接口",
+        "subBehavior": "删除联系人",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "删除联系人",
+        "permissions": [
+          "ohos.permission.WRITE_CONTACTS"
+        ],
+        "desc": "敏感数据出口/敏感操作：开启无线外围接口（删除联系人）；可能涉及=删除联系人；权限=ohos.permission.WRITE_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.deleteContact(context: Context, key: string, callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "sink:6b3e46f8de",
+      "kind": "sink",
+      "apiKey": "@ohos.contact.updateContact",
+      "methodName": "updateContact",
+      "ownerHint": "contact",
+      "moduleHint": "ohos.contact.updateContact",
+      "meta": {
+        "behavior": "修改用户电话本数据（包含新增）",
+        "subBehavior": "修改联系人",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "修改联系人",
+        "permissions": [
+          "ohos.permission.WRITE_CONTACTS",
+          "ohos.permission.READ_CONTACTS"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改用户电话本数据（包含新增）（修改联系人）；可能涉及=修改联系人；权限=ohos.permission.WRITE_CONTACTS, ohos.permission.READ_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.contact.updateContact(context: Context, contact: Contact, callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "sink:2afb33d64a",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.createDataShareHelper",
+      "methodName": "createDataShareHelper",
+      "ownerHint": "dataShare",
+      "moduleHint": "ohos.data.dataShare.createDataShareHelper",
+      "meta": {
+        "behavior": "读取短信数据",
+        "subBehavior": "获取短信",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "短信列表",
+        "permissions": [
+          "ohos.permission.READ_CALENDAR",
+          "ohos.permission.READ_MESSAGES"
+        ],
+        "desc": "敏感数据出口/敏感操作：读取短信数据（获取短信）；可能涉及=短信列表；权限=ohos.permission.READ_MESSAGES",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.data.dataShare.createDataShareHelper(context, 'datashare:///com.ohos.smsmmsability')",
+        "descAlt": [
+          "敏感数据出口/敏感操作：读取日程表（获取日程表记录）；可能涉及=日程表；权限=ohos.permission.READ_CALENDAR"
+        ]
+      }
+    },
+    {
+      "id": "sink:4f213e4dce",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.createDataShareHelper.update",
+      "methodName": "update",
+      "ownerHint": "createDataShareHelper",
+      "moduleHint": "ohos.data.dataShare.createDataShareHelper",
+      "meta": {
+        "behavior": "修改用户电话本数据（包含新增）",
+        "subBehavior": "修改联系人",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "修改联系人",
+        "permissions": [
+          "ohos.permission.WRITE_CONTACTS"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改用户电话本数据（包含新增）（修改联系人）；可能涉及=修改联系人；权限=ohos.permission.WRITE_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.data.dataShare.createDataShareHelper(context, 'com.ohos.contactsdataability').update(uri: string, valuesBucket: ValuesBucket, predicates: DataSharePredicates): Promise<number>"
+      }
+    },
+    {
+      "id": "sink:aec2ae49f7",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.dataShareHelper.batchInsert",
+      "methodName": "batchInsert",
+      "ownerHint": "dataShareHelper",
+      "moduleHint": "ohos.data.dataShare.dataShareHelper",
+      "meta": {
+        "behavior": "修改用户电话本数据（包含新增）",
+        "subBehavior": "批量新增数据",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "增加联系人",
+        "permissions": [
+          "ohos.permission.READ_CALL_LOG",
+          "ohos.permission.WRITE_CALL_LOG",
+          "ohos.permission.WRITE_CONTACTS"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改用户电话本数据（包含新增）（批量新增数据）；可能涉及=增加联系人；权限=ohos.permission.WRITE_CONTACTS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.data.dataShare'.dataShareHelper.batchInsert-->URI:datashare:///com.ohos.contactsdataability",
+        "descAlt": [
+          "敏感数据出口/敏感操作：修改通话记录（包含新增）（批量新增通话记录）；可能涉及=新增通话记录；权限=ohos.permission.WRITE_CALL_LOG, ohos.permission.READ_CALL_LOG"
+        ]
+      }
+    },
+    {
+      "id": "sink:d12c3f7117",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.dataShareHelper.delete",
+      "methodName": "delete",
+      "ownerHint": "dataShareHelper",
+      "moduleHint": "ohos.data.dataShare.dataShareHelper",
+      "meta": {
+        "behavior": "删除通话记录",
+        "subBehavior": "删除通话记录",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "删除通话记录",
+        "permissions": [
+          "ohos.permission.WRITE_CALL_LOG"
+        ],
+        "desc": "敏感数据出口/敏感操作：删除通话记录（删除通话记录）；可能涉及=删除通话记录；权限=ohos.permission.WRITE_CALL_LOG",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.data.dataShare'.dataShareHelper.delete-->dataability:///com.ohos.calllogability"
+      }
+    },
+    {
+      "id": "sink:aca6ee3d0a",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.dataShareHelper.query",
+      "methodName": "query",
+      "ownerHint": "dataShareHelper",
+      "moduleHint": "ohos.data.dataShare.dataShareHelper",
+      "meta": {
+        "behavior": "读取通话记录",
+        "subBehavior": "获取通话记录",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "通讯录",
+        "permissions": [
+          "ohos.permission.READ_CALENDAR",
+          "ohos.permission.READ_CALL_LOG",
+          "ohos.permission.READ_WHOLE_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：读取通话记录（获取通话记录）；可能涉及=通讯录；权限=ohos.permission.READ_CALL_LOG",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.data.dataShare'.dataShareHelper.query-->dataability://com.ohos.calllogability",
+        "descAlt": [
+          "敏感数据出口/敏感操作：读取日程表（获取日程表记录）；可能涉及=日程表；权限=ohos.permission.READ_WHOLE_CALENDAR, ohos.permission.READ_CALENDAR"
+        ]
+      }
+    },
+    {
+      "id": "extra:sink:fs.writeSync",
+      "kind": "sink",
+      "apiKey": "@ohos.file.fs.writeSync",
+      "methodName": "writeSync",
+      "ownerHint": "fs",
+      "moduleHint": "ohos.file.fs",
+      "meta": {
+        "behavior": "本地持久化写入",
+        "subBehavior": "文件写入（同步）",
+        "dataItem": "任意数据",
+        "dataSubItem": "写入文件/落盘",
+        "permissions": [],
+        "desc": "文件系统写入（writeSync）。对隐私数据流而言属于典型落地点：数据被持久化到本地文件。"
+      }
+    },
+    {
+      "id": "extra:sink:hilog.debug",
+      "kind": "sink",
+      "apiKey": "@ohos.hilog.debug",
+      "methodName": "debug",
+      "ownerHint": "hilog",
+      "moduleHint": "ohos.hilog",
+      "meta": {
+        "behavior": "日志输出",
+        "subBehavior": "hilog.debug",
+        "dataItem": "调试/业务文本",
+        "dataSubItem": "输出到系统日志",
+        "permissions": [],
+        "desc": "系统日志输出（hilog.debug）。"
+      }
+    },
+    {
+      "id": "extra:sink:hilog.error",
+      "kind": "sink",
+      "apiKey": "@ohos.hilog.error",
+      "methodName": "error",
+      "ownerHint": "hilog",
+      "moduleHint": "ohos.hilog",
+      "meta": {
+        "behavior": "日志输出",
+        "subBehavior": "hilog.error",
+        "dataItem": "调试/业务文本",
+        "dataSubItem": "输出到系统日志",
+        "permissions": [],
+        "desc": "系统日志输出（hilog.error）。"
+      }
+    },
+    {
+      "id": "extra:sink:hilog.info",
+      "kind": "sink",
+      "apiKey": "@ohos.hilog.info",
+      "methodName": "info",
+      "ownerHint": "hilog",
+      "moduleHint": "ohos.hilog",
+      "meta": {
+        "behavior": "日志输出",
+        "subBehavior": "hilog.info",
+        "dataItem": "调试/业务文本",
+        "dataSubItem": "输出到系统日志",
+        "permissions": [],
+        "desc": "系统日志输出（hilog.info）。很多隐私分析把日志当作“泄露点/可疑出口”。"
+      }
+    },
+    {
+      "id": "extra:sink:hilog.warn",
+      "kind": "sink",
+      "apiKey": "@ohos.hilog.warn",
+      "methodName": "warn",
+      "ownerHint": "hilog",
+      "moduleHint": "ohos.hilog",
+      "meta": {
+        "behavior": "日志输出",
+        "subBehavior": "hilog.warn",
+        "dataItem": "调试/业务文本",
+        "dataSubItem": "输出到系统日志",
+        "permissions": [],
+        "desc": "系统日志输出（hilog.warn）。"
+      }
+    },
+    {
+      "id": "sink:4a5e1a14ad",
+      "kind": "sink",
+      "apiKey": "@ohos.net.http.createHttp.request",
+      "methodName": "request",
+      "ownerHint": "createHttp",
+      "moduleHint": "ohos.net.http.createHttp",
+      "meta": {
+        "behavior": "移动通信网络数据连接传送数据",
+        "subBehavior": "发起HTTP网络请求",
+        "dataItem": "网络数据",
+        "dataSubItem": "发起网络请求",
+        "permissions": [
+          "ohos.permission.INTERNET"
+        ],
+        "desc": "敏感数据出口/敏感操作：移动通信网络数据连接传送数据（发起HTTP网络请求）；可能涉及=发起网络请求；权限=ohos.permission.INTERNET",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.net.http.createHttp().request(url: string, callback: AsyncCallback<HttpResponse>): void"
+      }
+    },
+    {
+      "id": "sink:6a3d675761",
+      "kind": "sink",
+      "apiKey": "@ohos.net.http.requestInStream",
+      "methodName": "requestInStream",
+      "ownerHint": "http",
+      "moduleHint": "ohos.net.http.requestInStream",
+      "meta": {
+        "behavior": "移动通信网络数据连接传送数据",
+        "subBehavior": "根据URI发送网络请求",
+        "dataItem": "网路数据",
+        "dataSubItem": "发起网络请求",
+        "permissions": [
+          "ohos.permission.INTERNET"
+        ],
+        "desc": "敏感数据出口/敏感操作：移动通信网络数据连接传送数据（根据URI发送网络请求）；可能涉及=发起网络请求；权限=ohos.permission.INTERNET",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.net.http.requestInStream(url: string, callback: AsyncCallback<number>): void"
+      }
+    },
+    {
+      "id": "sink:09bc38d6d0",
+      "kind": "sink",
+      "apiKey": "@ohos.nfc.controller.enableNfc",
+      "methodName": "enableNfc",
+      "ownerHint": "controller",
+      "moduleHint": "ohos.nfc.controller.enableNfc",
+      "meta": {
+        "behavior": "开启无线外围接口",
+        "subBehavior": "开启NFC",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "开启NFC",
+        "permissions": [
+          "ohos.permission.MANAGE_SECURE_SETTINGS"
+        ],
+        "desc": "敏感数据出口/敏感操作：开启无线外围接口（开启NFC）；可能涉及=开启NFC；权限=ohos.permission.MANAGE_SECURE_SETTINGS",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.nfc.controller.enableNfc(): void"
+      }
+    },
+    {
+      "id": "sink:43923d202f",
+      "kind": "sink",
+      "apiKey": "@ohos.screenshot.save",
+      "methodName": "save",
+      "ownerHint": "screenshot",
+      "moduleHint": "ohos.screenshot.save",
+      "meta": {
+        "behavior": "后台截屏/录屏",
+        "subBehavior": "截屏",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "照片",
+        "permissions": [
+          "ohos.permission.CAPTURE_SCREEN"
+        ],
+        "desc": "敏感数据出口/敏感操作：后台截屏/录屏（截屏）；可能涉及=照片；权限=ohos.permission.CAPTURE_SCREEN",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.screenshot.save(options?: ScreenshotOptions, callback: AsyncCallback<image.PixelMap>): void"
+      }
+    },
+    {
+      "id": "sink:8553224152",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.call.makeCall",
+      "methodName": "makeCall",
+      "ownerHint": "call",
+      "moduleHint": "ohos.telephony.call.makeCall",
+      "meta": {
+        "behavior": "修改通话记录（包含新增）",
+        "subBehavior": "新增通话记录",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "新增通话记录",
+        "permissions": [
+          "ohos.permission.PLACE_CALL"
+        ],
+        "desc": "敏感数据出口/敏感操作：修改通话记录（包含新增）（新增通话记录）；可能涉及=新增通话记录；权限=ohos.permission.PLACE_CALL",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.call.makeCall(phoneNumber: string): Promise<void>",
+        "descAlt": [
+          "敏感数据出口/敏感操作：拨打电话（拨打电话）；可能涉及=拨打电话；权限=ohos.permission.PLACE_CALL"
+        ]
+      }
+    },
+    {
+      "id": "sink:d204a06633",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.data.setDataRoamingEnabled",
+      "methodName": "setDataRoamingEnabled",
+      "ownerHint": "data",
+      "moduleHint": "ohos.telephony.data.setDataRoamingEnabled",
+      "meta": {
+        "behavior": "开启移动通信网络连接",
+        "subBehavior": "启用蜂窝数据服务",
+        "dataItem": "网络状态",
+        "dataSubItem": "数据服务",
+        "permissions": [
+          "ohos.permission.SET_TELEPHONY_STATE"
+        ],
+        "desc": "敏感数据出口/敏感操作：开启移动通信网络连接（启用蜂窝数据服务）；可能涉及=数据服务；权限=ohos.permission.SET_TELEPHONY_STATE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.data.setDataRoamingEnabled(slotId: number, enable: boolean): Promise<void>"
+      }
+    },
+    {
+      "id": "sink:60d5f358a3",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.sms.getAllSimMessages",
+      "methodName": "getAllSimMessages",
+      "ownerHint": "sms",
+      "moduleHint": "ohos.telephony.sms.getAllSimMessages",
+      "meta": {
+        "behavior": "读取短信数据",
+        "subBehavior": "获取SIM卡短信",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "短信列表",
+        "permissions": [
+          "ohos.permission.READ_MESSAGES"
+        ],
+        "desc": "敏感数据出口/敏感操作：读取短信数据（获取SIM卡短信）；可能涉及=短信列表；权限=ohos.permission.READ_MESSAGES",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sms.getAllSimMessages(slotId: number, callback: AsyncCallback<Array<SimShortMessage>>): void"
+      }
+    },
+    {
+      "id": "sink:1572047782",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.sms.sendMessage",
+      "methodName": "sendMessage",
+      "ownerHint": "sms",
+      "moduleHint": "ohos.telephony.sms.sendMessage",
+      "meta": {
+        "behavior": "发送短信",
+        "subBehavior": "发送短信",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "发短信",
+        "permissions": [
+          "ohos.permission.SEND_MESSAGES"
+        ],
+        "desc": "敏感数据出口/敏感操作：发送短信（发送短信）；可能涉及=发短信；权限=ohos.permission.SEND_MESSAGES",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sms.sendMessage(options: SendMessageOptions): void"
+      }
+    },
+    {
+      "id": "sink:64894df1b5",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.sms.sendShortMessage",
+      "methodName": "sendShortMessage",
+      "ownerHint": "sms",
+      "moduleHint": "ohos.telephony.sms.sendShortMessage",
+      "meta": {
+        "behavior": "发送短信",
+        "subBehavior": "发送短信",
+        "dataItem": "屏幕操作记录",
+        "dataSubItem": "发短信",
+        "permissions": [
+          "ohos.permission.SEND_MESSAGES"
+        ],
+        "desc": "敏感数据出口/敏感操作：发送短信（发送短信）；可能涉及=发短信；权限=ohos.permission.SEND_MESSAGES",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "@ohos.telephony.sms.sendShortMessage(options: SendMessageOptions, callback: AsyncCallback<void>): void"
+      }
+    },
+    {
+      "id": "extra:sink:console.error",
+      "kind": "sink",
+      "apiKey": "console.error",
+      "methodName": "error",
+      "ownerHint": "console",
+      "moduleHint": "console",
+      "meta": {
+        "behavior": "控制台输出",
+        "subBehavior": "console.error",
+        "dataItem": "调试/业务文本",
+        "dataSubItem": "输出到控制台/日志",
+        "permissions": [],
+        "desc": "控制台输出（console.error）。同样可视作潜在泄露点。"
+      }
+    },
+    {
+      "id": "sink:3c30ed5fb4",
+      "kind": "sink",
+      "apiKey": "@ohos.data.dataShare.dataShareHelper.query",
+      "methodName": "query",
+      "ownerHint": "dataShareHelper",
+      "moduleHint": "ohos.data.dataShare.dataShareHelper",
+      "meta": {
+        "behavior": "读取彩信数据",
+        "subBehavior": "获取彩信",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "短信列表",
+        "permissions": [
+          "ohos.permission.READ_WHOLE_CALENDAR",
+          "ohos.permission.READ_CALENDAR"
+        ],
+        "desc": "敏感数据出口/敏感操作：读取彩信数据（获取彩信）；可能涉及=短信列表；权限=ohos.permission.READ_WHOLE_CALENDAR, ohos.permission.READ_CALENDAR",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.data.dataShare.dataShareHelper.query-->URI:datashare:///com.ohos.smsmmsability"
+      }
+    },
+    {
+      "id": "sink:66eb6d93f6",
+      "kind": "sink",
+      "apiKey": "@ohos.telephony.sms.sendMms",
+      "methodName": "sendMms",
+      "ownerHint": "sms",
+      "moduleHint": "ohos.telephony.sms.sendMms",
+      "meta": {
+        "behavior": "发送彩信",
+        "subBehavior": "发送彩信",
+        "dataItem": "云空间同步/备份内容",
+        "dataSubItem": "拨打电话",
+        "permissions": [
+          "ohos.permission.SEND_MESSAGE"
+        ],
+        "desc": "敏感数据出口/敏感操作：发送彩信（发送彩信）；可能涉及=拨打电话；权限=ohos.permission.SEND_MESSAGE",
+        "source": "sensitiveAPILists.csv",
+        "rawApi": "ohos.telephony.sms.sendMms(context: Context, mmsParams: MmsParams, callback: AsyncCallback<void>): void"
+      }
+    }
+  ],
+  "patchedAt": "2025-12-17T00:00:00Z",
+  "patchNote": "Normalized apiKey to start with '@' for ohos/kit rules; strengthened moduleHint for @kit rules (was too generic 'kit')."
+}

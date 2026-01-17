@@ -1,6 +1,0 @@
-{
-  "name": "ColumnSplit",
-  "attrs": [
-    "resizeable", "divider"
-  ]
-}

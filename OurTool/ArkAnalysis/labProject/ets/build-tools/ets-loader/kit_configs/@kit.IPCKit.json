@@ -1,8 +1,0 @@
-{
-  "symbols": {
-    "rpc": {
-      "source": "@ohos.rpc.d.ts",
-      "bindings": "default"
-    }
-  }
-}
